@@ -479,7 +479,6 @@ namespace RE
 	class TESPackageData;
 	class TESRegionDataList;
 	class TESRegionPointList;
-	class TESResponse;
 
 	struct BGSDebrisData;
 	struct FORM;
@@ -1693,6 +1692,32 @@ namespace RE
 		std::uint16_t timeUntilReset;  // 2
 	};
 	static_assert(sizeof(TOPIC_INFO_DATA) == 0x4);
+
+	struct TESResponse
+	{
+	public:
+		struct RespData
+		{
+			std::uint16_t uiPercent;
+			std::uint8_t ucResponseID;
+			bool bUseEmotion;
+		};
+		static_assert(sizeof(RespData) == 0x4);
+
+		const char* GetResponseText()
+		{
+			using func_t = decltype(&TESResponse::GetResponseText);
+			REL::Relocation<func_t> func{ REL::ID(2208288) };
+			return func(this);
+		}
+
+		// Members
+		BGSLocalizedString responseText;
+		TESResponse* pNext;
+		TESResponse::RespData data;
+		BGSTypedKeywordValue<KeywordType::kAnimFaceArchetype> faceArcheType;
+	};
+	static_assert(sizeof(TESRespone) == 0x18);
 
 	class ResponseListWrapper
 	{
