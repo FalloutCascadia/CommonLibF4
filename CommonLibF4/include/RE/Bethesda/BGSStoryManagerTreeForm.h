@@ -15,7 +15,6 @@
 namespace RE
 {
 	class BGSBaseAlias;
-	class BGSQuestInstanceText;
 	class BGSQuestObjective;
 	class BGSRegisteredStoryEvent;
 	class BGSStoryEvent;
@@ -79,6 +78,39 @@ namespace RE
 		std::int8_t questType;  // 7
 	};
 	static_assert(sizeof(QUEST_DATA) == 0x8);
+
+	class BGSQuestInstanceText
+	{
+	public:
+		void ParseString(BSStringT<char>& inOutText, const TESQuest* quest, std::uint32_t instanceID)
+		{
+			using func_t = decltype(&BGSQuestInstanceText::ParseString);
+			REL::Relocation<func_t> func{ REL::ID(141681) }; // Update
+			return func(this, inOutText, quest, instanceID);
+		}
+
+		struct StringData
+		{
+			std::uint32_t aliasID;
+			std::uint32_t fullNameFormID;
+		};
+		static_assert(sizeof(StringData) == 0x8);
+
+		struct GlobabValueData
+		{
+			const TESGlobal* globab;
+			float value;
+		};
+		static_assert(sizeof(GlobabValueData) == 0x10);
+
+		// Members
+		std::uint32_t ID; // 00
+		BSTArray<BGSQuestInstanceText::StringData> StringData; // 08
+		BSTArray<BGSQuestInstanceText::GlobabValueData> ValueData; // 20
+		std::uint16_t JournalStage; // 38
+		std::uint16_t JournalStageItem; // 3A
+	};
+	static_assert(sizeof(BGSQuestInstanceText) == 0x40);
 
 	class __declspec(novtable) TESQuest :
 		public BGSStoryManagerTreeForm,  // 000
