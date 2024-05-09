@@ -132,6 +132,14 @@ namespace RE
 			return func(this, stage);
 		}
 
+		BSPointerHandle<TESObjectREFR>* GetAliasedRef(BSPointerHandle<TESObjectREFR>* a_result, std::uint32_t a_aiAliasID)
+		{
+			using func_t = decltype(&TESQuest::GetAliasedRef);
+			REL::Relocation<func_t> func{ REL::ID(2207810) };
+			return func(this, a_result, a_aiAliasID);
+		}
+
+
 		// members
 		BSTArray<BGSQuestInstanceText*> instanceData;                                                  // 038
 		std::uint32_t currentInstanceID;                                                               // 050
