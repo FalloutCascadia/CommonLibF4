@@ -2,6 +2,7 @@
 
 #include "RE/Bethesda/AITimeStamp.h"
 #include "RE/Bethesda/Actor.h"
+#include "RE/Bethesda/BGSCharacterTint.h"
 #include "RE/Bethesda/BSLock.h"
 #include "RE/Bethesda/BSPointerHandle.h"
 #include "RE/Bethesda/BSSoundHandle.h"
@@ -54,11 +55,6 @@ namespace RE
 	struct ItemChange;
 	struct PickRefUpdateEvent;
 	struct PositionPlayerEvent;
-
-	namespace BGSCharacterTint
-	{
-		class Entries;
-	}
 
 	namespace PerkValueEvents
 	{

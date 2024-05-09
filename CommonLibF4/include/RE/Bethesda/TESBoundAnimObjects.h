@@ -1,6 +1,7 @@
 #pragma once
 
 #include "RE/Bethesda/BGSCharacterMorph.h"
+#include "RE/Bethesda/BGSCharacterTint.h"
 #include "RE/Bethesda/BSFixedString.h"
 #include "RE/Bethesda/BSTArray.h"
 #include "RE/Bethesda/BSTEvent.h"
@@ -17,11 +18,6 @@ namespace RE
 	enum class LOCK_LEVEL;
 
 	class MenuOpenCloseEvent;
-
-	namespace BGSCharacterTint
-	{
-		class Entries;
-	}
 
 	class __declspec(novtable) TESBoundAnimObject :
 		public TESBoundObject  // 00
