@@ -278,7 +278,7 @@ namespace RE
 		DIFFICULTY_LEVEL GetDifficultyLevel()
 		{
 			using func_t = decltype(&PlayerCharacter::GetDifficultyLevel);
-			REL::Relocation<func_t> func{ REL::ID(922962) };
+			REL::Relocation<func_t> func{ REL::ID(2233056) };
 			return func(this);
 		}
 
@@ -292,14 +292,14 @@ namespace RE
 		bool IsHolotapePlaying(BGSNote* a_holotape)
 		{
 			using func_t = decltype(&PlayerCharacter::IsHolotapePlaying);
-			REL::Relocation<func_t> func{ REL::ID(530826) };
+			REL::Relocation<func_t> func{ REL::ID(2233206) };
 			return func(this, a_holotape);
 		}
 
 		bool IsImmortal()
 		{
 			using func_t = decltype(&PlayerCharacter::IsImmortal);
-			REL::Relocation<func_t> func{ REL::ID(500346) };
+			REL::Relocation<func_t> func{ REL::ID(2232988) };
 			return func(this);
 		}
 
@@ -317,14 +317,14 @@ namespace RE
 		void PauseHolotape(BGSNote* a_holotape)
 		{
 			using func_t = decltype(&PlayerCharacter::PauseHolotape);
-			REL::Relocation<func_t> func{ REL::ID(1567456) };
+			REL::Relocation<func_t> func{ REL::ID(2233208) };
 			return func(this, a_holotape);
 		}
 
 		void PlayHolotape(BGSNote* a_holotape)
 		{
 			using func_t = decltype(&PlayerCharacter::PlayHolotape);
-			REL::Relocation<func_t> func{ REL::ID(1581042) };
+			REL::Relocation<func_t> func{ REL::ID(2233207) };
 			return func(this, a_holotape);
 		}
 
