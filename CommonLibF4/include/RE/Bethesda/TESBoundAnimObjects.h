@@ -465,6 +465,13 @@ namespace RE
 
 		[[nodiscard]] bool UsingAlternateHeadPartList() const;
 
+		float GetFacialBoneMorphIntensity()
+		{
+			using func_t = decltype(&TESNPC::GetFacialBoneMorphIntensity);
+			REL::Relocation<func_t> func{ REL::ID(2207416) };
+			return func(this);
+		}
+
 		// members
 		BGSAttachParentArray attachParents;  // 220
 		NPC_DATA data;                       // 238
