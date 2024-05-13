@@ -370,6 +370,20 @@ namespace RE
 			return func(this, a_show, a_skipEffects);
 		}
 
+		void SetLastDialogueInput(uint32_t dialogueOption)
+		{
+			using func_t = decltype(&PlayerCharacter::SetLastDialogueInput);
+			REL::Relocation<func_t> func{ REL::ID(2233190) };
+			return func(this, dialogueOption);
+		}
+
+		void ClearPrison()
+		{
+			using func_t = decltype(&PlayerCharacter::ClearPrison);
+			REL::Relocation<func_t> func{ REL::ID(2233196) };
+			return func(this);
+		}
+
 		// members
 		BSSpinLock actorToDisplayOnHUDLock;                                                     // 628
 		BSSpinLock questTargetLock;                                                             // 630
