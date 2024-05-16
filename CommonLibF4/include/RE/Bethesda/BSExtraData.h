@@ -350,8 +350,12 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::ExtraHealth };
 		static constexpr auto TYPE{ EXTRA_DATA_TYPE::kHealth };
 
-		ExtraHealth();
-		ExtraHealth(float health);
+		ExtraHealth(float health) :
+			BSExtraData(TYPE),
+			health(health)
+		{
+			stl::emplace_vtable(this);
+		}
 
 		// members
 		float health;  // 18
