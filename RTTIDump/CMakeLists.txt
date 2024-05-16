@@ -7,7 +7,6 @@ add_project(
 		src
 	GROUPED_FILES
 		"src/main.cpp"
-		"src/PCH.cpp"
 		"src/PCH.h"
 	PRECOMPILED_HEADERS
 		"src/PCH.h"
@@ -18,15 +17,12 @@ if(NOT TARGET CommonLibF4)
 endif()
 
 find_package(spdlog REQUIRED CONFIG)
-find_package(srell MODULE REQUIRED)
 
 target_link_libraries(
 	"${PROJECT_NAME}"
 	PUBLIC
 		CommonLibF4::CommonLibF4
-		Dbghelp.lib
 		spdlog::spdlog
-		srell::srell
 )
 
 copy_files(

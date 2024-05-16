@@ -13,7 +13,6 @@ if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
 	message(FATAL_ERROR "in-source builds are not allowed")
 endif()
 
-find_package(Boost MODULE REQUIRED)
 find_package(mmio REQUIRED CONFIG)
 find_package(spdlog REQUIRED CONFIG)
 
@@ -37,7 +36,6 @@ add_library("${PROJECT_NAME}::${PROJECT_NAME}" ALIAS "${PROJECT_NAME}")
 target_compile_definitions(
 	"${PROJECT_NAME}"
 	PUBLIC
-		BOOST_STL_INTERFACES_DISABLE_CONCEPTS
 		WINVER=0x0601	# windows 7, minimum supported version by fallout 4
 		_WIN32_WINNT=0x0601
 		"$<$<BOOL:${F4SE_SUPPORT_XBYAK}>:F4SE_SUPPORT_XBYAK=1>"
@@ -46,7 +44,7 @@ target_compile_definitions(
 target_compile_features(
 	"${PROJECT_NAME}"
 	PUBLIC
-		cxx_std_20
+		cxx_std_23
 )
 
 if (MSVC)
@@ -95,11 +93,16 @@ target_include_directories(
 target_link_libraries(
 	"${PROJECT_NAME}"
 	PUBLIC
+ 		advapi32.lib
 		bcrypt.lib
-		Boost::headers
+		d3d11.lib
+		d3dcompiler.lib
+		dbghelp.lib
+		dxgi.lib
 		mmio::mmio
+		ole32.lib
 		spdlog::spdlog
-		Version.lib
+		version.lib
 )
 
 target_precompile_headers(
@@ -135,5 +138,6 @@ install(
 		"include/F4SE"
 		"include/RE"
 		"include/REL"
+		"include/REX"
 	DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
 )

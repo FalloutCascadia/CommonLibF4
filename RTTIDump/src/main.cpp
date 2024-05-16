@@ -128,20 +128,20 @@ private:
 {
 	static const std::array expressions{
 		std::make_pair(
-			srell::regex{ R"regex((`anonymous namespace'|[ &'*\-`]){1})regex"s, srell::regex::ECMAScript },
-			std::function{ [](std::string& a_name, const srell::ssub_match& a_match) {
+			std::regex{ R"regex((`anonymous namespace'|[ &'*\-`]){1})regex"s, std::regex::ECMAScript },
+			std::function{ [](std::string& a_name, const std::ssub_match& a_match) {
 				a_name.erase(a_match.first, a_match.second);
 			} }),
 		std::make_pair(
-			srell::regex{ R"regex(([(),:<>]){1})regex"s, srell::regex::ECMAScript },
-			std::function{ [](std::string& a_name, const srell::ssub_match& a_match) {
+			std::regex{ R"regex(([(),:<>]){1})regex"s, std::regex::ECMAScript },
+			std::function{ [](std::string& a_name, const std::ssub_match& a_match) {
 				a_name.replace(a_match.first, a_match.second, "_"sv);
 			} }),
 	};
 
-	srell::smatch matches;
+	std::smatch matches;
 	for (const auto& [expr, callback] : expressions) {
-		while (srell::regex_search(a_name, matches, expr)) {
+		while (std::regex_search(a_name, matches, expr)) {
 			for (std::size_t i = 1; i < matches.size(); ++i) {
 				callback(a_name, matches[static_cast<int>(i)]);
 			}
@@ -157,20 +157,20 @@ private:
 
 	std::array<char, 0x1000> buf;
 	const auto len =
-		WinAPI::UnDecorateSymbolName(
+		REX::W32::UnDecorateSymbolName(
 			a_typeDesc->mangled_name() + 1,
 			buf.data(),
 			static_cast<std::uint32_t>(buf.size()),
-			(WinAPI::UNDNAME_NO_MS_KEYWORDS) |
-				(WinAPI::UNDNAME_NO_FUNCTION_RETURNS) |
-				(WinAPI::UNDNAME_NO_ALLOCATION_MODEL) |
-				(WinAPI::UNDNAME_NO_ALLOCATION_LANGUAGE) |
-				(WinAPI::UNDNAME_NO_THISTYPE) |
-				(WinAPI::UNDNAME_NO_ACCESS_SPECIFIERS) |
-				(WinAPI::UNDNAME_NO_THROW_SIGNATURES) |
-				(WinAPI::UNDNAME_NO_RETURN_UDT_MODEL) |
-				(WinAPI::UNDNAME_NAME_ONLY) |
-				(WinAPI::UNDNAME_NO_ARGUMENTS) |
+			(REX::W32::UNDNAME_NO_MS_KEYWORDS) |
+				(REX::W32::UNDNAME_NO_FUNCTION_RETURNS) |
+				(REX::W32::UNDNAME_NO_ALLOCATION_MODEL) |
+				(REX::W32::UNDNAME_NO_ALLOCATION_LANGUAGE) |
+				(REX::W32::UNDNAME_NO_THISTYPE) |
+				(REX::W32::UNDNAME_NO_ACCESS_SPECIFIERS) |
+				(REX::W32::UNDNAME_NO_THROW_SIGNATURES) |
+				(REX::W32::UNDNAME_NO_RETURN_UDT_MODEL) |
+				(REX::W32::UNDNAME_NAME_ONLY) |
+				(REX::W32::UNDNAME_NO_ARGUMENTS) |
 				static_cast<std::uint32_t>(0x8000));  // Disable enum/class/struct/union prefix
 
 	if (len != 0) {
@@ -389,20 +389,19 @@ void MessageHandler(F4SE::MessagingInterface::Message* a_message)
 
 DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f4se)
 {
-#ifndef NDEBUG
-	auto sink = std::make_shared<spdlog::sinks::msvc_sink_mt>();
-#else
 	auto path = logger::log_directory();
 	if (!path) {
 		return false;
 	}
 
 	*path /= "RTTIDump.log"sv;
-	auto sink = std::make_shared<spdlog::sinks::basic_file_sink_mt>(path->string(), true);
-#endif
 
-	auto log = std::make_shared<spdlog::logger>("global log", std::move(sink));
+	spdlog::sinks_init_list sinks{
+		std::make_shared<spdlog::sinks::basic_file_sink_mt>(path->string(), true),
+		std::make_shared<spdlog::sinks::msvc_sink_mt>()
+	};
 
+	auto log = std::make_shared<spdlog::logger>("global", sinks);
 #ifndef NDEBUG
 	log->set_level(spdlog::level::trace);
 #else
