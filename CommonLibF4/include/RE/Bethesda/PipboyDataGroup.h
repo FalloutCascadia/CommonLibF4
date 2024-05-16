@@ -19,7 +19,7 @@ namespace RE
 		virtual void DoClearData();
 		virtual void DoClearSink();
 
-		WinAPI::CRITICAL_SECTION PipboyDataMutex;
+		REX::W32::CRITICAL_SECTION PipboyDataMutex;
 		void* rThrottleManager; // PipboyThrottleManager
 		PipboyValue* rootValue;
 	};
