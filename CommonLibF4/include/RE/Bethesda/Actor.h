@@ -853,6 +853,16 @@ namespace RE
 			kUnderwater = 1 << 31,
 		};
 
+		enum class DETECTION_PRIORITY
+		{
+			kNone = 0,
+			kVeryLow = 1,
+			kLow = 2,
+			kNormal = 3,
+			kHigh = 4,
+			kCritical = 5,
+		};
+
 		// add
 		virtual void PlayPickUpSound(TESBoundObject* a_boundObj, bool a_pickUp, bool a_use);                                                                                                             // 0C6
 		virtual float GetHeading() const { return data.angle.z; }                                                                                                                                        // 0C7
