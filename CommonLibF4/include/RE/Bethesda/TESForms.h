@@ -1781,9 +1781,9 @@ namespace RE
 			return func(this);
 		}
 
-		CHARISMA_CHALLENGE_DIFFICULTY GetSpeechChallengeLevel()
+		CHARISMA_CHALLENGE_DIFFICULTY GetChallengeLevel()
 		{
-			using func_t = decltype(&TESTopicInfo::GetSpeechChallengeLevel);
+			using func_t = decltype(&TESTopicInfo::GetChallengeLevel);
 			static REL::Relocation<func_t> func{ REL::ID(2208441) };
 			return func(this);
 		}
