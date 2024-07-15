@@ -907,7 +907,7 @@ namespace RE
 		bool GetItemCount(uint32_t& count, TESForm* item, bool countComponent)
 		{
 			using func_t = decltype(&TESObjectREFR::GetItemCount);
-			static REL::Relocation<func_t> func{ REL::ID(635042) };
+			static REL::Relocation<func_t> func{ REL::ID(2200996) };
 			return func(this, count, item, countComponent);
 		}
 
