@@ -795,7 +795,7 @@ namespace RE
 		[[nodiscard]] std::uint32_t GetInventoryObjectCount(const TESBoundObject* a_object)
 		{
 			using func_t = decltype(&TESObjectREFR::GetInventoryObjectCount);
-			static REL::Relocation<func_t> func{ REL::ID(333415) };
+			static REL::Relocation<func_t> func{ REL::ID(2200939) };
 			return func(this, a_object);
 		}
 
