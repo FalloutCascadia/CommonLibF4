@@ -345,7 +345,7 @@ namespace RE
 			bool a_alwaysContinue = false)
 		{
 			using func_t = decltype(&BGSInventoryList::FindAndWriteStackDataForItem);
-			static REL::Relocation<func_t> func{ REL::ID(1354005) };
+			static REL::Relocation<func_t> func{ REL::ID(2194179) };
 			return func(this, a_object, a_compareFunc, a_writeFunc, a_objCompFn, a_alwaysContinue);
 		}
 
