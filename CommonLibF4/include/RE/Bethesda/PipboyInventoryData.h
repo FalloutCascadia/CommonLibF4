@@ -44,14 +44,14 @@ namespace RE
 
 		struct StackEntry
 		{
-			PipboyObject* linkedObject;
-			const InventoryInterface::Handle inventoryHandle;
+			PipboyObject* linkedObject;							// 00
+			const InventoryInterface::Handle inventoryHandle;	// 08
 		};
 		static_assert(sizeof(StackEntry) == 0x10);
 
 		struct ItemEntry
 		{
-			BSSimpleList<PipboyInventoryData::StackEntry>* stackEntries;
+			void*  stackEntries; // 00 - BSTList<PipboyInventoryData::StackEntry*>
 		};
 		static_assert(sizeof(ItemEntry) == 0x8);
 
