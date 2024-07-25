@@ -1212,7 +1212,7 @@ namespace RE
 		void UpdateData() override
 		{
 			using func_t = decltype(&PipboyInventoryMenu::UpdateData);
-			static REL::Relocation<func_t> func{ REL::ID(762897) };
+			static REL::Relocation<func_t> func{ REL::ID(2224143) };
 			return func(this);
 		}
 	};
