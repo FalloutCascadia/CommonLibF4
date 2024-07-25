@@ -18,6 +18,7 @@ namespace RE
 	class TESObjectCELL;
 	class TESObjectREFR;
 	class VATSCommand;
+	class BGSInstancedQuestObjective;
 
 	struct InventoryUserUIInterfaceEntry;
 
@@ -75,6 +76,50 @@ namespace RE
 			BGSPerkEntry* perkEntry;										// 08
 		};
 		static_assert(sizeof(PerkEntryUpdatedEvent) == 0x10);
+	}
+
+	namespace PlayerCharacterQuestEvent
+	{
+		enum Type
+		{
+			AddObjective = 0,
+			UpdateObjective,
+			RemoveQuest,
+			RemoveQuestTarget,
+			UpdateQuestTarget
+		};
+
+		struct Event
+		{
+			PlayerCharacterQuestEvent::Type changeType;		// 00
+			BGSInstancedQuestObjective* questObjective;		// 08
+		};
+		static_assert(sizeof(Event) == 0x10);
+	}
+
+	struct TESTrackedStatsEvent
+	{
+		BSFixedString stat;
+		std::int32_t value;
+	};
+	static_assert(sizeof(TESTrackedStatsEvent) == 0x10);
+
+	namespace TESQuestEvent
+	{
+		enum Type
+		{
+			UpdateQuestActiveStatus = 0,
+			UpdateQuestEnableStatus,
+			UpdateQuestStageChange,
+			UpdateMiscQuestVisibility
+		};
+
+		struct Event
+		{
+			TESQuestEvent::Type changeType;
+			TESQuest* quest;
+		};
+		static_assert(sizeof(Event) == 0x10);
 	}
 
 	namespace HolotapeStateChanged
