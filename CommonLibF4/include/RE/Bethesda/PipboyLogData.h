@@ -5,7 +5,7 @@
 
 namespace RE
 {
-	class _declspec(novtable) PipboyLogData :
+	class __declspec(novtable) PipboyLogData :
 		public PipboyDataGroup,						// 00
 		public BSTEventSink<TESTrackedStatsEvent>	// 98
 	{
@@ -17,9 +17,9 @@ namespace RE
 
 		virtual BSEventNotifyControl ProcessEvent(const TESTrackedStatsEvent& a_event, BSTEventSource<TESTrackedStatsEvent>* a_source);								// 01
 
-		virtual void Populate(bool a_arg1);		// 02
-		virtual void DoClearData();				// 03
-		virtual void DoClearSink();				// 04
+		virtual void Populate(bool a_arg1) override;  // 02
+		virtual void DoClearData() override;          // 03
+		virtual void DoClearSink() override;          // 04
 
 		// members
 		PipboyArray* statTypeArray;								// A0

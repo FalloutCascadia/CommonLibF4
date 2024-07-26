@@ -7,6 +7,7 @@
 #include "RE/Bethesda/PipboyLogData.h"
 #include "RE/Bethesda/PipboyQuestData.h"
 #include "RE/Bethesda/PipboyRadioData.h"
+#include "RE/Bethesda/PipboySpecialData.h"
 #include "RE/Bethesda/PipboyThrottleManager.h"
 #include "RE/Bethesda/PipboyValue.h"
 
@@ -25,7 +26,7 @@ namespace RE
 		// members
 		PipboyObject rootObject;					// 08
 		void* statsData[39];						// A0 - PipboyStatsData 
-		void* specialData[21];						// 1D8 - PipboySpecialData
+		PipboySpecialData specialData;              // 1D8
 		void* perksData[27];						// 280 - PipboyPerksData
 		PipboyInventoryData inventoryData;			// 358
 		PipboyQuestData questData;					// 4F0

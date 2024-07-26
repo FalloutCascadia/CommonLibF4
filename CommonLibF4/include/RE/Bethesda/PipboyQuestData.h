@@ -5,7 +5,7 @@
 
 namespace RE
 {
-	class _declspec(novtable) PipboyQuestData :
+	class __declspec(novtable) PipboyQuestData :
 		public PipboyDataGroup,										// 00
 		public BSTEventSink<PlayerCharacterQuestEvent::Event>,		// 89
 		public BSTEventSink<TESQuestEvent::Event>					// A0
@@ -19,9 +19,9 @@ namespace RE
 		virtual BSEventNotifyControl ProcessEvent(const PlayerCharacterQuestEvent::Event& a_event, BSTEventSource<PlayerCharacterQuestEvent::Event>* a_source);		// 01
 		virtual BSEventNotifyControl ProcessEvent(const TESQuestEvent::Event& a_event, BSTEventSource<TESQuestEvent::Event>* a_source);								// 02
 
-		virtual void Populate(bool a_arg1);		// 03
-		virtual void DoClearData();				// 04
-		virtual void DoClearSink();				// 05
+		virtual void Populate(bool a_arg1) override;		// 03
+		virtual void DoClearData() override;          // 04
+		virtual void DoClearSink() override;                // 05
 
 		// members
 		std::uint32_t sortIndex;																					// A8

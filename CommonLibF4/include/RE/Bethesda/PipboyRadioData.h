@@ -11,7 +11,7 @@ namespace RE
 		struct PipboyRadioTuningEvent;
 	}
 
-	class _declspec(novtable) PipboyRadioData :
+	class __declspec(novtable) PipboyRadioData :
 		public PipboyDataGroup,												// 00
 		public BSTEventSink<RadioManager::PipboyFrequencyDetectionEvent>,	// 98
 		public BSTEventSink<RadioManager::PipboyRadioTuningEvent>			// A0
@@ -25,9 +25,9 @@ namespace RE
 		virtual BSEventNotifyControl ProcessEvent(const RadioManager::PipboyFrequencyDetectionEvent& a_event, BSTEventSource<RadioManager::PipboyFrequencyDetectionEvent>* a_source);	// 01
 		virtual BSEventNotifyControl ProcessEvent(const RadioManager::PipboyRadioTuningEvent& a_event, BSTEventSource<RadioManager::PipboyRadioTuningEvent>* a_source);					// 02
 
-		virtual void Populate(bool a_arg1);		// 03
-		virtual void DoClearData();				// 04
-		virtual void DoClearSink();				// 05
+		virtual void Populate(bool a_arg1) override;	// 03
+		virtual void DoClearData() override;			// 04
+		virtual void DoClearSink() override;            // 05
 
 		// members
 		PipboyArray* radioStations;				// A8

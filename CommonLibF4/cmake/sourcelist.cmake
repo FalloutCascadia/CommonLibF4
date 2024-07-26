@@ -206,6 +206,7 @@ set(SOURCES
 	include/RE/Bethesda/PipboyManager.h
 	include/RE/Bethesda/PipboyQuestData.h
 	include/RE/Bethesda/PipboyRadioData.h
+	include/RE/Bethesda/PipboySpecialData.h
 	include/RE/Bethesda/PipboyThrottleManager.h
 	include/RE/Bethesda/PipboyValue.h
 	include/RE/Bethesda/PlayerCharacter.h
