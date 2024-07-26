@@ -1744,6 +1744,13 @@ namespace RE
 		virtual void                 ShowBuildFailureMessage();                    // 1A
 		virtual bool                 TryCreate() = 0;                              // 1B
 
+		void UpdateOptimizedAutoBuildInv()
+		{
+			using func_t = decltype(&WorkbenchMenuBase::UpdateOptimizedAutoBuildInv);
+			static REL::Relocation<func_t> func{ REL::ID(2224955) };
+			return func(this);
+		}
+
 		// members
 		NiPointer<TESObjectREFR>                   sharedContainerRef;        // 0E0
 		NiPointer<TESObjectREFR>                   workbenchContainerRef;     // 0E8

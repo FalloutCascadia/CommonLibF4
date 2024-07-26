@@ -13,7 +13,7 @@ namespace RE
 		static constexpr auto RTTI{ RTTI::PipboyLogData };
 		static constexpr auto VTABLE{ VTABLE::PipboyLogData };
 
-		virtual ~PipboyLogData();
+		virtual ~PipboyLogData() = default; // 00
 
 		virtual BSEventNotifyControl ProcessEvent(const TESTrackedStatsEvent& a_event, BSTEventSource<TESTrackedStatsEvent>* a_source);								// 01
 

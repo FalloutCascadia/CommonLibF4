@@ -134,7 +134,7 @@ namespace RE
 		{
 			bool shouldClearMapMarkers;	// 00
 		};
-		static_assert(size_of(Event) == 0x1)
+		static_assert(sizeof(Event) == 0x1);
 	}
 
 	namespace LocalMapCameraUpdate

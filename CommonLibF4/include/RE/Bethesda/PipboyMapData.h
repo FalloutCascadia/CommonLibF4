@@ -23,7 +23,23 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::PipboyMapData };
 
 
-		virtual ~PipboyMapData();
+		virtual ~PipboyMapData() = default;
+
+		virtual BSEventNotifyControl ProcessEvent(const TravelMarkerStateChange::Event& a_event, BSTEventSource<TravelMarkerStateChange::Event>* a_source);	// 01
+		virtual BSEventNotifyControl ProcessEvent(const PlayerUpdateEvent& a_event, BSTEventSource<PlayerUpdateEvent>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const BGSActorCellEvent& a_event, BSTEventSource<BGSActorCellEvent>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const TESQuestEvent::Event& a_event, BSTEventSource<TESQuestEvent::Event>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const PlayerCharacterQuestEvent::Event& a_event, BSTEventSource<PlayerCharacterQuestEvent::Event>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const CustomMarkerUpdate::Event& a_event, BSTEventSource<CustomMarkerUpdate::Event>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const LocationMarkerArrayUpdate::Event& a_event, BSTEventSource<LocationMarkerArrayUpdate::Event>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const LocalMapCameraUpdate::Event& a_event, BSTEventSource<LocalMapCameraUpdate::Event>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const TESLocationClearedEvent& a_event, BSTEventSource<TESLocationClearedEvent>* a_source);					// 02
+		virtual BSEventNotifyControl ProcessEvent(const ActorValueEvents::ActorValueChangedEvent& a_event, BSTEventSource<ActorValueEvents::ActorValueChangedEvent>* a_source);					// 02
+
+		// override
+		virtual void Populate(bool a_arg1) override;  // 02
+		virtual void DoClearData() override;          // 03
+		virtual void DoClearSink() override;          // 04
 
 		// members
 		PipboyObject*                                                                       mapObject;

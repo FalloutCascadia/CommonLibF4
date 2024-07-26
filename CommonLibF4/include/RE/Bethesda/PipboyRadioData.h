@@ -20,7 +20,7 @@ namespace RE
 		static constexpr auto RTTI{ RTTI::PipboyRadioData };
 		static constexpr auto VTABLE{ VTABLE::PipboyRadioData };
 
-		virtual ~PipboyRadioData();
+		virtual ~PipboyRadioData() = default;
 
 		virtual BSEventNotifyControl ProcessEvent(const RadioManager::PipboyFrequencyDetectionEvent& a_event, BSTEventSource<RadioManager::PipboyFrequencyDetectionEvent>* a_source);	// 01
 		virtual BSEventNotifyControl ProcessEvent(const RadioManager::PipboyRadioTuningEvent& a_event, BSTEventSource<RadioManager::PipboyRadioTuningEvent>* a_source);					// 02

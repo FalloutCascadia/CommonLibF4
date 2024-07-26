@@ -14,7 +14,7 @@ namespace RE
 		static constexpr auto RTTI{ RTTI::PipboyDataGroup };
 		static constexpr auto VTABLE{ VTABLE::PipboyDataGroup };
 
-		virtual ~PipboyDataGroup();  // 00
+		virtual ~PipboyDataGroup() = default;  // 00
 
 		// override
 		virtual BSEventNotifyControl ProcessEvent(const PipboyValueChangedEvent& a_event, BSTEventSource<PipboyValueChangedEvent>* a_source);  // 01
