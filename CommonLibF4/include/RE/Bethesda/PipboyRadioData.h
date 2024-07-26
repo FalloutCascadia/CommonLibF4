@@ -1,11 +1,10 @@
 #pragma once
 
+#include "RE/Bethesda/PipboyArray.h"
 #include "RE/Bethesda/PipboyDataGroup.h"
 
 namespace RE
 {
-	class PipboyArray;
-
 	namespace RadioManager
 	{
 		struct PipboyFrequencyDetectionEvent;

@@ -1,11 +1,10 @@
 #pragma once
 
+#include "RE/Bethesda/PipboyArray.h"
 #include "RE/Bethesda/PipboyDataGroup.h"
 
 namespace RE
 {
-	class PipboyArray;
-
 	class _declspec(novtable) PipboyQuestData :
 		public PipboyDataGroup,										// 00
 		public BSTEventSink<PlayerCharacterQuestEvent::Event>,		// 89
