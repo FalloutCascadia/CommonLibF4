@@ -122,7 +122,40 @@ namespace RE
 		static_assert(sizeof(Event) == 0x10);
 	}
 
+	struct TESLocationClearedEvent
+	{
+		const BGSLocation* loc;	//00
+	};
+	static_assert(sizeof(TESLocationClearedEvent) == 0x8);
+
+	namespace LocationMarkerArrayUpdate
+	{
+		struct Event
+		{
+			bool shouldClearMapMarkers;	// 00
+		};
+		static_assert(size_of(Event) == 0x1)
+	}
+
+	namespace LocalMapCameraUpdate
+	{
+		// intentional
+		struct Event
+		{}; 
+	}
+
 	namespace HolotapeStateChanged
+	{
+		// intentional
+		struct Event
+		{};
+	}
+
+	// intentional
+	struct PlayerUpdateEvent
+	{};
+
+	namespace CustomMarkerUpdate
 	{
 		// intentional
 		struct Event
