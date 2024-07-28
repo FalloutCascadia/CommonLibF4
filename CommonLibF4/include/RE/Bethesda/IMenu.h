@@ -1867,6 +1867,30 @@ namespace RE
 		};
 		static_assert(sizeof(InitDataScrap) == 0x40);
 
+		class __declspec(novtable) InitDataRepairFailure :
+			public InitData  // 00
+		{
+		public:
+			static constexpr auto RTTI{ RTTI::ExamineConfirmMenu__InitDataRepairFailure };
+			static constexpr auto VTABLE{ VTABLE::ExamineConfirmMenu__InitDataRepairFailure };
+
+			InitDataRepairFailure(const BSTArray<BSTTuple<TESForm*, BGSTypedFormValuePair::SharedVal>>* requiredItems) :
+				InitData(GameSettingCollection::GetSingleton()->GetSetting("sCannotRepairMessage")->GetString(), "$OK", CONFIRM_TYPE::kRepairFailure),
+				requiredItems(requiredItems)
+			{
+				stl::emplace_vtable(this);
+			}
+
+			virtual ~InitDataRepairFailure() = default;  // 00
+
+			F4_HEAP_REDEFINE_NEW(InitDataRepairFailure);
+
+			// members
+			const BSTArray<BSTTuple<TESForm *,BGSTypedFormValuePair::SharedVal>>* requiredItems;  // 20
+			BSTHashMap<TESBoundObject*, std::uint32_t> availableComponents;						  // 28
+		};
+		static_assert(sizeof(InitDataRepairFailure) == 0x58);
+
 		// members
 		Scaleform::GFx::Value confirmObj;  // E0
 	};
