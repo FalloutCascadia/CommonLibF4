@@ -28,7 +28,7 @@ namespace RE
 		PipboyObject rootObject;					// 08
 		void* statsData[39];						// A0 - PipboyStatsData 
 		PipboySpecialData specialData;              // 1D8
-		void* perksData[27];						// 280 - PipboyPerksData
+		PipboyPerksData perksData;                  // 280
 		PipboyInventoryData inventoryData;			// 358
 		PipboyQuestData questData;					// 4F0
 		void* workshopData[40];						// 5D8 - PipboyWorkshopData

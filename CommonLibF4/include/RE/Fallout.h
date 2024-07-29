@@ -200,6 +200,7 @@
 #include "RE/Bethesda/PipboyLogData.h"
 #include "RE/Bethesda/PipboyManager.h"
 #include "RE/Bethesda/PipboyMapData.h"
+#include "RE/Bethesda/PipboyPerksData.h"
 #include "RE/Bethesda/PipboyQuestData.h"
 #include "RE/Bethesda/PipboyRadioData.h"
 #include "RE/Bethesda/PipboySpecialData.h"
