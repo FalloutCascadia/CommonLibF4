@@ -36,7 +36,7 @@ namespace RE
 		PipboyMapData mapData;                      // 7F0
 		PipboyRadioData radioData;					// A28
 		void* playerInfoData[33];					// AD8 - PipboyPlayerInfoData
-		void* statusData[28];						// BE0 - PipboyStatusData 
+		PipboyStatusData statusData;				// BE0
 		PipboyDataGroup* dataGroups[11];			// CC0
 		PipboyThrottleManager throttleManager;		// D18
 	};
