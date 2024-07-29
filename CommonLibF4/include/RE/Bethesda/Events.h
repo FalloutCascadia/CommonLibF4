@@ -128,6 +128,33 @@ namespace RE
 	};
 	static_assert(sizeof(TESLocationClearedEvent) == 0x8);
 
+	namespace PlayerLifeStateChanged
+	{
+		struct Event
+		{
+			ACTOR_LIFE_STATE lifeState;	// 00
+		};
+		static_assert(sizeof(Event) == 0x4);
+	}
+
+	namespace LoadingStatusChanged
+	{
+		struct Event
+		{
+			bool isLoading;	// 00
+		};
+		static_assert(sizeof(Event) == 0x1);
+	}
+
+	namespace PlayerInDialogueChanged
+	{
+		struct Event
+		{
+			bool isPlayerInDialogue; // 00
+		};
+		static_assert(sizeof(Event) == 0x1);
+	}
+
 	namespace LocationMarkerArrayUpdate
 	{
 		struct Event
