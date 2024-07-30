@@ -29,7 +29,7 @@ namespace RE
 
 		// members
 		PipboyObject rootObject;					// 08
-		void* statsData[39];						// A0 - PipboyStatsData 
+		PipboyStatsData statsData;                  // A0 
 		PipboySpecialData specialData;              // 1D8
 		PipboyPerksData perksData;                  // 280
 		PipboyInventoryData inventoryData;			// 358

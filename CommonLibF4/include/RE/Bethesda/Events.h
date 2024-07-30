@@ -178,6 +178,16 @@ namespace RE
 		static_assert(sizeof(Event) == 0x1);
 	}
 
+	namespace ActorItemEquipped
+	{
+		struct Event
+		{
+			const TESBoundObject* item;		// 00
+			const Actor*          equipper;	// 08
+		};
+		static_assert(sizeof(Event) == 0x10);
+	}
+
 	namespace PlayerInDialogueChanged
 	{
 		struct Event
