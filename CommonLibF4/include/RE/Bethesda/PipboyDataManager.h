@@ -11,6 +11,7 @@
 #include "RE/Bethesda/PipboySpecialData.h"
 #include "RE/Bethesda/PipboyThrottleManager.h"
 #include "RE/Bethesda/PipboyValue.h"
+#include "RE/Bethesda/PipboyWorkshopData.h"
 
 namespace RE
 {
@@ -31,7 +32,7 @@ namespace RE
 		PipboyPerksData perksData;                  // 280
 		PipboyInventoryData inventoryData;			// 358
 		PipboyQuestData questData;					// 4F0
-		void* workshopData[40];						// 5D8 - PipboyWorkshopData
+		PipboyWorkshopData workshopData;			// 5D8
 		PipboyLogData logData;						// 718
 		PipboyMapData mapData;                      // 7F0
 		PipboyRadioData radioData;					// A28

@@ -212,6 +212,7 @@ set(SOURCES
 	include/RE/Bethesda/PipboyStatusData.h
 	include/RE/Bethesda/PipboyThrottleManager.h
 	include/RE/Bethesda/PipboyValue.h
+	include/RE/Bethesda/PipboyWorkshopData.h
 	include/RE/Bethesda/PlayerCharacter.h
 	include/RE/Bethesda/PlayerControls.h
 	include/RE/Bethesda/PowerArmor.h
