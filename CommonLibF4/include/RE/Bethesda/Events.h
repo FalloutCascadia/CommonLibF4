@@ -212,7 +212,6 @@ namespace RE
 		struct Event
 		{}; 
 	}
-
 	namespace HolotapeStateChanged
 	{
 		// intentional
