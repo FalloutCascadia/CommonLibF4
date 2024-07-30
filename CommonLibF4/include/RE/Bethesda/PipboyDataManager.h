@@ -20,7 +20,7 @@
 namespace RE
 {
 	class _declspec(novtable) PipboyDataManager :
-		public BSTSingletonSDM<PipboyDataManager>
+		public BSTSingletonSDM<PipboyDataManager>	// 00
 	{
 	public:
 		[[nodiscard]] static PipboyDataManager* GetSingleton()
