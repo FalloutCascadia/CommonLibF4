@@ -6,6 +6,8 @@
 #include "RE/Bethesda/PipboyInventoryData.h"
 #include "RE/Bethesda/PipboyLogData.h"
 #include "RE/Bethesda/PipboyMapData.h"
+#include "RE/Bethesda/PipboyPerksData.h"
+#include "RE/Bethesda/PipboyPlayerInfoData.h"
 #include "RE/Bethesda/PipboyQuestData.h"
 #include "RE/Bethesda/PipboyRadioData.h"
 #include "RE/Bethesda/PipboySpecialData.h"
@@ -36,7 +38,7 @@ namespace RE
 		PipboyLogData logData;						// 718
 		PipboyMapData mapData;                      // 7F0
 		PipboyRadioData radioData;					// A28
-		void* playerInfoData[33];					// AD8 - PipboyPlayerInfoData
+		PipboyPlayerInfoData playerInfoData;        // AD8
 		PipboyStatusData statusData;				// BE0
 		PipboyDataGroup* dataGroups[11];			// CC0
 		PipboyThrottleManager throttleManager;		// D18
