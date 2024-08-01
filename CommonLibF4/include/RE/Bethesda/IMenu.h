@@ -1807,7 +1807,7 @@ namespace RE
 			virtual ~ICallback() = default;  // 00
 
 			// add
-			virtual void OnAccept() = 0;  // 01
+			virtual void OnAccept();  // 01
 
 			F4_HEAP_REDEFINE_NEW(ICallback);
 
@@ -1878,6 +1878,7 @@ namespace RE
 				InitData(GameSettingCollection::GetSingleton()->GetSetting("sCannotRepairMessage")->GetString(), "$OK", CONFIRM_TYPE::kRepairFailure),
 				requiredItems(requiredItems)
 			{
+				this->hasCancelButton = false;
 				stl::emplace_vtable(this);
 			}
 
