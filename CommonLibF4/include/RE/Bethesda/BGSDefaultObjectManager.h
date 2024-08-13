@@ -421,7 +421,7 @@ namespace RE
 	public:
 		// members
 		const char*                                     name;           // 00
-		REX::EnumSet<ENUM_FORM_ID, std::uint8_t>        type;           // 08
+		ENUM_FORM_ID									type;           // 08
 		std::uint32_t                                   uniqueID;       // 0C
 		REX::EnumSet<DEFAULT_OBJECT_TYPE, std::int32_t> doType;         // 10
 		const char*                                     newObjectName;  // 18
@@ -501,7 +501,7 @@ namespace RE
 
 		// members
 		TESForm*                                 form;          // 20
-		REX::EnumSet<ENUM_FORM_ID, std::uint8_t> type;          // 28
+		ENUM_FORM_ID							 type;          // 28
 		BSFixedString                            formEditorID;  // 30
 
 	private:

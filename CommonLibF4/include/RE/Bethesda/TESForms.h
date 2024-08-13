@@ -910,7 +910,7 @@ namespace RE
 		std::uint32_t                            formFlags;        // 10
 		TESFormID                                formID;           // 14
 		std::uint16_t                            inGameFormFlags;  // 18
-		REX::EnumSet<ENUM_FORM_ID, std::uint8_t> formType;         // 1A
+		ENUM_FORM_ID							 formType;         // 1A
 	};
 	static_assert(sizeof(TESForm) == 0x20);
 
@@ -3361,7 +3361,7 @@ namespace RE
 		static_assert(sizeof(RuleSet) == 0x18);
 
 		// members
-		REX::EnumSet<ENUM_FORM_ID, std::int32_t> type;          // 020
+		ENUM_FORM_ID							 type;          // 020
 		RuleSet                                  ruleSets[10];  // 028
 		BSTArray<const BGSInstanceNamingRules*>  mergeSources;  // 118
 	};
