@@ -111,37 +111,37 @@ namespace RE
 
 	enum class ACTOR_CRITICAL_STAGE : std::int32_t
 	{
-		kNone,
-		kGooStart,
-		kGooEnd,
-		kDisintegrateStart,
-		kDisintegrateEnd,
-		kFreezeStart,
-		kFreezeEnd,
-		kCount
+		kNone = 0,
+		kGooStart = 1,
+		kGooEnd = 2,
+		kDisintegrateStart = 3,
+		kDisintegrateEnd = 4,
+		kFreezeStart = 5,
+		kFreezeEnd = 6,
+		kCount = 7
 	};
 
 	enum class ACTOR_LIFE_STATE : std::int32_t
 	{
-		kAlive,
-		kDying,
-		kDead,
-		kUnconscious,
-		kReanimate,
-		kRecycle,
-		kRestrained,
-		kEssentialDown,
-		kBleedout
+		kAlive = 0,
+		kDying = 1,
+		kDead = 2,
+		kUnconscious = 3,
+		kReanimate = 4,
+		kRecycle = 5,
+		kRestrained = 6,
+		kEssentialDown = 7,
+		kBleedout = 8
 	};
 
 	enum class ACTOR_LOS_LOCATION : std::int32_t
 	{
-		kNone,
-		kEye,
-		kHead,
-		kTorse,
-		kFeet,
-		kCount
+		kNone = 0,
+		kEye = 1,
+		kHead = 2,
+		kTorse = 3,
+		kFeet = 4,
+		kCount = 5
 	};
 
 	enum class PTYPE : std::int32_t
@@ -522,9 +522,9 @@ namespace RE
 
 	enum class WEAPON_CULL_TYPE
 	{
-		kGeneral,
-		kAnimation,
-		kWeaponSwitch,
+		kGeneral = 0,
+		kAnimation = 1,
+		kWeaponSwitch = 2,
 	};
 
 	class AITimer
@@ -729,46 +729,46 @@ namespace RE
 
 	enum class LIFE_STATE : std::uint32_t
 	{
-		kAlive,
-		kDying,
-		kDead,
-		kUnconscious,
-		kReanimate,
-		kRecycle,
-		kRestrained,
-		kEssentialDown,
-		kBleedout
+		kAlive = 0,
+		kDying = 1,
+		kDead = 2,
+		kUnconscious = 3,
+		kReanimate = 4,
+		kRecycle = 5,
+		kRestrained = 6,
+		kEssentialDown = 7,
+		kBleedout = 8
 	};
 
 	enum class WEAPON_STATE : std::uint32_t
 	{
-		kSheathed,
-		kWantToDraw,
-		kDrawing,
-		kDrawn,
-		kWantToSheathe,
-		kSheathing
+		kSheathed = 0,
+		kWantToDraw = 1,
+		kDrawing = 2,
+		kDrawn = 3,
+		kWantToSheathe = 4,
+		kSheathing = 5
 	};
 
 	enum class GUN_STATE : std::uint32_t
 	{
-		kDrawn,
-		kRelaxed,
-		kBlocked,
-		kAlert,
-		kReloading,
-		kThrowing,
-		kSighted,
-		kFire,
-		kFireSighted
+		kDrawn = 0,
+		kRelaxed = 1,
+		kBlocked = 2,
+		kAlert = 3,
+		kReloading = 4,
+		kThrowing = 5,
+		kSighted = 6,
+		kFire = 7,
+		kFireSighted = 8
 	};
 
 	enum class INTERACTING_STATE : std::uint32_t
 	{
-		kNotInteracting,
-		kWaitingToInteract,
-		kInteracting,
-		kWaitingToStopInteracting
+		kNotInteracting = 0,
+		kWaitingToInteract = 1,
+		kInteracting = 2,
+		kWaitingToStopInteracting = 3
 	};
 
 	class __declspec(novtable) ActorState :
