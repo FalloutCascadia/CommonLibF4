@@ -2092,6 +2092,13 @@ namespace RE
 			return func(this, a_data, a_callback);
 		}
 
+		void ConsumeSelectedItems(bool a_autoBuild, const BGSSoundDescriptorForm* a_consumeSound)
+		{
+			using func_t = decltype(&ExamineMenu::ConsumeSelectedItems);
+			static REL::Relocation<func_t> func{ REL::ID(2223052) };
+			return func(this, a_autoBuild, a_consumeSound);
+		}
+
 		// members
 		ComponentBuilderFunctor                            componentFunctor;                    // 340
 		REX::EnumSet<INSPECT_MODE_STATE, std::uint32_t>    inspectModeState;                    // 368
