@@ -910,7 +910,7 @@ namespace RE
 		std::uint32_t                            formFlags;        // 10
 		TESFormID                                formID;           // 14
 		std::uint16_t                            inGameFormFlags;  // 18
-		REX::EnumSet<ENUM_FORM_ID, std::uint8_t> formType;         // 1A
+		ENUM_FORM_ID							 formType;         // 1A
 	};
 	static_assert(sizeof(TESForm) == 0x20);
 
@@ -1774,10 +1774,10 @@ namespace RE
 
 		enum CHARISMA_CHALLENGE_SUCCESS : int32_t
 		{
-			CC_SUCCESS_FAIL = 0,
-			CC_SUCCESS_SUCCEED = 1,
-			CC_SUCCESS_COUNT = 2,
-			CC_SUCCESS_NONE = -1,
+			CC_SUCCESS_FAIL = 0x0,
+			CC_SUCCESS_SUCCEED = 0x1,
+			CC_SUCCESS_COUNT = 0x2,
+			CC_SUCCESS_NONE = 0xFFFFFFFF,
 		};
 
 		// Returns nullptr if no parent.
