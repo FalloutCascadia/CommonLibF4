@@ -6,6 +6,7 @@ namespace RE::BGSBodyPartDefs
 {
 	enum class LIMB_ENUM : std::uint32_t
 	{
+		kNone = 0xFFFFFFFF,
 		kTorso = 0x0,
 		kHead1 = 0x1,
 		kEye1 = 0x2,
