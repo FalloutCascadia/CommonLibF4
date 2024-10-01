@@ -1021,6 +1021,26 @@ namespace RE
 	};
 	static_assert(sizeof(TESSwitchRaceCompleteEvent) == 0x8);
 
+	namespace TESHarvestEvent
+	{
+		struct ItemHarvested
+		{
+			[[nodiscard]] static BSTEventSource<ItemHarvested>* GetEventSource()
+			{
+				using func_t = decltype(&ItemHarvested::GetEventSource);
+				static REL::Relocation<func_t> func{ REL::ID(693088) };
+				return func();
+			}
+
+
+			// members
+			const TESBoundObject* itemHarvested;		// 00
+			TESObjectREFR*        referenceHarvested;	// 08
+			const Actor*          harvestedBy;			// 10
+		};
+		static_assert(sizeof(ItemHarvested) == 0x18);
+	};
+
 	class TutorialEvent
 	{
 	public:
