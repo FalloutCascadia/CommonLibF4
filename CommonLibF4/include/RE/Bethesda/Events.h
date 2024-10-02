@@ -166,10 +166,18 @@ namespace RE
 	{
 		struct Event
 		{
+			[[nodiscard]] static BSTEventSource<Event>* GetEventSource()
+			{
+				using func_t = decltype(&Event::GetEventSource);
+				static REL::Relocation<func_t> func{ REL::ID(349120) }; // .163
+				return func();
+			}
+
 			std::uint32_t newLevel;	// 00
 		};
 		static_assert(sizeof(Event) == 0x4);
 	}
+
 
 	namespace LoadingStatusChanged
 	{
@@ -1031,7 +1039,6 @@ namespace RE
 				static REL::Relocation<func_t> func{ REL::ID(693088) };
 				return func();
 			}
-
 
 			// members
 			const TESBoundObject* itemHarvested;		// 00
