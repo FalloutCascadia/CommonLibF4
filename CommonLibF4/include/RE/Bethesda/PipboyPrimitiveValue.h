@@ -22,7 +22,6 @@ namespace RE
 		PipboyPrimitiveValue(std::uint32_t a_value, PipboyValue* a_parentValue)
 			: PipboyValue(a_parentValue), value(a_value) {}
 
-
 		void ctor(std::uint32_t a_value, PipboyValue* a_parentValue)
 		{
 			using func_t = decltype(&PipboyPrimitiveValue<std::uint32_t>::ctor);
@@ -30,7 +29,8 @@ namespace RE
 			func(this, a_value, a_parentValue);
 		}
 
-		operator std::uint32_t() const {
+		operator std::uint32_t() const
+		{
 			return value;
 		}
 
@@ -61,12 +61,13 @@ namespace RE
 			func(this, a_value, a_parentValue);
 		}
 
-		operator bool() const {
+		operator bool() const
+		{
 			return value;
 		}
 
 		// members
-		bool value; // 18
+		bool value;  // 18
 	};
 	static_assert(sizeof(PipboyPrimitiveValue<bool>) == 0x20);
 }
