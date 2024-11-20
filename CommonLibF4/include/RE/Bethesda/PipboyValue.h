@@ -76,7 +76,7 @@ namespace RE
 		virtual void                    SerializeChanges(BSBinarySerializer& a_serializer, bool a_fullSerialize) override;  // 03
 		virtual SERIALIZATION_DATA_TYPE GetType() override;                                                                 // 04
 
-		template<typename T>
+		template <typename T>
 		T GetMember(const BSFixedString& a_name)
 		{
 			const auto it = memberMap.find(a_name);
