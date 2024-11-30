@@ -6,7 +6,7 @@ namespace RE
 {
 	namespace ActorUtils
 	{
-		class __declspec(novtable)ArmorRatingVisitorBase
+		class __declspec(novtable) ArmorRatingVisitorBase
 		{
 		public:
 			static constexpr auto RTTI{ RTTI::ActorUtils__ArmorRatingVisitorBase };
@@ -17,13 +17,13 @@ namespace RE
 				stl::emplace_vtable(this);
 			}
 
-			virtual bool ShouldProcess(TESBoundObject*) { return 1; };		// 00
-			virtual void PostPRocess(TESBoundObject*) {};					// 01
+			virtual bool ShouldProcess(TESBoundObject*) { return 1; };  // 00
+			virtual void PostPRocess(TESBoundObject*){};                // 01
 
-			Actor* actor;													// 08
-			float rating;													// 10
-			float armorPerks;												// 14
-			bool checkEquipped;												// 18
+			Actor* actor;          // 08
+			float  rating;         // 10
+			float  armorPerks;     // 14
+			bool   checkEquipped;  // 18
 
 			void ctor(const Actor* a_actor, bool a_checkEquipped)
 			{
@@ -48,12 +48,12 @@ namespace RE
 		static_assert(sizeof(ArmorRatingVisitorBase) == 0x20);
 
 		class __declspec(novtable) ArmorRatingVisitor :
-			public ArmorRatingVisitorBase	// 00
+			public ArmorRatingVisitorBase  // 00
 		{
 			static constexpr auto RTTI{ RTTI::ActorUtils__ArmorRatingVisitor };
 			static constexpr auto VTABLE{ VTABLE::ActorUtils__ArmorRatingVisitor };
 
-			BSScrapArray<TESBoundObject*> foundArmor;	// 20
+			BSScrapArray<TESBoundObject*> foundArmor;  // 20
 		};
 		static_assert(sizeof(ArmorRatingVisitor) == 0x40);
 	}
