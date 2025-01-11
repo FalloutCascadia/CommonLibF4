@@ -1275,6 +1275,13 @@ namespace RE
 			static REL::Relocation<func_t> func{ REL::ID(2224143) };
 			return func(this);
 		}
+
+		void SetQuickkey(int a_selectedIndex, int a_quickkeyIndex)
+		{
+			using func_t = decltype(&PipboyInventoryMenu::SetQuickkey);
+			static REL::Relocation<func_t> func{ REL::ID(2224159) };
+			return func(this, a_selectedIndex, a_quickkeyIndex);
+		}
 	};
 	static_assert(sizeof(PipboyInventoryMenu) == 0x18);
 
