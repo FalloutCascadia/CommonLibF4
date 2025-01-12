@@ -1418,6 +1418,13 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::PipboyMenu };
 		static constexpr auto MENU_NAME{ "PipboyMenu"sv };
 
+		void RefreshMapMarkers(std::uint32_t a_markerID)
+		{
+			using func_t = decltype(&PipboyMenu::RefreshMapMarkers);
+			static REL::Relocation<func_t> func{ REL::ID(2224187) };
+			return func(this, a_markerID);
+		}
+
 		// members
 		Scaleform::GFx::Value dataObj;                    // 0F0
 		PipboyStatsMenu       statsMenuObj;               // 110
