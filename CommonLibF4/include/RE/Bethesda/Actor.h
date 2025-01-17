@@ -1312,6 +1312,13 @@ namespace RE
 			return func(this);
 		}
 
+		BGSObjectInstance* GetEquippedItem(BGSObjectInstance* a_result, BGSEquipIndex a_equipIndex)
+		{
+			using func_t = decltype(&Actor::GetEquippedItem);
+			static REL::Relocation<func_t> func{ REL::ID(2231089) };
+			return func(this, a_result, a_equipIndex);
+		}
+
 		// members
 		NiTFlags<std::uint32_t, Actor>                   niFlags;                      // 2D0
 		float                                            updateTargetTimer;            // 2D4
