@@ -69,6 +69,13 @@ namespace RE
 		void MoveItem(std::uint32_t a_fromX, std::uint32_t a_fromY, std::uint32_t a_toX, std::uint32_t a_toY) override;  // 07
 		void SwapItem(std::uint32_t a_fromX, std::uint32_t a_fromY, std::uint32_t a_toX, std::uint32_t a_toY) override;  // 08
 
+		GridCell* Get(std::uint32_t a_x, std::uint32_t a_y)
+		{
+			using func_t = decltype(&GridCellArray::Get);
+			static REL::Relocation<func_t> func{ REL::ID(2194566) };
+			return func(this, a_x, a_y);
+		}
+
 		// members
 		GridCell* gridCell;
 		std::uint32_t cellAttachDetatchQueueDisabled;

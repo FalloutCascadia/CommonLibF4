@@ -1552,6 +1552,13 @@ namespace RE
 			return func(this, pd);
 		}
 
+		[[nodisacrd]] void SetCullCellMarkers(bool a_cull)
+		{
+			using func_t = decltype(&TESObjectCELL::SetCullCellMarkers);
+			static REL::Relocation<func_t> func{ REL::ID(2192259) };
+			return func(this, a_cull);
+		}
+
 		[[nodiscard]] TESWaterForm* GetWaterType() const noexcept;
 		[[nodiscard]] bool          HasWater() const noexcept { return cellFlags.all(Flag::kHasWater); }
 		[[nodiscard]] bool          IsExterior() const noexcept { return !IsInterior(); }

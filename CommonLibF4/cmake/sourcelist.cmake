@@ -231,6 +231,7 @@ set(SOURCES
 	include/RE/Bethesda/SWFToCodeFunctionHandler.h
 	include/RE/Bethesda/Script.h
 	include/RE/Bethesda/SendHUDMessage.h
+	include/RE/Bethesda/SetCullMarkersFunctor.h
 	include/RE/Bethesda/Settings.h
 	include/RE/Bethesda/Sky.h
 	include/RE/Bethesda/SplineUtils.h
