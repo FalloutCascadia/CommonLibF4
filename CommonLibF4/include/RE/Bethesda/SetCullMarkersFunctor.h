@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	struct SetCullMarkersFunctor
+	class SetCullMarkersFunctor
 	{
 	public:
 		// members
