@@ -608,7 +608,7 @@ namespace RE
 
 		[[nodiscard]] static EventSource_t* GetEventSource()
 		{
-			static REL::Relocation<EventSource_t**> singleton{ REL::ID(685859) };
+			static REL::Relocation<EventSource_t**> singleton{ REL::ID(2697359) };
 			if (!*singleton) {
 				*singleton = new EventSource_t(&BSTGlobalEvent::GetSingleton()->eventSourceSDMKiller);
 			}
