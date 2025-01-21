@@ -934,6 +934,13 @@ namespace RE
 			return func(this, scale);
 		}
 
+		bool IsMarker()
+		{
+			using func_t = decltype(&TESObjectREFR::IsMarker);
+			static REL::Relocation<func_t> func{ REL::ID(2201157) };
+			return func(this);
+		}
+
 		// members
 		TESObjectCELL*                 parentCell;     // 0B8
 		OBJ_REFR                       data;           // 0C0
