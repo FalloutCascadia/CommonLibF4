@@ -1552,7 +1552,7 @@ namespace RE
 			return func(this, pd);
 		}
 
-		[[nodisacrd]] void SetCullCellMarkers(bool a_cull)
+		[[nodiscard]] void SetCullCellMarkers(bool a_cull)
 		{
 			using func_t = decltype(&TESObjectCELL::SetCullCellMarkers);
 			static REL::Relocation<func_t> func{ REL::ID(2192259) };
