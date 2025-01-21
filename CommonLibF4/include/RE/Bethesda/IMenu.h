@@ -1296,7 +1296,7 @@ namespace RE
 		void UpdateData() override
 		{
 			using func_t = decltype(&PipboyQuestMenu::UpdateData);
-			static REL::Relocation<func_t> func{ REL::ID(1495929) };
+			static REL::Relocation<func_t> func{ REL::ID(2224231) };
 			return func(this);
 		}
 	};
@@ -1313,7 +1313,7 @@ namespace RE
 		void UpdateData() override
 		{
 			using func_t = decltype(&PipboyWorkshopMenu::UpdateData);
-			static REL::Relocation<func_t> func{ REL::ID(1370368) };
+			static REL::Relocation<func_t> func{ REL::ID(2224273) };
 			return func(this);
 		}
 	};
