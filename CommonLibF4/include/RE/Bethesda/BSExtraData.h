@@ -14,6 +14,7 @@ namespace RE
 {
 	class BGSObjectInstanceExtra;
 	class BSExtraData;
+	class BSFadeNode;
 	class ExtraAliasInstanceArray;
 	class ExtraCellWaterType;
 	class ExtraInstanceData;
@@ -1112,6 +1113,13 @@ namespace RE
 			using func_t = decltype(&ExtraDataList::SetFavorite);
 			static REL::Relocation<func_t> func{ REL::ID(2190188) };
 			return func(this, a_quickkeyIndex);
+		}
+
+		BSFadeNode* GetPrimitive()
+		{
+			using func_t = decltype(&ExtraDataList::GetPrimitive);
+			static REL::Relocation<func_t> func{ REL::ID(2190427) };
+			return func(this);
 		}
 
 		// members
