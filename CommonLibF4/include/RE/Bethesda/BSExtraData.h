@@ -13,6 +13,7 @@
 namespace RE
 {
 	class BGSObjectInstanceExtra;
+	class BGSPrimitive;
 	class BSExtraData;
 	class BSFadeNode;
 	class ExtraAliasInstanceArray;
@@ -1115,7 +1116,7 @@ namespace RE
 			return func(this, a_quickkeyIndex);
 		}
 
-		BSFadeNode* GetPrimitive()
+		BGSPrimitive* GetPrimitive()
 		{
 			using func_t = decltype(&ExtraDataList::GetPrimitive);
 			static REL::Relocation<func_t> func{ REL::ID(2190427) };

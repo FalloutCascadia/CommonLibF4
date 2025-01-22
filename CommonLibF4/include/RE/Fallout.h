@@ -165,6 +165,7 @@
 #include "RE/Bethesda/Console.h"
 #include "RE/Bethesda/ControlMap.h"
 #include "RE/Bethesda/Events.h"
+#include "RE/Bethesda/ExteriorCellSingleton.h"
 #include "RE/Bethesda/FavoritesManager.h"
 #include "RE/Bethesda/FormComponents.h"
 #include "RE/Bethesda/FormFactory.h"

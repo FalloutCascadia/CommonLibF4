@@ -2242,6 +2242,13 @@ namespace RE
 		virtual void OnThumbstickEvent(const ThumbstickEvent*) override;  // 04
 		virtual void OnButtonEvent(const ButtonEvent*) override;          // 08
 
+		static void StartTestingLoadMenu()
+		{
+			using func_t = decltype(&LoadingMenu::StartTestingLoadMenu);
+			static REL::Relocation<func_t> func{ REL::ID(2249224) };
+			return func();
+		}
+
 		// members
 		BGSLocation*             loadLocation;                      // 0E0
 		TESLoadScreen*           artScreen;                         // 0E8
