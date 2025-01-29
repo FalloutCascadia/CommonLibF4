@@ -805,6 +805,23 @@ namespace RE
 	};
 	static_assert(sizeof(TESContainerChangedEvent) == 0x18);
 
+	struct TESCellAttachDetachEvent
+	{
+	public:
+		// members
+		NiPointer<TESObjectREFR> refr;
+		bool isAttaching;
+	};
+	static_assert(sizeof(TESCellAttachDetachEvent) == 0x10);
+
+	struct TESCellFullyLoadedEvent
+	{
+	public:
+		// members
+		TESObjectCELL* cell;
+	};
+	static_assert(sizeof(TESCellFullyLoadedEvent) == 0x8);
+
 	struct TESDeathEvent
 	{
 	public:

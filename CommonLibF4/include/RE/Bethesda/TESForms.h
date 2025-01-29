@@ -1559,6 +1559,34 @@ namespace RE
 			return func(this, a_cull);
 		}
 
+		[[nodiscard]] void UpdateAllRefsLoaded()
+		{
+			using func_t = decltype(&TESObjectCELL::UpdateAllRefsLoaded);
+			static REL::Relocation<func_t> func{ REL::ID(2200415) };
+			return func(this);
+		}
+
+		[[nodiscard]] void AttatchReference3D(TESObjectREFR* a_ref, bool a_onTop, bool a_queueAttatch)
+		{
+			using func_t = decltype(&TESObjectCELL::AttatchReference3D);
+			static REL::Relocation<func_t> func{ REL::ID(2200620) };
+			return func(this, a_ref, a_onTop, a_queueAttatch);
+		}
+
+		[[nodiscard]] void RemoveReference(TESObjectREFR* a_ref)
+		{
+			using func_t = decltype(&TESObjectCELL::RemoveReference);
+			static REL::Relocation<func_t> func{ REL::ID(2200299) };
+			return func(this, a_ref);
+		}
+
+		[[nodiscard]] void UpdateAllDecals()
+		{
+			using func_t = decltype(&TESObjectCELL::UpdateAllDecals);
+			static REL::Relocation<func_t> func{ REL::ID(2200643) };
+			return func(this);
+		}
+
 		[[nodiscard]] TESWaterForm* GetWaterType() const noexcept;
 		[[nodiscard]] bool          HasWater() const noexcept { return cellFlags.all(Flag::kHasWater); }
 		[[nodiscard]] bool          IsExterior() const noexcept { return !IsInterior(); }
