@@ -19,6 +19,7 @@ namespace RE
 
 		struct TransUpdateFunctor
 		{
+		public:
 			const CELLJobs::AnimatedRefJobData* data;
 			NiUpdateData*                       updateData;
 		};
