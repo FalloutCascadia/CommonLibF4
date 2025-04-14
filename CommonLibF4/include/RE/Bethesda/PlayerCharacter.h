@@ -23,7 +23,6 @@ namespace RE
 {
 	enum class DEFAULT_OBJECT;
 	enum class DIFFICULTY_LEVEL;
-	enum class PLAYER_ACTION;
 	enum class QUEST_OBJECTIVE_STATE;
 	enum class SCENE_ACTION_PLAYER_RESPONSE_TYPE;
 
@@ -60,6 +59,26 @@ namespace RE
 	{
 		struct PerkEntryUpdatedEvent;
 	}
+
+	enum class PLAYER_ACTION
+	{
+		kNone = 0x0,
+		kSwingMeleeWeapon = 0x1,
+		kCastProjectileSpell = 0x2,
+		kShootBow = 0x3,
+		kZKeyObject = 0x4,
+		kJumping = 0x5,
+		kKnockingOverObjects = 0x6,
+		kStandOnTableChair = 0x7,
+		kIronSights = 0x8,
+		kDestroyObject = 0x9,
+		kLockedObject = 0xA,
+		kPickpocket = 0xB,
+		kCastSelfSpell = 0xC,
+		kShout = 0xD,
+		kActorCollision = 0xE,
+		kInvalidMarker = 0x10,
+	};
 
 	enum class COMMAND_TYPE
 	{

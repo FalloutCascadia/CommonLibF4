@@ -41,7 +41,6 @@ namespace RE
 {
 	enum class ContainerMenuMode;
 	enum class DIFFICULTY_LEVEL;
-	enum class EQUIP_TYPE;
 
 	namespace Workshop
 	{
@@ -80,6 +79,16 @@ namespace RE
 	struct RevertPlayerCharacterEvent;
 	struct SaveLoadMessageTypeEvent;
 	struct UIAdvanceMenusFunctionCompleteEvent;
+
+	enum class EQUIP_TYPE
+	{
+		kNone = 0x0,
+		kEquipped = 0x1,
+		kLeftHandEquip = 0x2,
+		kRightHandEquip = 0x3,
+		kBothHandEquip = 0x4,
+		kWillEquipAgain = 0x5
+	};
 
 	enum class HUDColorTypes
 	{

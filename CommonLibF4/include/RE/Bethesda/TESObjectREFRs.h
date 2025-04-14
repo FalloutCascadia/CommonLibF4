@@ -17,7 +17,6 @@
 
 namespace RE
 {
-	enum class BIPED_OBJECT;
 	enum class IO_TASK_PRIORITY;
 
 	namespace MagicSystem
