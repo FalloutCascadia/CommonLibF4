@@ -3,6 +3,7 @@
 #include "RE/Bethesda/AITimeStamp.h"
 #include "RE/Bethesda/Actor.h"
 #include "RE/Bethesda/BGSCharacterTint.h"
+#include "RE/Bethesda/BGSStoryManagerTreeForm.h"
 #include "RE/Bethesda/BSLock.h"
 #include "RE/Bethesda/BSPointerHandle.h"
 #include "RE/Bethesda/BSSoundHandle.h"
@@ -23,7 +24,6 @@ namespace RE
 {
 	enum class DEFAULT_OBJECT;
 	enum class DIFFICULTY_LEVEL;
-	enum class QUEST_OBJECTIVE_STATE;
 	enum class SCENE_ACTION_PLAYER_RESPONSE_TYPE;
 
 	class BGSQuestObjective;
