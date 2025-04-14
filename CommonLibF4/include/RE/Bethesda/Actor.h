@@ -211,7 +211,7 @@ namespace RE
 		kAlch = 0xE,
 		kFood = 0xF,
 		kClot = 0x10,
-		kWeap = 0x11,
+		kWear = 0x11,
 		kWeapNone = 0x12,
 		kWeapMelee = 0x13,
 		kWeapRanged = 0x14,
