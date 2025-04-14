@@ -13,7 +13,7 @@
 namespace RE
 {
 	enum class COL_LAYER;
-	
+
 	enum class ImpactResult
 	{
 		kNone = 0x0,
