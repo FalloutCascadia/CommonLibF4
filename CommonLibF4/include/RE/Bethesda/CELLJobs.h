@@ -1,15 +1,18 @@
 #pragma once
 
+#include "RE/NetImmerse/NiSmartPointer.h"
 #include "RE/NetImmerse/NiUpdateData.h"
 
 namespace RE
 {
+	class NiUpdataData;
+
 	struct CELLJobs
 	{
 		struct AnimatedRefJobData
 		{
 		public:
-			NiPointer < NiAVObject > 3d;
+			NiPointer<NiAVObject> p3d;
 			BSPointerHandle<TESObjectREFR, BSUntypedPointerHandle<21, 5>> ref;
 			float                                                         time;
 			std::uint32_t                                                 uiFlags;
