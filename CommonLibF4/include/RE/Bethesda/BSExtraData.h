@@ -13,7 +13,9 @@
 namespace RE
 {
 	class BGSObjectInstanceExtra;
+	class BGSPrimitive;
 	class BSExtraData;
+	class BSFadeNode;
 	class ExtraAliasInstanceArray;
 	class ExtraCellWaterType;
 	class ExtraInstanceData;
@@ -512,6 +514,13 @@ namespace RE
 	class DoorTeleportData
 	{
 	public:
+		enum class TELEPORT_DATA_FLAGS
+		{
+			kNoAlarm = 0x0,
+			kInstant = 0x1,
+			kRelative = 0x4
+		};
+
 		// members
 		TESObjectCELL*  transitionCell;  // 00
 		ObjectRefHandle linkedDoor;      // 08
@@ -621,6 +630,13 @@ namespace RE
 			using func_t = decltype(&BGSObjectInstanceExtra::RemoveMod);
 			static REL::Relocation<func_t> func{ REL::ID(2189027) };
 			return func(this, a_mod, a_attachIndex);
+		}
+
+		std::uint32_t GetNumMods(bool a_ignoreCollections)
+		{
+			using func_t = decltype(&BGSObjectInstanceExtra::GetNumMods);
+			static REL::Relocation<func_t> func{ REL::ID(2189019) };
+			return func(this, a_ignoreCollections);
 		}
 
 		// members
@@ -1112,6 +1128,13 @@ namespace RE
 			using func_t = decltype(&ExtraDataList::SetFavorite);
 			static REL::Relocation<func_t> func{ REL::ID(2190188) };
 			return func(this, a_quickkeyIndex);
+		}
+
+		BGSPrimitive* GetPrimitive()
+		{
+			using func_t = decltype(&ExtraDataList::GetPrimitive);
+			static REL::Relocation<func_t> func{ REL::ID(2190427) };
+			return func(this);
 		}
 
 		// members

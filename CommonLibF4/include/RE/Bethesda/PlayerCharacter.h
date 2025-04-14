@@ -23,7 +23,6 @@ namespace RE
 {
 	enum class DEFAULT_OBJECT;
 	enum class DIFFICULTY_LEVEL;
-	enum class PLAYER_ACTION;
 	enum class QUEST_OBJECTIVE_STATE;
 	enum class SCENE_ACTION_PLAYER_RESPONSE_TYPE;
 
@@ -60,6 +59,26 @@ namespace RE
 	{
 		struct PerkEntryUpdatedEvent;
 	}
+
+	enum class PLAYER_ACTION
+	{
+		kNone = 0x0,
+		kSwingMeleeWeapon = 0x1,
+		kCastProjectileSpell = 0x2,
+		kShootBow = 0x3,
+		kZKeyObject = 0x4,
+		kJumping = 0x5,
+		kKnockingOverObjects = 0x6,
+		kStandOnTableChair = 0x7,
+		kIronSights = 0x8,
+		kDestroyObject = 0x9,
+		kLockedObject = 0xA,
+		kPickpocket = 0xB,
+		kCastSelfSpell = 0xC,
+		kShout = 0xD,
+		kActorCollision = 0xE,
+		kInvalidMarker = 0x10,
+	};
 
 	enum class COMMAND_TYPE
 	{
@@ -382,6 +401,13 @@ namespace RE
 			using func_t = decltype(&PlayerCharacter::ClearPrison);
 			static REL::Relocation<func_t> func{ REL::ID(2233196) };
 			return func(this);
+		}
+
+		bool ReloadWeapon(const BGSObjectInstanceT<TESObjectWEAP>* a_weapon, BGSEquipIndex a_equipIndex)
+		{
+			using func_t = decltype(&PlayerCharacter::ReloadWeapon);
+			static REL::Relocation<func_t> func{ REL::ID(2232907) };
+			return func(this, a_weapon, a_equipIndex);
 		}
 
 		// members
