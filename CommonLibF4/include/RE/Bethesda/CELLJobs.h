@@ -12,7 +12,7 @@ namespace RE
 		struct AnimatedRefJobData
 		{
 		public:
-			NiPointer<NiAVObject> p3d;
+			NiPointer<NiAVObject>                                         p3d;
 			BSPointerHandle<TESObjectREFR, BSUntypedPointerHandle<21, 5>> ref;
 			float                                                         time;
 			std::uint32_t                                                 uiFlags;
