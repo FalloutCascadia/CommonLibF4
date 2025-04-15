@@ -55,6 +55,75 @@ namespace RE
 		static_assert(sizeof(Event) == 0x20);
 	}
 
+	namespace ActorKill
+	{
+		struct Event
+		{
+			// members
+			const Actor* killer;
+			const Actor* victim;
+		};
+		static_assert(sizeof(Event) == 0x10);
+	}
+
+	namespace Bleedout
+	{
+		struct Event
+		{
+			Actor* actorBleedingOut;
+		};
+		static_assert(sizeof(Event) == 0x8);
+	}
+
+	namespace BobbleheadCollected
+	{
+		struct Event
+		{
+			// intentional
+		};
+	}
+
+	namespace BooksRead
+	{
+		struct Event
+		{
+			// members
+			const TESObjectBOOK* book;
+			bool                 advancedActorValue;
+			bool                 addedPerk;
+		};
+		static_assert(sizeof(Event) == 0x10);
+	}
+
+	namespace FatmanDeaths
+	{
+		struct Event
+		{
+			Actor* victim;
+		};
+		static_assert(sizeof(Event) == 0x8);
+	}
+
+	namespace PerkAdded
+	{
+		struct Event
+		{
+			const Actor* adder;
+			const BGSPerk* perk;
+			std::uint8_t   rank;
+		};
+		static_assert(sizeof(Event) == 0x18);
+	}
+
+	namespace PlayerAddicted
+	{
+		struct Event
+		{
+			const AlchemyItem* chem;
+		};
+		static_assert(sizeof(Event) == 0x8);
+	}
+
 	namespace PerkValueEvents
 	{
 		enum class Type : std::int32_t
