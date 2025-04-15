@@ -1371,6 +1371,20 @@ namespace RE
 			return func(this, a_result, a_equipIndex);
 		}
 
+		TESFaction* GetCrimeTrackingFaction()
+		{
+			using func_t = decltype(&Actor::GetCrimeTrackingFaction);
+			static REL::Relocation<func_t> func{ REL::ID(2229787) };
+			return func(this);
+		}
+
+		void ForceDetect(Actor* a_target, bool a_forceLOS, float a_time)
+		{
+			using func_t = decltype(&Actor::ForceDetect);
+			static REL::Relocation<func_t> func{ REL::ID(2230194) };
+			return func(this, a_target, a_forceLOS, a_time);
+		}
+
 		// members
 		NiTFlags<std::uint32_t, Actor>                   niFlags;                      // 2D0
 		float                                            updateTargetTimer;            // 2D4
