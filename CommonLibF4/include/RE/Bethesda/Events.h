@@ -108,7 +108,7 @@ namespace RE
 	{
 		struct Event
 		{
-			const Actor* adder;
+			const Actor*   adder;
 			const BGSPerk* perk;
 			std::uint8_t   rank;
 		};
