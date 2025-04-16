@@ -238,7 +238,7 @@ namespace RE
 			[[nodiscard]] static BSTEventSource<Event>* GetEventSource()
 			{
 				using func_t = decltype(&Event::GetEventSource);
-				static REL::Relocation<func_t> func{ REL::ID(349120) };  // .163
+				static REL::Relocation<func_t> func{ REL::ID(2233736) };
 				return func();
 			}
 
