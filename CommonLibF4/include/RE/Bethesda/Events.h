@@ -168,7 +168,6 @@ namespace RE
 		static_assert(sizeof(Event) == 0x10);
 	}
 
-	
 	struct TESLoadGameEvent
 	{
 		[[nodiscard]] static BSTEventSource<TESLoadGameEvent>* GetEventSource()
@@ -179,7 +178,6 @@ namespace RE
 		}
 	};
 	static_assert(sizeof(TESLoadGameEvent) == 0x1);
-	
 
 	struct TESTrackedStatsEvent
 	{
