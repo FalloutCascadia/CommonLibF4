@@ -410,6 +410,13 @@ namespace RE
 			return func(this, a_weapon, a_equipIndex);
 		}
 
+		void SetPerkCount(std::uint8_t a_count)
+		{
+			using func_t = decltype(&PlayerCharacter::SetPerkCount);
+			static REL::Relocation<func_t> func{ REL::ID(2233187) };
+			return func(this, a_count);
+		}
+
 		// members
 		BSSpinLock                                                    actorToDisplayOnHUDLock;              // 628
 		BSSpinLock                                                    questTargetLock;                      // 630
