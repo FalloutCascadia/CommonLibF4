@@ -168,6 +168,19 @@ namespace RE
 		static_assert(sizeof(Event) == 0x10);
 	}
 
+	
+	struct TESLoadGameEvent
+	{
+		[[nodiscard]] static BSTEventSource<TESLoadGameEvent>* GetEventSource()
+		{
+			using func_t = decltype(&TESLoadGameEvent::GetEventSource);
+			static REL::Relocation<func_t> func{ REL::ID(2201848) };
+			return func();
+		}
+	};
+	static_assert(sizeof(TESLoadGameEvent) == 0x1);
+	
+
 	struct TESTrackedStatsEvent
 	{
 		BSFixedString stat;   // 00
