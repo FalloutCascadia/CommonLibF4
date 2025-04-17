@@ -358,7 +358,7 @@ namespace RE
 		void OnSetSafeRect()
 		{
 			using func_t = decltype(&IMenu::OnSetSafeRect);
-			static REL::Relocation<func_t> func{ REL::ID(964859) };
+			static REL::Relocation<func_t> func{ REL::ID(2287375) };
 			return func(this);
 		}
 
@@ -367,14 +367,14 @@ namespace RE
 		UI_MESSAGE_RESULTS ProcessScaleformEvent(Scaleform::GFx::Movie* a_movie, const IUIMessageData* a_data)
 		{
 			using func_t = decltype(&IMenu::ProcessScaleformEvent);
-			static REL::Relocation<func_t> func{ REL::ID(150211) };
+			static REL::Relocation<func_t> func{ REL::ID(2287395) };
 			return func(this, a_movie, a_data);
 		}
 
 		void RefreshPlatform()
 		{
 			using func_t = decltype(&IMenu::RefreshPlatform);
-			static REL::Relocation<func_t> func{ REL::ID(1071829) };
+			static REL::Relocation<func_t> func{ REL::ID(2287374) };
 			return func(this);
 		}
 
@@ -506,7 +506,7 @@ namespace RE
 		Scaleform::GFx::Value* AcquireFlashObjectByPath(const Scaleform::GFx::Movie& a_parentMovie, const char* a_absolutePathToMember)
 		{
 			using func_t = decltype(&BSGFxObject::AcquireFlashObjectByPath);
-			static REL::Relocation<func_t> func{ REL::ID(1065592) };
+			static REL::Relocation<func_t> func{ REL::ID(2287015) };
 			return func(this, a_parentMovie, a_absolutePathToMember);
 		}
 	};
