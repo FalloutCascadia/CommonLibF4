@@ -737,7 +737,7 @@ namespace RE
 		virtual void OnMenuDisplayStateChanged() override  // 0A
 		{
 			using func_t = decltype(&GameMenuBase::OnMenuDisplayStateChanged);
-			static REL::Relocation<func_t> func{ REL::ID(1274450) };
+			static REL::Relocation<func_t> func{ REL::ID(2223205) };
 			return func(this);
 		}
 
