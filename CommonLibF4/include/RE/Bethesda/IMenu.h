@@ -254,7 +254,7 @@ namespace RE
 		bool ShouldHandleEvent(const InputEvent* a_event) override  // 01
 		{
 			using func_t = decltype(&IMenu::ShouldHandleEvent);
-			static REL::Relocation<func_t> func{ REL::ID(1241790) };
+			static REL::Relocation<func_t> func{ REL::ID(2287392) };
 			return func(this, a_event);
 		}
 
@@ -760,7 +760,7 @@ namespace RE
 		virtual bool CacheShaderFXQuadsForRenderer_Impl() override  // 10
 		{
 			using func_t = decltype(&GameMenuBase::CacheShaderFXQuadsForRenderer_Impl);
-			static REL::Relocation<func_t> func{ REL::ID(863029) };
+			static REL::Relocation<func_t> func{ REL::ID(2223200) };
 			return func(this);
 		}
 
@@ -774,7 +774,7 @@ namespace RE
 		virtual void SetViewportRect(const NiRect<float>& a_viewportRect) override  // 12
 		{
 			using func_t = decltype(&GameMenuBase::SetViewportRect);
-			static REL::Relocation<func_t> func{ REL::ID(1554334) };
+			static REL::Relocation<func_t> func{ REL::ID(2223202) };
 			return func(this, a_viewportRect);
 		}
 
@@ -782,7 +782,7 @@ namespace RE
 		virtual void AppendShaderFXInfos(BSTAlignedArray<UIShaderFXInfo>& a_colorFXInfos, BSTAlignedArray<UIShaderFXInfo>& a_backgroundFXInfos) const  // 13
 		{
 			using func_t = decltype(&GameMenuBase::AppendShaderFXInfos);
-			static REL::Relocation<func_t> func{ REL::ID(583584) };
+			static REL::Relocation<func_t> func{ REL::ID(2223203) };
 			return func(this, a_colorFXInfos, a_backgroundFXInfos);
 		}
 
