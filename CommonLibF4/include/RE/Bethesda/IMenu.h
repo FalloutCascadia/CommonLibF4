@@ -730,7 +730,7 @@ namespace RE
 		virtual void SetIsTopButtonBar(bool a_isTopButtonBar) override  // 08
 		{
 			using func_t = decltype(&GameMenuBase::SetIsTopButtonBar);
-			static REL::Relocation<func_t> func{ REL::ID(1367353) };
+			static REL::Relocation<func_t> func{ REL::ID(2223204) };
 			return func(this, a_isTopButtonBar);
 		}
 
@@ -789,7 +789,7 @@ namespace RE
 		void SetUpButtonBar(BSGFxShaderFXTarget& a_parentObject, const char* a_buttonBarPath, HUDColorTypes a_colorType)
 		{
 			using func_t = decltype(&GameMenuBase::SetUpButtonBar);
-			static REL::Relocation<func_t> func{ REL::ID(531584) };
+			static REL::Relocation<func_t> func{ REL::ID(2223197) };
 			func(this, a_parentObject, a_buttonBarPath, a_colorType);
 		}
 
@@ -999,7 +999,7 @@ namespace RE
 		void Begin3D()
 		{
 			using func_t = decltype(&Inventory3DManager::Begin3D);
-			static REL::Relocation<func_t> func{ REL::ID(662659) };
+			static REL::Relocation<func_t> func{ REL::ID(2249084) };
 			return func(this);
 		}
 
@@ -1041,7 +1041,7 @@ namespace RE
 		void SetModelScreenPosition(const NiPoint3& a_position, bool a_screenCoords)
 		{
 			using func_t = decltype(&Inventory3DManager::SetModelScreenPosition);
-			static REL::Relocation<func_t> func{ REL::ID(2967) };
+			static REL::Relocation<func_t> func{ REL::ID(2249096) };
 			return func(this, a_position, a_screenCoords);
 		}
 
@@ -1366,7 +1366,7 @@ namespace RE
 		void UpdateData() override
 		{
 			using func_t = decltype(&PipboyMapMenu::UpdateData);
-			static REL::Relocation<func_t> func{ REL::ID(92696) };
+			static REL::Relocation<func_t> func{ REL::ID(2224074) };
 			return func(this);
 		}
 
