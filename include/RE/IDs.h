@@ -194,7 +194,7 @@ namespace RE::ID
 
 	namespace BGSKeyword
 	{
-		inline constexpr REL::ID TypedKeywords{ 1095775 };
+		inline constexpr REL::ID TypedKeywords{ 2692038 };
 	}
 
 	namespace BGSKeywordForm
