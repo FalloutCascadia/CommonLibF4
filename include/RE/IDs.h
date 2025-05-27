@@ -1361,10 +1361,10 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Singleton{ 2688801 };
 		inline constexpr REL::ID PopState{ 2248424 };
-		inline constexpr REL::ID PushState{ 0 };
+		inline constexpr REL::ID PushState{ 2248422 };
 		inline constexpr REL::ID ToggleFreeCameraMode{ 2248368 };
 		inline constexpr REL::ID SetState{ 2214742 };
-		inline constexpr REL::ID StartFurnitureMode{ 0 };
+		inline constexpr REL::ID StartFurnitureMode{ 2248373 };
 		inline constexpr REL::ID StartPipboyMode{ 2248358 };
 		inline constexpr REL::ID StopPipboyMode{ 2248359 };
 		inline constexpr REL::ID QCameraEquals{ 2248421 };
@@ -1384,15 +1384,15 @@ namespace RE::ID
 		inline constexpr REL::ID IsGodMode{ 2232986 };
 		inline constexpr REL::ID IsHolotapePlaying{ 2233206 };
 		inline constexpr REL::ID IsImmortal{ 2232988 };
-		inline constexpr REL::ID IsPipboyLightOn{ 426550 };
+		inline constexpr REL::ID IsPipboyLightOn{ 2233202 };
 		inline constexpr REL::ID PauseHolotape{ 2233208 };
 		inline constexpr REL::ID PlayHolotape{ 2233207 };
-		inline constexpr REL::ID QueueFastTravel{ 556824 };
-		inline constexpr REL::ID RemoveLastUsedPowerArmor{ 1488486 };
-		inline constexpr REL::ID SelectPerk{ 1397326 };
-		inline constexpr REL::ID SetEscaping{ 25528 };
-		inline constexpr REL::ID SetVATSCriticalCount{ 327338 };
-		inline constexpr REL::ID ShowPipboyLight{ 1304102 };
+		inline constexpr REL::ID QueueFastTravel{ 2232918 };
+		inline constexpr REL::ID RemoveLastUsedPowerArmor{ 2233024 };
+		inline constexpr REL::ID SelectPerk{ 2232926 };
+		inline constexpr REL::ID SetEscaping{ 2233142 };
+		inline constexpr REL::ID SetVATSCriticalCount{ 2233219 };
+		inline constexpr REL::ID ShowPipboyLight{ 2233203 };
 		inline constexpr REL::ID SetLastDialogueInput{ 2233190 };
 		inline constexpr REL::ID ClearPrison{ 2233196 };
 		inline constexpr REL::ID ReloadWeapon{ 2232907 };
@@ -1495,8 +1495,8 @@ namespace RE::ID
 
 	namespace SitWaitMenu
 	{
-		inline constexpr REL::ID OnEnterFurniture{ 562238 };
-		inline constexpr REL::ID OnExitFurniture{ 454795 };
+		inline constexpr REL::ID OnEnterFurniture{ 2249503 };
+		inline constexpr REL::ID OnExitFurniture{ 2249504 };
 	}
 
 	namespace Sky
@@ -1710,7 +1710,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetDataY{ 2200214 };
 		inline constexpr REL::ID GetEncounterZone{ 2200242 };
 		inline constexpr REL::ID GetLocation{ 2200179 };
-		inline constexpr REL::ID GetOwner{ 910422 };
+		inline constexpr REL::ID GetOwner{ 2200236 };
 		inline constexpr REL::ID GetRegionList{ 2200265 };
 		inline constexpr REL::ID Pick{ 434717 };
 		inline constexpr REL::ID SetCullCellMarkers{ 2192259 };
