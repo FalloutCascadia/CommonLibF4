@@ -11,7 +11,7 @@ namespace RE
 			kSmallMotor = 0x1
 		};
 
-		enum RUMBLE_PATTERN : std::uint32_t 
+		enum RUMBLE_PATTERN : std::uint32_t
 		{
 			kConstant = 0x0,
 			kPeriodicSquare = 0x1,
