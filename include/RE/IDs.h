@@ -1674,7 +1674,7 @@ namespace RE::ID
 
 	namespace TESInitScriptEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 2691330 };
+		inline constexpr REL::ID GetEventSource{ 2201846 };
 	}
 
 	namespace TESLeveledList
