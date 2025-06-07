@@ -6,9 +6,8 @@ namespace RE
 	{
 	public:
 		// members
-		std::uint16_t index;           // 00
-		std::uint8_t flags;			   // 02
-		
+		std::uint16_t index;  // 00
+		std::uint8_t  flags;  // 02
 	};
 	static_assert(sizeof(QUEST_STAGE_DATA) == 0x4);
 }
