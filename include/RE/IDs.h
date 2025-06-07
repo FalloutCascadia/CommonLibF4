@@ -1700,6 +1700,7 @@ namespace RE::ID
 		inline constexpr REL::ID AlternateHeadPartListMap{ 2662368 };
 		inline constexpr REL::ID GetSex{ 2207107 };
 		inline constexpr REL::ID GetFacialBoneMorphIntensity{ 2207416 };
+		inline constexpr REL::ID SetHairColor{ 2207426 };
 	}
 
 	namespace TESObjectCELL
