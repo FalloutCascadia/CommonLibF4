@@ -977,6 +977,8 @@
 #include "RE/S/SubGraphIdleRootData.h"
 #include "RE/S/SubgraphHandle.h"
 #include "RE/S/SubgraphIdentifier.h"
+#include "RE/S/SUBTITLE_PRIORITY.h"
+#include "RE/S/SubtitleInfo.h"
 #include "RE/S/SummonPlacementEffect.h"
 #include "RE/T/TBO_InstanceData.h"
 #include "RE/T/TEMP_EFFECT_TYPE.h"
