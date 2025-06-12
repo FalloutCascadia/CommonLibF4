@@ -161,8 +161,8 @@ namespace Scaleform
 		const auto mem = Scaleform::malloc(a_count);                                                                    \
 		if (!mem) {                                                                                                     \
 			REX::FAIL("out of memory"sv);                                                                               \
-		}		                                                                                                        \
-		return mem;																										\
+		}                                                                                                               \
+		return mem;                                                                                                     \
 	}                                                                                                                   \
                                                                                                                         \
 	[[nodiscard]] void* operator new[](std::size_t a_count)                                                             \
