@@ -1018,7 +1018,7 @@ namespace RE::ID
 		inline constexpr REL::ID MainScreen_SetWorldAttached3D{ 724778 };
 		inline constexpr REL::ID Offscreen_AddLight{ 1267198 };
 		inline constexpr REL::ID Offscreen_Clear3D{ 2222542 };
-		inline constexpr REL::ID Offscreen_ClearLights{ 2222545	 };
+		inline constexpr REL::ID Offscreen_ClearLights{ 2222545 };
 		inline constexpr REL::ID Offscreen_GetRenderTargetHeight{ 1280897 };
 		inline constexpr REL::ID Offscreen_GetRenderTargetWidth{ 403273 };
 		inline constexpr REL::ID Offscreen_Set3D{ 43983 };
