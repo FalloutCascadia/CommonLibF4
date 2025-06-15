@@ -842,7 +842,7 @@ namespace RE::ID
 
 	namespace ExtraTextDisplayData
 	{
-		inline constexpr REL::ID GetDisplayName{ 1523343 };
+		inline constexpr REL::ID GetDisplayName{ 2191318 };
 	}
 
 	namespace FavoritesManager
@@ -872,8 +872,8 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID CanHackGateCheck{ 269668 };
 		inline constexpr REL::ID CanPickLockGateCheck{ 1160841 };
-		inline constexpr REL::ID GetExperienceReward{ 853500 };
-		inline constexpr REL::ID GetLockXPReward{ 880926 };
+		inline constexpr REL::ID GetExperienceReward{ 2209076 };
+		inline constexpr REL::ID GetLockXPReward{ 2209070 };
 		inline constexpr REL::ID CalculateItemHealthDamageBonus{ 2209087 };
 	}
 
@@ -916,8 +916,8 @@ namespace RE::ID
 
 	namespace HolotapeMenu
 	{
-		inline constexpr REL::ID ShowHolotapeInPipboy{ 217953 };
-		inline constexpr REL::ID ShowHolotapeInTerminal{ 390509 };
+		inline constexpr REL::ID ShowHolotapeInPipboy{ 2224028 };
+		inline constexpr REL::ID ShowHolotapeInTerminal{ 2224029 };
 	}
 
 	namespace HUDMenuUtils
@@ -1009,22 +1009,22 @@ namespace RE::ID
 
 	namespace Interface3D
 	{
-		inline constexpr REL::ID Create{ 88488 };
-		inline constexpr REL::ID GetByName{ 140387 };
+		inline constexpr REL::ID Create{ 2222519 };
+		inline constexpr REL::ID GetByName{ 2222524 };
 		inline constexpr REL::ID MainScreen_AddPointLight{ 1335675 };
 		inline constexpr REL::ID MainScreen_AddSpotLight{ 1056093 };
 		inline constexpr REL::ID MainScreen_ClearLights{ 683530 };
-		inline constexpr REL::ID MainScreen_SetScreenAttached3D{ 817727 };
+		inline constexpr REL::ID MainScreen_SetScreenAttached3D{ 2222528 };
 		inline constexpr REL::ID MainScreen_SetWorldAttached3D{ 724778 };
 		inline constexpr REL::ID Offscreen_AddLight{ 1267198 };
-		inline constexpr REL::ID Offscreen_Clear3D{ 1533262 };
-		inline constexpr REL::ID Offscreen_ClearLights{ 1039253 };
+		inline constexpr REL::ID Offscreen_Clear3D{ 2222542 };
+		inline constexpr REL::ID Offscreen_ClearLights{ 2222545	 };
 		inline constexpr REL::ID Offscreen_GetRenderTargetHeight{ 1280897 };
 		inline constexpr REL::ID Offscreen_GetRenderTargetWidth{ 403273 };
 		inline constexpr REL::ID Offscreen_Set3D{ 43983 };
 		inline constexpr REL::ID Offscreen_SetDebugMode{ 1277879 };
 		inline constexpr REL::ID Offscreen_SetDirectionalLight{ 987144 };
-		inline constexpr REL::ID Enable{ 326895 };
+		inline constexpr REL::ID Enable{ 2222522 };
 		inline constexpr REL::ID Disable{ 938370 };
 		inline constexpr REL::ID DisableAll{ 2222521 };
 		inline constexpr REL::ID Release{ 74749 };
@@ -1034,7 +1034,7 @@ namespace RE::ID
 	namespace Inventory3DManager
 	{
 		inline constexpr REL::ID Begin3D{ 2249084 };
-		inline constexpr REL::ID ClearModel{ 63218 };
+		inline constexpr REL::ID ClearModel{ 2249113 };
 		inline constexpr REL::ID DisableRendering{ 255893 };
 		inline constexpr REL::ID EnableRendering{ 176578 };
 		inline constexpr REL::ID End3D{ 1512675 };
