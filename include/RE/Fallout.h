@@ -524,6 +524,7 @@
 #include "RE/D/DeviceConnectEvent.h"
 #include "RE/D/DialogueMenu.h"
 #include "RE/D/DialoguePackage.h"
+#include "RE/D/DialogueUtils.h"
 #include "RE/D/DifficultyLevel.h"
 #include "RE/D/DisableHeavyItemsFunc.h"
 #include "RE/D/DisconnectHandler.h"

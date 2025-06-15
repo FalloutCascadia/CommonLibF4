@@ -787,6 +787,13 @@ namespace RE::ID
 		inline constexpr REL::ID GetDefaultObjectData{ 838886 };
 	}
 
+	namespace DialogueUtils
+	{
+		inline constexpr REL::ID OpenMenu{ 2249658 };
+		inline constexpr REL::ID CloseMenu{ 2249659 };
+		inline constexpr REL::ID ShowSpeechChallengeAnim{ 2249665 };
+	}
+
 	namespace DoBeforeNewOrLoadCompletedEvent
 	{
 		inline constexpr REL::ID GetEventSource{ 787908 };
