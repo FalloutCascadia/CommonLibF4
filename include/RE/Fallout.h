@@ -829,6 +829,7 @@
 #include "RE/O/OtherInputEvents.h"
 #include "RE/P/PACKAGE_DATA.h"
 #include "RE/P/PACKAGE_OBJECT_TYPE.h"
+#include "RE/P/PACK_EVENT_ACTION_TYPE.h"
 #include "RE/P/PACK_SCHED_DATA.h"
 #include "RE/P/PART_DATA.h"
 #include "RE/P/PATH_DATA.h"
