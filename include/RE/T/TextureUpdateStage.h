@@ -9,6 +9,6 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TextureUpdateStage };
 
 		// add
-		virtual bool Update();	// 00
+		virtual bool Update();  // 00
 	};
 }
