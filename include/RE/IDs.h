@@ -110,9 +110,9 @@ namespace RE::ID
 
 	namespace BarterMenu
 	{
-		inline constexpr REL::ID ClearTradingData{ 1112285 };
-		inline constexpr REL::ID CompleteTrade{ 379932 };
-		inline constexpr REL::ID GetCapsOwedByPlayer{ 672405 };
+		inline constexpr REL::ID ClearTradingData{ 2222700 };
+		inline constexpr REL::ID CompleteTrade{ 2222701 };
+		inline constexpr REL::ID GetCapsOwedByPlayer{ 2222714 };
 	}
 
 	namespace BGSAnimationSystemUtils
@@ -164,7 +164,7 @@ namespace RE::ID
 
 	namespace BGSHackTerminal
 	{
-		inline constexpr REL::ID EventIndex{ 1186942 };
+		inline constexpr REL::ID EventIndex{ 2663434 };
 	}
 
 	namespace BGSInventoryInterface
@@ -205,7 +205,7 @@ namespace RE::ID
 
 	namespace BGSListForm
 	{
-		inline constexpr REL::ID AddScriptAddedForm{ 1064874 };
+		inline constexpr REL::ID AddScriptAddedForm{ 2203262 };
 		inline constexpr REL::ID ContainsItem{ 688500 };
 	}
 
@@ -217,7 +217,7 @@ namespace RE::ID
 
 	namespace BGSMessage
 	{
-		inline constexpr REL::ID AddButton{ 236744 };
+		inline constexpr REL::ID AddButton{ 0 };
 		inline constexpr REL::ID GetConvertedDescription{ 8331 };
 	}
 
@@ -258,7 +258,7 @@ namespace RE::ID
 		inline constexpr REL::ID RemoveInvalidMods{ 2189028 };
 		inline constexpr REL::ID RemoveMod{ 2189027 };
 		inline constexpr REL::ID GetNumMods{ 2189019 };
-		inline constexpr REL::ID ctor{ 1222521 };
+		inline constexpr REL::ID ctor{ 2189015 };
 	}
 
 	namespace BGSOpenCloseForm
@@ -340,7 +340,7 @@ namespace RE::ID
 		inline constexpr REL::ID CopyMembers{ 2277907 };
 		inline constexpr REL::ID GetBody{ 2277926 };
 		inline constexpr REL::ID GetBodyId{ 2277928 };
-		inline constexpr REL::ID GetShape{ 315427 };
+		inline constexpr REL::ID GetShape{ 2277929 };
 		inline constexpr REL::ID GetTransform{ 1508189 };
 		inline constexpr REL::ID SetMotionType{ 2277913 };
 		inline constexpr REL::ID SetTransform{ 178085 };
@@ -606,7 +606,7 @@ namespace RE::ID
 
 	namespace BSShaderProperty
 	{
-		inline constexpr REL::ID SetMaterial{ 706318 };
+		inline constexpr REL::ID SetMaterial{ 2316285 };
 	}
 
 	namespace BSShaderTextureSet
@@ -718,7 +718,7 @@ namespace RE::ID
 
 	namespace CombatFormulas
 	{
-		inline constexpr REL::ID GetWeaponDisplayAccuracy{ 1137654 };
+		inline constexpr REL::ID GetWeaponDisplayAccuracy{ 2209049 };
 		inline constexpr REL::ID GetWeaponDisplayDamage{ 1431014 };
 		inline constexpr REL::ID GetWeaponDisplayRange{ 1324037 };
 		inline constexpr REL::ID GetWeaponDisplayRateOfFire{ 1403591 };
@@ -756,7 +756,7 @@ namespace RE::ID
 
 	namespace ContainerMenu
 	{
-		inline constexpr REL::ID TakeAllItems{ 1323703 };
+		inline constexpr REL::ID TakeAllItems{ 2248619 };
 	}
 
 	namespace ContainerMenuBase
@@ -772,7 +772,7 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 2692014 };
 		inline constexpr REL::ID PopInputContext{ 2268336 };
 		inline constexpr REL::ID PushInputContext{ 2268335 };
-		inline constexpr REL::ID RemapButton{ 0 };
+		inline constexpr REL::ID RemapButton{ 2268330 };
 		inline constexpr REL::ID SaveRemappings{ 0 };
 		inline constexpr REL::ID SetTextEntryMode{ 2268339 };
 	}
