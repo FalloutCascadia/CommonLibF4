@@ -1809,6 +1809,8 @@ namespace RE::ID
 		inline constexpr REL::ID GetChallengeLevel{ 2208441 };
 		inline constexpr REL::ID GetSuccessLevel{ 2208444 };
 		inline constexpr REL::ID StartSceneOnEnd{ 2208466 };
+		inline constexpr REL::ID GetScene{ 2208453 };
+		inline constexpr REL::ID StartScene{ 2208469 };
 	}
 
 	namespace TESValueForm

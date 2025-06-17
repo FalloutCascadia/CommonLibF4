@@ -62,10 +62,24 @@ namespace RE
 			return func(this);
 		}
 
-		void StartSceneOnEnd(BSPointerHandle<TESObjectREFR, BSUntypedPointerHandle<21,5>> a_ref)
+		BGSScene* StartSceneOnEnd(BSPointerHandle<TESObjectREFR, BSUntypedPointerHandle<21,5>> a_ref)
 		{
 			using func_t = decltype(&TESTopicInfo::StartSceneOnEnd);
 			static REL::Relocation<func_t> func{ ID::TESTopicInfo::StartSceneOnEnd };
+			return func(this, a_ref);
+		}
+
+		BGSScene* GetScene()
+		{
+			using func_t = decltype(&TESTopicInfo::GetScene);
+			static REL::Relocation<func_t> func{ ID::TESTopicInfo::GetScene };
+			return func(this);
+		}
+
+		void StartScene(TESObjectREFR* a_ref)
+		{
+			using func_t = decltype(&TESTopicInfo::StartScene);
+			static REL::Relocation<func_t> func{ ID::TESTopicInfo::StartScene };
 			return func(this, a_ref);
 		}
 
