@@ -787,7 +787,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetDefaultObjectData{ 838886 };
 	}
 
-	namespace DialogueUtils
+	namespace DialogueMenuUtils
 	{
 		inline constexpr REL::ID OpenMenu{ 2249658 };
 		inline constexpr REL::ID CloseMenu{ 2249659 };
@@ -1808,6 +1808,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetParentInfoGroup{ 2208435 };
 		inline constexpr REL::ID GetChallengeLevel{ 2208441 };
 		inline constexpr REL::ID GetSuccessLevel{ 2208444 };
+		inline constexpr REL::ID StartSceneOnEnd{ 2208466 };
 	}
 
 	namespace TESValueForm
