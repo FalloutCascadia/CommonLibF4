@@ -22,13 +22,13 @@ namespace RE
 			class Node
 			{
 				// members
-				std::uint16_t left;		// 00
-				std::uint16_t right;	// 02
+				std::uint16_t left;   // 00
+				std::uint16_t right;  // 02
 			};
 			static_assert(sizeof(Node) == 0x4);
 
 			// members
-			Node roots;	// 00
+			Node roots;  // 00
 		};
 		static_assert(sizeof(InfoTree) == 0x4);
 

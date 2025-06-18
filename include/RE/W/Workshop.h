@@ -43,7 +43,7 @@ namespace RE
 		{
 		public:
 			// members
-			bool exit;	// 00
+			bool exit;  // 00
 		};
 		static_assert(sizeof(BuildableAreaEvent) == 0x1);
 
@@ -167,7 +167,7 @@ namespace RE
 		{
 		public:
 			// members
-			PlacementStatusValue value;	// 00
+			PlacementStatusValue value;  // 00
 		};
 		static_assert(sizeof(PlacementStatusEvent) == 0x1);
 

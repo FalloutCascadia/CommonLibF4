@@ -23,7 +23,7 @@ namespace RE
 			kFly = 0x1,
 			kHit = 0x2,
 			kZoom = 0x3,
-			
+
 			kTotal = 0x4
 		};
 
@@ -33,7 +33,7 @@ namespace RE
 			kProjectile = 0x1,
 			kTarget = 0x2,
 			kLeadActor = 0x3,
-			
+
 			kTotal = 0x4
 		};
 

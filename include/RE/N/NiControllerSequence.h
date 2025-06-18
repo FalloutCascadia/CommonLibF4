@@ -35,11 +35,11 @@ namespace RE
 		{
 		public:
 			// members
-			BSFixedString avObjectName;		// 00
-			BSFixedString propertyType;		// 08
-			BSFixedString ctrlType;			// 10
-			BSFixedString ctrlID;			// 18
-			BSFixedString interpolatorID;	// 20
+			BSFixedString avObjectName;    // 00
+			BSFixedString propertyType;    // 08
+			BSFixedString ctrlType;        // 10
+			BSFixedString ctrlID;          // 18
+			BSFixedString interpolatorID;  // 20
 		};
 		static_assert(sizeof(IDTag) == 0x28);
 
