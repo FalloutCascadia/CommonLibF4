@@ -11,9 +11,9 @@ namespace RE
 	{
 	public:
 		// members
-		NiPointer<NiLight> light;		// 00
-		NiPointer<BSLight> BSLight;		// 08
-		float              wantDimmer;	// 10
+		NiPointer<NiLight> light;       // 00
+		NiPointer<BSLight> BSLight;     // 08
+		float              wantDimmer;  // 10
 	};
 	static_assert(sizeof(REFR_LIGHT) == 0x18);
 }

@@ -6,7 +6,7 @@
 namespace RE
 {
 	class __declspec(novtable) ExtraLight :
-		public BSExtraData // 00
+		public BSExtraData  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::ExtraLight };
@@ -14,7 +14,7 @@ namespace RE
 		static constexpr atuo TYPE{ EXTRA_DATA_TYPE::kLight };
 
 		// members
-		REFR_LIGHT lightdata;	// 18
+		REFR_LIGHT lightdata;  // 18
 	};
 	static_assert(sizeof(ExtraLight) == 0x30);
 }
