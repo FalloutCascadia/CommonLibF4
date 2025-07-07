@@ -734,7 +734,7 @@ namespace RE::ID
 		inline constexpr REL::ID CalculateProjectileLOS1{ 798616 };
 		inline constexpr REL::ID CalculateProjectileLOS2{ 55339 };
 		inline constexpr REL::ID CalculateProjectileTrajectory{ 1575156 };
-		inline constexpr REL::ID WorldGravity{ 1378547 };
+		inline constexpr REL::ID WorldGravity{ 2700340 };
 	}
 
 	namespace ComparisonQualifiers
@@ -1041,9 +1041,9 @@ namespace RE::ID
 		inline constexpr REL::ID Begin3D{ 2249084 };
 		inline constexpr REL::ID ClearModel{ 2249113 };
 		inline constexpr REL::ID DisableRendering{ 255893 };
-		inline constexpr REL::ID EnableRendering{ 176578 };
-		inline constexpr REL::ID End3D{ 1512675 };
-		inline constexpr REL::ID SetModelScale{ 1319701 };
+		inline constexpr REL::ID EnableRendering{ 2249099 };
+		inline constexpr REL::ID End3D{ 2249086 };
+		inline constexpr REL::ID SetModelScale{ 2249097 };
 		inline constexpr REL::ID SetModelScreenPosition{ 2249096 };
 	}
 
@@ -1229,7 +1229,7 @@ namespace RE::ID
 
 	namespace PerkUtilities
 	{
-		inline constexpr REL::ID RemoveGrenadeTrajectory{ 672186 };
+		inline constexpr REL::ID RemoveGrenadeTrajectory{ 2233303 };
 	}
 
 	namespace PipboyDataManager
