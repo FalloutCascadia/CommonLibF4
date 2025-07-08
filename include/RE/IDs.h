@@ -1644,7 +1644,8 @@ namespace RE::ID
 		inline constexpr REL::ID AllFormsByEditorID{ 2689179 };
 		inline constexpr REL::ID AllFormsEditorIDMapLock{ 2689190 };
 		inline constexpr REL::ID GetFile{ 2193103 };
-		inline constexpr REL::ID GetFormEnumString{ 1309967 };
+		inline constexpr REL::ID GetFormByNumericID{ 2193092 };
+		inline constexpr REL::ID GetFormEnumString{ 1529598 };
 		inline constexpr REL::ID GetFormTypeFromString{ 2193108 };
 		inline constexpr REL::ID SetTemporary{ 2193125 };
 	}
