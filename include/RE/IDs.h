@@ -68,6 +68,8 @@ namespace RE::ID
 			inline constexpr REL::ID _operator{ 2227206 };
 			inline constexpr REL::ID ctor{ 2227205 };
 		}
+
+		inline constexpr REL::ID GetEquippedArmorDamageResistance{ 2227189 };
 	}
 
 	namespace ActorValue
@@ -1242,6 +1244,7 @@ namespace RE::ID
 		inline constexpr REL::ID RepopulateItemCardsOnSection{ 2225279 };
 		inline constexpr REL::ID PopulateItemCardInfo{ 2225266 };
 		inline constexpr REL::ID AddItemCardInfoEntry{ 2225267 };
+		inline constexpr REL::ID BaseAddItemCardInfoEntry{ 2225270 };
 	}
 
 	namespace PipboyInventoryMenu
@@ -1871,6 +1874,7 @@ namespace RE::ID
 	namespace WorkbenchMenuBase
 	{
 		inline constexpr REL::ID UpdateOptimizedAutoBuildInv{ 2224955 };
+		inline constexpr REL::ID QCurrentModChoiceData{ 2224958 };
 	}
 
 	namespace Workshop
