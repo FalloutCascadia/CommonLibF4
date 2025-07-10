@@ -822,6 +822,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetSelectedIndex{ 2223022 };
 		inline constexpr REL::ID ShowConfirmMenu{ 2223081 };
 		inline constexpr REL::ID ConsumeSelectedItems{ 2223052 };
+		inline constexpr REL::ID BuildConfirmed{ 2223013 };
 	}
 
 	namespace ExteriorCellSingleton
@@ -869,7 +870,7 @@ namespace RE::ID
 		inline constexpr REL::ID SetIsTopButtonBar{ 2223204 };
 		inline constexpr REL::ID OnMenuDisplayStateChanged{ 2223205 };
 		inline constexpr REL::ID CacheShaderFXQuadsForRenderer_Impl{ 2223200 };
-		inline constexpr REL::ID TransferCachedShaderFXQuadsForRenderer{ 65166 };
+		inline constexpr REL::ID TransferCachedShaderFXQuadsForRenderer{ 2223201 };
 		inline constexpr REL::ID SetViewportRect{ 2223202 };
 		inline constexpr REL::ID AppendShaderFXInfos{ 2223203 };
 		inline constexpr REL::ID SetUpButtonBar{ 2223197 };
@@ -903,7 +904,7 @@ namespace RE::ID
 			inline constexpr REL::ID Singleton{ 2689134 };
 			inline constexpr REL::ID QueuePostRenderCall{ 2251314 };
 			inline constexpr REL::ID RegisterForAllGameEvents{ 2251353 };
-			inline constexpr REL::ID SendEventToObjectAndRelated{ 367992 };
+			inline constexpr REL::ID SendEventToObjectAndRelated{ 2251344 };
 		}
 
 		inline constexpr REL::ID LogFormError{ 2251028 };
@@ -912,7 +913,7 @@ namespace RE::ID
 
 	namespace GameUIModel
 	{
-		inline constexpr REL::ID Singleton{ 17419 };
+		inline constexpr REL::ID Singleton{ 2695523 };
 		inline constexpr REL::ID UpdateDataModels{ 2220905 };
 	}
 
