@@ -6,7 +6,7 @@ namespace RE
 	{
 	public:
 		// members
-		bool showHudWarningColor;	// B0
+		bool showHudWarningColor;  // B0
 	};
 	static_assert(sizeof(HUDCompassMarkerBase) == 0xB8);
 }

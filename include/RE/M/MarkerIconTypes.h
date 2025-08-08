@@ -2,7 +2,8 @@
 
 namespace RE
 {
-	enum class MarkerIconTypes : std::int32_t {
+	enum class MarkerIconTypes : std::int32_t
+	{
 		kInvalid = 0x0,
 		kQuest = 0x1,
 		kQuestDoor = 0x2,
