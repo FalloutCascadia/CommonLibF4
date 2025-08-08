@@ -66,7 +66,8 @@ namespace RE
 		class PerkEntryUpdatedEvent;
 	}
 
-	bool IsPlayerInDialogue() {
+	bool IsPlayerInDialogue()
+	{
 		using func_t = decltype(&IsPlayerInDialogue);
 		static REL::Relocation<func_t> func{ ID::IsPlayerInDialogue };
 		return func();

@@ -1925,7 +1925,7 @@ namespace RE::ID
 	inline constexpr REL::ID NiFree{ 242362 };
 	inline constexpr REL::ID NiMalloc{ 974443 };
 	inline constexpr REL::ID RTDynamicCast{ 2725673 };
-	inline constexpr REL::ID IsPlayerInDialogue { 2188686 };
+	inline constexpr REL::ID IsPlayerInDialogue{ 2188686 };
 }
 
 namespace Scaleform::ID
