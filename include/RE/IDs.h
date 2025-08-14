@@ -54,6 +54,8 @@ namespace RE::ID
 		inline constexpr REL::ID GetDesirability{ 2229946 };
 		inline constexpr REL::ID CalcArmorRating1{ 2230008 };
 		inline constexpr REL::ID CalcArmorRating2{ 2230009 };
+		inline constexpr REL::ID UnequipItem{ 2230479 };
+		inline constexpr REL::ID UpdateSoundCallBack{ 2229974 };
 	}
 
 	namespace ActorEquipManager
@@ -1609,6 +1611,15 @@ namespace RE::ID
 		inline constexpr REL::ID GetReloadsWithAmmoRef{ 2197864 };
 	}
 
+	namespace TESAudio
+	{
+		namespace ScriptedMusicState
+		{
+			inline constexpr REL::ID Singleton{ 2691985 };
+			inline constexpr REL::ID Remove{ 2226976 };
+		}
+	}
+
 	namespace TESBoundObject
 	{
 		inline constexpr REL::ID ApplyMods{ 2198325 };
@@ -1736,6 +1747,7 @@ namespace RE::ID
 	namespace TESLeveledList
 	{
 		inline constexpr REL::ID AddLeveledObject{ 2193258 };
+		inline constexpr REL::ID AddScriptAddedLeveledObject{ 2193269 };
 		inline constexpr REL::ID CalculateCurrentFormList{ 2193259 };
 		inline constexpr REL::ID CalculateCurrentFormListForRef{ 2193260 };
 		inline constexpr REL::ID GetUseAll{ 2193253 };
@@ -1915,6 +1927,7 @@ namespace RE::ID
 	namespace VATS
 	{
 		inline constexpr REL::ID Singleton{ 2690444 };
+		inline constexpr REL::ID CanActivateCriticals{ 2237208 };
 	}
 
 	namespace WorkbenchMenuBase
