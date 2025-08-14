@@ -6,7 +6,7 @@ namespace RE
 	{
 	public:
 		// members
-		Actor* actor;	// 00
+		Actor* actor;  // 00
 	};
 	static_assert(sizeof(UnequipObjectFunctor) == 0x08);
 }

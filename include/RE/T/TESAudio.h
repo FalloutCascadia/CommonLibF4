@@ -18,19 +18,19 @@ namespace RE
 		};
 
 		class __declspec(novtable) alignas(0x08) RepeaterData :
-			public BSIntrusiveRefCounted // 00
+			public BSIntrusiveRefCounted  // 00
 		{
 		public:
 			// members
-			BSSoundHandle currSound;	// 04
-			const TESSound* soundBase;	// 10
-			float countdown;	// 18
+			BSSoundHandle   currSound;  // 04
+			const TESSound* soundBase;  // 10
+			float           countdown;  // 18
 		};
 		static_assert(sizeof(RepeaterData) == 0x20);
 
 		class __declspec(novtable) ScriptedMusicState :
-			public BSTEventSink<TESLoadGameEvent>,	// 00
-			public BSTSingletonSDM<ScriptedMusicState>	// 08
+			public BSTEventSink<TESLoadGameEvent>,      // 00
+			public BSTSingletonSDM<ScriptedMusicState>  // 08
 		{
 		public:
 			[[nodiscard]] static ScriptedMusicState* GetSingleton()
@@ -55,17 +55,17 @@ namespace RE
 		{
 		public:
 			// members
-			float transitionQuantum;	// 00
-			float desiredMult;	// 04
+			float transitionQuantum;  // 00
+			float desiredMult;        // 04
 		};
 
 		class __declspec(novtable) alignas(0x08) SnapshotEntry
 		{
 		public:
 			// members
-			const BGSSoundCategorySnapshot* snapForm;	// 00
-			float transitionSecs;	// 08
+			const BGSSoundCategorySnapshot* snapForm;        // 00
+			float                           transitionSecs;  // 08
 		};
 		static_assert(sizeof(SnapshotEntry) == 0x10);
-	}	
+	}
 }
