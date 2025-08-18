@@ -41,7 +41,7 @@ namespace RE
 		{
 			kPipboyOpen = 0x0,
 			kTabChange = 0x1,
-			kCategoryChange = 0x2,	
+			kCategoryChange = 0x2,
 			kSmallTransition = 0x3,
 			kMapChange = 0x4
 		};
