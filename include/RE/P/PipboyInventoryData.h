@@ -76,22 +76,22 @@ namespace RE
 
 		virtual ~PipboyInventoryData();
 
-		enum ENTRY_TYPE
+		enum class ENTRY_TYPE
 		{
-			ENTRY_INT = 0x0,
-			ENTRY_FIXED_STRING = 0x1,
-			ENTRY_FLOAT = 0x1
+			kInt = 0x0,
+			kFixedString = 0x1,
+			kFloat = 0x1
 		};
 
-		enum SORT_ON_FIELD
+		enum class SORT_ON_FIELD
 		{
-			SOF_ALPHABETICALLY = 0x0,
-			SOF_DAMAGE = 0x1,
-			SOF_ROF = 0x2,
-			SOF_RANGE = 0x3,
-			SOF_ACCURARY = 0x4,
-			SOF_VALUE = 0x5,
-			SOF_WEIGHT = 0x6
+			kAlphabetically = 0x0,
+			kDamage = 0x1,
+			kRof = 0x2,
+			kRange = 0x3,
+			kAccuracy = 0x4,
+			kValue = 0x5,
+			kWeight = 0x6
 		};
 
 		class StackEntry
