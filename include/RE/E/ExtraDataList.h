@@ -35,7 +35,7 @@ namespace RE
 			kContainer = 0x0,
 			kReference = 0x1
 		};
-		
+
 		void AddExtra(BSExtraData* a_extra)
 		{
 			const BSAutoWriteLock l{ extraRWLock };
