@@ -100,7 +100,7 @@ namespace RE
 			k2hMelee = 0xD,
 			kH2hWeap = 0xE,
 			kMissileLauncher = 0xF,
-			kFatman  = 0x10,
+			kFatman = 0x10,
 			kMinigun = 0x11,
 			kGatlingLaser = 0x12,
 			kCryolator = 0x13,
