@@ -18,6 +18,15 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TESObjectLAND };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kLAND };
 
+		enum class COORD_DATA_FLAGS
+		{
+			kVertexCoord = 0x1,
+			kForceToVertex = 02,
+			kCalcNearest = 0x4,
+			kBlockOnly = 0x8,
+			kDefaults = 0x5
+		};
+
 		class LoadedLandData;
 
 		// members
