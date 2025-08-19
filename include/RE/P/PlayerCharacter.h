@@ -92,11 +92,25 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::PlayerCharacter };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kACHR };
 
+		enum class CHAR_GEN_DISABLE_FLAGS
+		{
+			kDisableSave = 0x1,
+			kDisableWait = 0x2,
+			kShowControlsDisabledMessage = 0x4
+		};
+
 		enum class GrabbingType
 		{
 			kNone = 0x0,
 			kNormal = 0x1,
 			kTelekinesis = 0x2
+		};
+
+		enum class PROGRESS_EVENT
+		{
+			kLevelUp = 0x0,
+			kDeath = 0x1,
+			kChargen = 0x2
 		};
 
 		class PlayerActionObject
