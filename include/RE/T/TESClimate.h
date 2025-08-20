@@ -29,6 +29,15 @@ namespace RE
 			kCount = 0x2
 		};
 
+		enum class TransTime
+		{
+			kSunriseBegin = 0x0,
+			kSunriseEnd = 0x1,
+			kSunsetBegin = 0x2,
+			kSunsetEnd = 0x3,
+			kCount = 0x4
+		};
+
 		// members
 		TESModel       nightSky;       // 20
 		TESWeatherList weatherList;    // 50
