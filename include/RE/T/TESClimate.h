@@ -22,6 +22,13 @@ namespace RE
 			kNumSliders = 0x6
 		};
 
+		enum class TextureType
+		{
+			kSun = 0x0,
+			kGlare = 0x1,
+			kCount = 0x2
+		};
+
 		// members
 		TESModel       nightSky;       // 20
 		TESWeatherList weatherList;    // 50
