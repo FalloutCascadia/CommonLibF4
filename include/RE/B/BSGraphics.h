@@ -21,8 +21,6 @@ namespace RE
 	namespace BSGraphics
 	{
 		enum class Format;
-		enum class TextureAddressMode;
-
 		class Texture;
 
 		enum class MultiSampleLevel
@@ -33,10 +31,30 @@ namespace RE
 			kEight
 		};
 
+		enum class SetRenderTargetMode
+		{
+			kClear = 0x0,
+			kClearDepth = 0x1,
+			kClearStencil = 0x2,
+			kNoClear = 0x3,
+			kRestore = 0x3,
+			kForceCopyRestore = 0x4,
+			kInit = 0x5
+		};
+
 		enum class TAA_STATE
 		{
 			kDisabled,
 			kEnabled
+		};
+
+		enum class TextureAddressMode
+		{
+			kDefault = 0x0,
+			kClampSWrapT = 0x1,
+			kWrapSClampT = 0x2,
+			kWrapSWrapT = 0x3,
+			kCount = 0x4
 		};
 
 		enum class TextureFileFormat
@@ -67,6 +85,14 @@ namespace RE
 			kClamp_S_Wrap_T = 0x1,
 			kWrap_S_Clamp_T = 0x2,
 			kWrap_S_Wrap_T = 0x3,
+		};
+
+		enum class Usage
+		{
+			kDefault = 0x0,
+			kImmutable = 0x1,
+			kDynamic = 0x2,
+			kStaging = 0x3
 		};
 
 		class Buffer
