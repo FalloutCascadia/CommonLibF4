@@ -15,6 +15,13 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TESClimate };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kCLMT };
 
+		enum class MiscData
+		{
+			kVolatility = 0x4,
+			kMoonData = 0x5,
+			kNumSliders = 0x6
+		};
+
 		// members
 		TESModel       nightSky;       // 20
 		TESWeatherList weatherList;    // 50
