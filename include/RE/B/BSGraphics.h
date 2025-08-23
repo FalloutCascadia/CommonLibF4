@@ -48,15 +48,6 @@ namespace RE
 			kEnabled
 		};
 
-		enum class TextureAddressMode
-		{
-			kDefault = 0x0,
-			kClampSWrapT = 0x1,
-			kWrapSClampT = 0x2,
-			kWrapSWrapT = 0x3,
-			kCount = 0x4
-		};
-
 		enum class TextureFileFormat
 		{
 			kBMP = 0,
