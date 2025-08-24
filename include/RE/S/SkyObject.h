@@ -7,15 +7,15 @@ namespace RE
 	public:
 		static constexpr auto RTTI{ RTTI::SkyObject };
 		static constexpr auto VTABLE{ VTABLE::SkyObject };
-		
+
 		virtual ~SkyObject();
 
 		// add
-		virtual NiNode* GetRoot();							// 01
-		virtual void    Update(Sky* a_formal, float a_unk);	// 02
+		virtual NiNode* GetRoot();                           // 01
+		virtual void    Update(Sky* a_formal, float a_unk);  // 02
 
 		// members
-		NiPointer<NiNode> root;	// 08
+		NiPointer<NiNode> root;  // 08
 	};
 	static_assert(sizeof(SkyObject) == 0x10);
 }

@@ -1,19 +1,16 @@
 #pragma once
 
-
-
 namespace RE
 {
 	class __declspec(novtable) alignas(0x08) BSMultiBoundShape :
-		public NiObject // 00
+		public NiObject  // 00
 	{
 	public:
 		inline static constexpr auto RTTI{ RTTI::BSMultiBoundShape };
 		inline static constexpr auto VTABLE{ VTABLE::BSMultiBoundShape };
 		inline static constexpr auto Ni_RTTI{ Ni_RTTI::BSMultiBoundShape };
 
-		~BSMultiBoundShape() override;	// 00
-
+		~BSMultiBoundShape() override;  // 00
 
 		enum class BSMBCullResult
 		{
@@ -40,7 +37,7 @@ namespace RE
 		};
 
 		// members
-		BSMBCullResult cullResult;	// 18
+		BSMBCullResult cullResult;  // 18
 	};
 	static_assert(sizeof(BSMultiBoundShape) == 0x18);
 }

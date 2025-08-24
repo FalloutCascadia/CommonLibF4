@@ -6,7 +6,7 @@
 namespace RE
 {
 	class __declspec(novtable) BSOcclusionPlane :
-		public BSOcclusionShape // 00
+		public BSOcclusionShape  // 00
 	{
 	public:
 		inline static constexpr auto RTTI{ RTTI::BSOcclusionPlane };
@@ -31,12 +31,12 @@ namespace RE
 		};
 
 		// members
-		NiPoint2 halfExtents;	// 60
-		NiFrustumPlanes cachedPlanes;	// 68
-		NiPoint3         cachedVertices[4];	// D8
-		bool             disabledPlanes[4];	// 108
-		bool             twoSides;	// 10C
-		BSOcclusionPlane* linkedPlanes[4];	// 110
+		NiPoint2          halfExtents;        // 60
+		NiFrustumPlanes   cachedPlanes;       // 68
+		NiPoint3          cachedVertices[4];  // D8
+		bool              disabledPlanes[4];  // 108
+		bool              twoSides;           // 10C
+		BSOcclusionPlane* linkedPlanes[4];    // 110
 	};
 	static_assert(sizeof(BSOcclusionPlane) == 0x130);
 }

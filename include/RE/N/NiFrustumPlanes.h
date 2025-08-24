@@ -18,10 +18,10 @@ namespace RE
 		};
 
 		// members
-		NiPlane cullingPlanes[6];	// 00
-		std::uint32_t activePlanes;	// 60
-		std::uint32_t basePlaneStates;	//64
-		std::byte     pad[0x8];	// 68
+		NiPlane       cullingPlanes[6];  // 00
+		std::uint32_t activePlanes;      // 60
+		std::uint32_t basePlaneStates;   //64
+		std::byte     pad[0x8];          // 68
 	};
 	static_assert(sizeof(NiFrustumPlanes) == 0x70);
 }
