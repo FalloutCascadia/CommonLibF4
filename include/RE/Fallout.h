@@ -964,6 +964,7 @@
 #include "RE/S/SPECIALMenuEvent.h"
 #include "RE/S/SUBTITLE_PRIORITY.h"
 #include "RE/S/SWFToCodeFunctionHandler.h"
+#include "RE/S/SavefileMetadata.h"
 #include "RE/S/SayOnceTimeStampStruct.h"
 #include "RE/S/ScrapHeap.h"
 #include "RE/S/ScrapItemCallback.h"
