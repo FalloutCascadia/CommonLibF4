@@ -1,6 +1,7 @@
 #pragma once
 
 #include "RE/T/TESFullName.h"
+#include "RE/M/MARKER_TYPE.h"
 
 namespace RE
 {

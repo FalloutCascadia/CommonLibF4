@@ -15,6 +15,7 @@
 #include "RE/B/BSTSmartPointer.h"
 #include "RE/B/BSTTuple.h"
 #include "RE/C/CrimeGoldStruct.h"
+#include "RE/D/DifficultyLevel.h"
 #include "RE/F/FriendshipFactionsStruct.h"
 #include "RE/I/IMovementPlayerControlsFilter.h"
 #include "RE/N/NiPoint.h"
@@ -25,16 +26,16 @@
 #include "RE/P/PlayerCommandTypeEvent.h"
 #include "RE/P/PlayerCoverData.h"
 #include "RE/S/SayOnceTimeStampStruct.h"
+#include "RE/S/SCENE_ACTION_PLAYER_RESPONSE_TYPE.h"
 #include "RE/S/StolenItemValueStruct.h"
 #include "RE/S/SubgraphHandle.h"
+#include "RE/T/TeleportPath.h"
 #include "RE/X/XPChangeData.h"
 
 namespace RE
 {
 	enum class DEFAULT_OBJECT;
-	enum class DifficultyLevel;
 	enum class PLAYER_ACTION;
-	enum class SCENE_ACTION_PLAYER_RESPONSE_TYPE;
 	class BGSActorCellEvent;
 	class BGSActorDeathEvent;
 	class BGSInstancedQuestObjective;
@@ -56,7 +57,6 @@ namespace RE
 	class PlayerActionObject;
 	class PositionPlayerEvent;
 	class QuestTargetArray;
-	class TeleportPath;
 	class TESHitEvent;
 	class TESQuestStageItem;
 	class UserEventEnabledEvent;
@@ -297,6 +297,13 @@ namespace RE
 			using func_t = decltype(&PlayerCharacter::SetPerkCount);
 			static REL::Relocation<func_t> func{ ID::PlayerCharacter::SetPerkCount };
 			return func(this, a_count);
+		}
+
+		bool HasLOSToTarget(Actor* a_targetRef, bool* pickPerformed)
+		{
+			using func_t = decltype(&PlayerCharacter::HasLOSToTarget);
+			static REL::Relocation<func_t> func{ ID::PlayerCharacter::HasLOSToTarget };
+			return func(this, a_targetRef, pickPerformed);
 		}
 
 		// members

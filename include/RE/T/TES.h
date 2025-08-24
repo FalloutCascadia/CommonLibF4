@@ -44,7 +44,7 @@ namespace RE
 			kLand = 0x4,
 			kStatic = 0x8,
 			kActive = 0x10,
-			kAll 0x1F,
+			kAll = 0x1F,
 		};
 
 		enum class TACMode
