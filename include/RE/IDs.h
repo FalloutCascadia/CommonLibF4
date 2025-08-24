@@ -191,6 +191,9 @@ namespace RE::ID
 		inline constexpr REL::ID GetExtraDataAt{ 2194092 };
 		inline constexpr REL::ID MergeStacks{ 2194109 };
 		inline constexpr REL::ID IsEquipped{ 2194086 };
+		inline constexpr REL::ID GetStackCount{ 2194107 };
+		inline constexpr REL::ID IsQuestObject{ 2194076 };
+		inline constexpr REL::ID GetTotalWeight{ 2194074 };
 	}
 
 	namespace BGSInventoryItemUtils
@@ -308,9 +311,17 @@ namespace RE::ID
 		inline constexpr REL::ID ParseString{ 2206630 };
 	}
 
+	namespace BGSSaveLoadFileEntry
+	{
+		inline constexpr REL::ID DeleteGame{ 2227855 };
+		inline constexpr REL::ID LoadData{ 2227871 };
+	}
+
 	namespace BGSSaveLoadManager
 	{
 		inline constexpr REL::ID Singleton{ 2697802 };
+		inline constexpr REL::ID BuildSaveGameList{ 2228053 };
+		inline constexpr REL::ID GetSaveDirectoryPath{ 2228028 };
 		inline constexpr REL::ID QueueSaveLoadTask{ 2228080 };
 	}
 
@@ -720,6 +731,7 @@ namespace RE::ID
 	namespace Calendar
 	{
 		inline constexpr REL::ID Singleton{ 2689092 };
+		inline constexpr REL::ID GetDaysPassed{ 2228563 };
 	}
 
 	namespace CanDisplayNextHUDMessage
@@ -750,6 +762,8 @@ namespace RE::ID
 		inline constexpr REL::ID GetWeaponDisplayRateOfFire{ 2209048 };
 		inline constexpr REL::ID CalcTargetedLimbDamage{ 2209033 };
 		inline constexpr REL::ID CalcWeaponDamage{ 2209001 };
+		inline constexpr REL::ID GetNumCrippledAttackConditions{ 2209041 };
+		inline constexpr REL::ID CalcScopeSteadyActionPointDrain{ 2209045 };
 	}
 
 	namespace CombatUtilities
@@ -912,6 +926,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetExperienceReward{ 2209076 };
 		inline constexpr REL::ID GetLockXPReward{ 2209070 };
 		inline constexpr REL::ID CalculateItemHealthDamageBonus{ 2209087 };
+		inline constexpr REL::ID CalcSpringingActionPoints{ 2209071 };
 	}
 
 	namespace GameScript
@@ -1449,6 +1464,7 @@ namespace RE::ID
 		inline constexpr REL::ID ClearPrison{ 2233196 };
 		inline constexpr REL::ID ReloadWeapon{ 2232907 };
 		inline constexpr REL::ID SetPerkCount{ 2233187 };
+		inline constexpr REL::ID HasLOSToTarget{ 2233004 };
 	}
 
 	namespace PlayerControls
@@ -1500,6 +1516,11 @@ namespace RE::ID
 		inline constexpr REL::ID GetLockLevel{ 2191018 };
 		inline constexpr REL::ID SetLocked{ 2191020 };
 		inline constexpr REL::ID IsBroken{ 2191021 };
+	}
+
+	namespace SavefileMetadata
+	{
+		inline constexpr REL::ID FillDataFromFileName{ 2228156 };
 	}
 
 	namespace ScrapHeap
@@ -1839,6 +1860,8 @@ namespace RE::ID
 		inline constexpr REL::ID SetScale{ 2200893 };
 		inline constexpr REL::ID IsMarker{ 2201157 };
 		inline constexpr REL::ID IsDecalRef{ 2200794 };
+		inline constexpr REL::ID UpdateDynamicNavmesh{ 2201206 };
+		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
 	}
 
 	namespace TESObjectWEAP
