@@ -3,7 +3,7 @@
 namespace RE
 {
 	class __declspec(novtable) alignas(0x08) Moon :
-		public SkyObject	// 00
+		public SkyObject  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::Moon };
@@ -27,22 +27,22 @@ namespace RE
 		{
 			kNotRequired = 0x0,
 			kWhenCulled = 0x1,
-			kInitialize= 0x2
+			kInitialize = 0x2
 		};
 
 		// members
-		NiPointer<NiBillboardNode>						moonBaseNode;			// 10
-		NiPointer<NiNode>								moonNode;				// 18
-		NiPointer<NiNode>								shadowNode;				// 20
-		NiPointer<BSTriShape>							moonMesh;				// 28
-		NiPointer<BSTriShape>							shadowMesh;				// 30
-		BSStringT<char, -1, DynamicMemoryManagementPol> textures[8];			// 38
-		float                                           angleFadeStart;			// B8
-		float                                           angleFadeEnd;			// BC
-		float                                           angleShadowEarlyFade;	// C0
-		float                                           speed;					// C4
-		float                                           zOffset;				// C8
-		std::uint32_t                                   size;					// CC
-		UpdateStatus                                    updateMoonTexture;		// D0
+		NiPointer<NiBillboardNode>                      moonBaseNode;          // 10
+		NiPointer<NiNode>                               moonNode;              // 18
+		NiPointer<NiNode>                               shadowNode;            // 20
+		NiPointer<BSTriShape>                           moonMesh;              // 28
+		NiPointer<BSTriShape>                           shadowMesh;            // 30
+		BSStringT<char, -1, DynamicMemoryManagementPol> textures[8];           // 38
+		float                                           angleFadeStart;        // B8
+		float                                           angleFadeEnd;          // BC
+		float                                           angleShadowEarlyFade;  // C0
+		float                                           speed;                 // C4
+		float                                           zOffset;               // C8
+		std::uint32_t                                   size;                  // CC
+		UpdateStatus                                    updateMoonTexture;     // D0
 	};
 }

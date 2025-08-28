@@ -3,7 +3,7 @@
 namespace RE
 {
 	class __declspec(novtable) alignas(0x10) NiBillboardNode :
-		public NiNode	// 00
+		public NiNode  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::NiBillboardNode };
@@ -22,7 +22,7 @@ namespace RE
 		};
 
 		// members
-		NiTFlags<std::uint32_t, NiBillboardNode> flags;	// 140
+		NiTFlags<std::uint32_t, NiBillboardNode> flags;  // 140
 	};
 	static_assert(sizeof(NiBillboardNode) == 0x150);
 }

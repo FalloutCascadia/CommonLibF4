@@ -1,7 +1,7 @@
 #pragma once
 
-#include "RE/T/TESFullName.h"
 #include "RE/M/MARKER_TYPE.h"
+#include "RE/T/TESFullName.h"
 
 namespace RE
 {
