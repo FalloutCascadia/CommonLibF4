@@ -559,10 +559,10 @@ namespace RE
 			return func(this, a_target, a_forceLOS, a_time);
 		}
 
-		void UnequipItem(TESBoundObject* a_object, ObjectEquipParams a_params)
+		void UnequipObject(TESBoundObject* a_object, ObjectEquipParams a_params)
 		{
-			using func_t = decltype(&Actor::UnequipItem);
-			static REL::Relocation<func_t> func{ ID::Actor::UnequipItem };
+			using func_t = decltype(&Actor::UnequipObject);
+			static REL::Relocation<func_t> func{ ID::Actor::UnequipObject };
 			return func(this, a_object, a_params);
 		}
 

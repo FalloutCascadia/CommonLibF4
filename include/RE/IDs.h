@@ -54,7 +54,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetDesirability{ 2229946 };
 		inline constexpr REL::ID CalcArmorRating1{ 2230008 };
 		inline constexpr REL::ID CalcArmorRating2{ 2230009 };
-		inline constexpr REL::ID UnequipItem{ 2230479 };
+		inline constexpr REL::ID UnequipObject{ 2230479 };
 		inline constexpr REL::ID UpdateSoundCallBack{ 2229974 };
 	}
 
@@ -253,6 +253,11 @@ namespace RE::ID
 			inline constexpr REL::ID GetAllLooseMods{ 1108112 };
 		}
 
+		namespace Container
+		{
+			inline constexpr REL::ID GetData{ 2189206 };
+		}
+
 		namespace Template
 		{
 			namespace Items
@@ -291,14 +296,14 @@ namespace RE::ID
 
 	namespace BGSPerkRankArray
 	{
-		inline constexpr REL::ID AllocatePerkRankArray{ 888419 };
-		inline constexpr REL::ID ClearPerks{ 1247917 };
+		inline constexpr REL::ID AllocatePerkRankArray{ 2192837 };
+		inline constexpr REL::ID ClearPerks{ 2192836 };
 	}
 
 	namespace BGSPickLockEvent
 	{
-		inline constexpr REL::ID EventIndex{ 701969 };
-		inline constexpr REL::ID ctor{ 193329 };
+		inline constexpr REL::ID EventIndex{ 2663410 };
+		inline constexpr REL::ID ctor{ 2214021 };
 	}
 
 	namespace BGSProjectile
@@ -413,7 +418,7 @@ namespace RE::ID
 
 	namespace BSAudioManager
 	{
-		inline constexpr REL::ID Singleton{ 1321158 };
+		inline constexpr REL::ID Singleton{ 2703058 };
 		inline constexpr REL::ID GetSoundHandleByName{ 196484 };
 	}
 
