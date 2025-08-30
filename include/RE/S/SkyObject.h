@@ -1,5 +1,7 @@
 #pragma once
 
+#include "RE/S/Sky.h"
+
 namespace RE
 {
 	class __declspec(novtable) SkyObject

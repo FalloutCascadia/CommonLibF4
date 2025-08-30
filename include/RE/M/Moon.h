@@ -1,5 +1,8 @@
 #pragma once
 
+#include "RE/N/NiBillboardNode.h"
+#include "RE/S/SkyObject.h"
+
 namespace RE
 {
 	class __declspec(novtable) alignas(0x08) Moon :

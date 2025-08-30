@@ -1,5 +1,9 @@
 #pragma once
 
+#include "RE/B/BSOcclusionShape.h"
+#include "RE/N/NiFrustumPlanes.h"
+#include "RE/N/NiPoint.h"
+
 namespace RE
 {
 	class __declspec(novtable) BSOcclusionBox :

@@ -1211,6 +1211,11 @@ namespace RE::ID
 		inline constexpr REL::ID Create{ 2249456 };
 	}
 
+	namespace Moon
+	{
+		inline constexpr REL::ID Init{ 2208804 };
+	}
+
 	namespace NiAlphaProperty
 	{
 		inline constexpr REL::ID SetDestBlendMode{ 725249 };
