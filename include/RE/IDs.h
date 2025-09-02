@@ -563,8 +563,8 @@ namespace RE::ID
 
 	namespace BSResource
 	{
-		inline constexpr REL::ID RegisterLocation{ 918408 };
-		inline constexpr REL::ID GetOrCreateStream{ 1143155 };
+		inline constexpr REL::ID RegisterLocation{ 2269481 };
+		inline constexpr REL::ID GetOrCreateStream{ 2269490 };
 	}
 
 	namespace BSResourceNiBinaryStream
@@ -582,7 +582,7 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Singleton{ 2689600 };
 		inline constexpr REL::ID LoadMovie{ 2287422 };
-		inline constexpr REL::ID GetMovieFilename{ 1191277 };
+		inline constexpr REL::ID GetMovieFilename{ 2287428 };
 		inline constexpr REL::ID InitMovieViewport{ 2287430 };
 		inline constexpr REL::ID FileUncacheOnMenuOpen{ 2667999 };
 	}
@@ -720,10 +720,10 @@ namespace RE::ID
 
 	namespace BSUIMessageData
 	{
-		inline constexpr REL::ID SendUIBoolMessage{ 1388308 };
-		inline constexpr REL::ID SendUIStringMessage{ 1270833 };
-		inline constexpr REL::ID SendUIPtrMessage{ 1374542 };
-		inline constexpr REL::ID SendUIStringUIntMessage{ 99795 };
+		inline constexpr REL::ID SendUIBoolMessage{ 2284981 };
+		inline constexpr REL::ID SendUIStringMessage{ 2284977 };
+		inline constexpr REL::ID SendUIPtrMessage{ 2284982 };
+		inline constexpr REL::ID SendUIStringUIntMessage{ 2284979 };
 	}
 
 	namespace BSUtilities
@@ -746,7 +746,7 @@ namespace RE::ID
 
 	namespace CellAttachDetachEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 862142 };
+		inline constexpr REL::ID GetEventSource{ 2192250 };
 	}
 
 	namespace ColorUpdateEvent
@@ -1317,8 +1317,8 @@ namespace RE::ID
 
 	namespace PipboyInventoryUtils
 	{
-		inline constexpr REL::ID DoSlotsOverlap{ 1035436 };
-		inline constexpr REL::ID FillDamageTypeInfo{ 928518 };
+		inline constexpr REL::ID DoSlotsOverlap{ 2225230 };
+		inline constexpr REL::ID FillDamageTypeInfo{ 2225234 };
 		inline constexpr REL::ID FillResistTypeInfo{ 2225235 };
 	}
 
@@ -1329,7 +1329,7 @@ namespace RE::ID
 
 	namespace PipboyLogMenu
 	{
-		inline constexpr REL::ID UpdateData{ 672256 };
+		inline constexpr REL::ID UpdateData{ 2224052 };
 	}
 
 	namespace PipboyManager
@@ -1378,7 +1378,7 @@ namespace RE::ID
 
 	namespace PipboyPerksMenu
 	{
-		inline constexpr REL::ID UpdateData{ 783380 };
+		inline constexpr REL::ID UpdateData{ 2224224 };
 	}
 
 	namespace PipboyPlayerInfoMenu
@@ -1480,8 +1480,7 @@ namespace RE::ID
 	namespace PlayerControls
 	{
 		inline constexpr REL::ID Singleton{ 2692013 };
-		inline constexpr REL::ID CanPerformAction{ 565925 };
-		inline constexpr REL::ID DoAction{ 818081 };
+		inline constexpr REL::ID DoAction{ 2234796 };
 		inline constexpr REL::ID DoRegisterHandler{ 2234822 };
 	}
 
@@ -1491,9 +1490,9 @@ namespace RE::ID
 		inline constexpr REL::ID GetArmorKeyword{ 2194743 };
 		inline constexpr REL::ID GetBatteryKeyword{ 2194740 };
 		inline constexpr REL::ID GetDefaultBatteryObject{ 1279247 };
-		inline constexpr REL::ID IsPowerArmorBattery{ 1012910 };
+		inline constexpr REL::ID IsPowerArmorBattery{ 2219422 };
 		inline constexpr REL::ID SyncFurnitureVisualsToInventory{ 2219453 };
-		inline constexpr REL::ID fNewBatteryCapacity{ 1134204 };
+		inline constexpr REL::ID fNewBatteryCapacity{ 1353498 };
 	}
 
 	namespace PowerArmorGeometry
@@ -1836,37 +1835,36 @@ namespace RE::ID
 		inline constexpr REL::ID ActivateRef{ 2201147 };
 		inline constexpr REL::ID AddInventoryItem{ 2200949 };
 		inline constexpr REL::ID AddKeyword{ 2200860 };
-		inline constexpr REL::ID AddLockChange{ 1578706 };
+		inline constexpr REL::ID AddLockChange{ 2200731 };
 		inline constexpr REL::ID ApplyArtObject{ 2205200 };
 		inline constexpr REL::ID ApplyEffectShader{ 2205201 };
-		inline constexpr REL::ID Enable{ 1396707 };
+		inline constexpr REL::ID Enable{ 2201150 };
 		inline constexpr REL::ID GetCurrentLocation{ 2201163 };
 		inline constexpr REL::ID GetDisplayFullName{ 2201126 };
 		inline constexpr REL::ID GetEditorDead{ 2200781 };
-		inline constexpr REL::ID GetOwner{ 1323437 };
+		inline constexpr REL::ID GetOwner{ 2202616 };
 		inline constexpr REL::ID GetGoldAmount{ 2200923 };
 		inline constexpr REL::ID GetHandle{ 2201196 };
 		inline constexpr REL::ID GetHasOwner{ 1016277 };
 		inline constexpr REL::ID GetInventoryObjectCount{ 2200939 };
-		inline constexpr REL::ID GetLinkedRef{ 897287 };
-		inline constexpr REL::ID GetLock{ 930785 };
+		inline constexpr REL::ID GetLinkedRef{ 2202683 };
+		inline constexpr REL::ID GetLock{ 2202648 };
 		inline constexpr REL::ID GetWeightInContainer{ 2201001 };
 		inline constexpr REL::ID HasContainer{ 2201022 };
-		inline constexpr REL::ID IsAnOwner{ 933798 };
+		inline constexpr REL::ID IsAnOwner{ 2202635 };
 		inline constexpr REL::ID IsCrimeToActivate{ 2201180 };
-		inline constexpr REL::ID IsInWater{ 315318 };
 		inline constexpr REL::ID IsLeveledCreature{ 2202655 };
-		inline constexpr REL::ID MarkAsDeleted{ 192661 };
-		inline constexpr REL::ID MoveRefToNewSpace{ 629658 };
+		inline constexpr REL::ID MarkAsDeleted{ 2201156 };
+		inline constexpr REL::ID MoveRefToNewSpace{ 2201149 };
 		inline constexpr REL::ID RemoveKeyword{ 2200861 };
-		inline constexpr REL::ID SetAngleOnReference{ 1049748 };
-		inline constexpr REL::ID SetLinkedRef{ 192840 };
-		inline constexpr REL::ID SetLocationOnReference{ 1101832 };
-		inline constexpr REL::ID SetWantsDelete{ 761346 };
-		inline constexpr REL::ID RebuildBendableSpline{ 340319 };
+		inline constexpr REL::ID SetAngleOnReference{ 2201134 };
+		inline constexpr REL::ID SetLinkedRef{ 2202684 };
+		inline constexpr REL::ID SetLocationOnReference{ 2201138 };
+		inline constexpr REL::ID SetWantsDelete{ 2201199 };
+		inline constexpr REL::ID RebuildBendableSpline{ 2201119 };
 		inline constexpr REL::ID GetItemCount{ 2200996 };
-		inline constexpr REL::ID UpdateReference3D{ 1568075 };
-		inline constexpr REL::ID GetObjectCenter{ 777738 };
+		inline constexpr REL::ID UpdateReference3D{ 2201071 };
+		inline constexpr REL::ID GetObjectCenter{ 2201092 };
 		inline constexpr REL::ID SetScale{ 2200893 };
 		inline constexpr REL::ID IsMarker{ 2201157 };
 		inline constexpr REL::ID IsDecalRef{ 2200794 };

@@ -419,13 +419,6 @@ namespace RE
 			return func(this);
 		}
 
-		[[nodiscard]] bool IsInWater()
-		{
-			using func_t = decltype(&TESObjectREFR::IsInWater);
-			static REL::Relocation<func_t> func{ ID::TESObjectREFR::IsInWater };
-			return func(this);
-		}
-
 		[[nodiscard]] bool IsLeveledCreature()
 		{
 			using func_t = decltype(&TESObjectREFR::IsLeveledCreature);
