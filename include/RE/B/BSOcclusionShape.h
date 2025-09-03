@@ -15,8 +15,8 @@ namespace RE
 		~BSOcclusionShape() override;  // 00
 
 		// add
-		virtual bool GetIsPlane() const = 0;  // 140
-		virtual bool GetIsBox() const = 0;    // 148
+		virtual bool GetIsPlane() const = 0;  // 28
+		virtual bool GetIsBox() const = 0;    // 29
 
 		// members
 		NiPoint3A                         center;         // 10
