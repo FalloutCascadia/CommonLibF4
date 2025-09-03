@@ -5,7 +5,7 @@
 namespace RE
 {
 	class __declspec(novtable) BSNiNode :
-		public NiNode	// 00
+		public NiNode  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BSNiNode };

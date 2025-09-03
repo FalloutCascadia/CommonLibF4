@@ -24,24 +24,24 @@ namespace RE
 
 		struct FunctionOp
 		{
-			std::int32_t op;// 00
+			std::int32_t op;  // 00
 			std::int32_t jp;  // 04
 			std::int32_t jf;  // 08
 		};
 		static_assert(sizeof(FunctionOp) == 0x0C);
 
 		// members
-		BSTArray<NiFrustumPlanes, BSTArrayHeapAllocator> planes;	// 00
-		BSTArray<FunctionOp, BSTArrayHeapAllocator>      functionOperators; // 18
-		NiFrustumPlanes                                  viewFrustum; // 30
-		NiPoint3                                         viewPosition; // A0
-		const NiCamera*                                  camera;	// B0
-		const BSCoreUtils::BSCPUFeatures* const          CPUFeatures; // B8
-		std::uint32_t                                    freePlane;  // C0
-		std::uint32_t                                    freeOp; // C4
-		std::uint32_t                                    firstOp; // C8
-		bool                                             skipViewFrustum; // CC
-		bool                                             preThreaded; // CD
+		BSTArray<NiFrustumPlanes, BSTArrayHeapAllocator> planes;             // 00
+		BSTArray<FunctionOp, BSTArrayHeapAllocator>      functionOperators;  // 18
+		NiFrustumPlanes                                  viewFrustum;        // 30
+		NiPoint3                                         viewPosition;       // A0
+		const NiCamera*                                  camera;             // B0
+		const BSCoreUtils::BSCPUFeatures* const          CPUFeatures;        // B8
+		std::uint32_t                                    freePlane;          // C0
+		std::uint32_t                                    freeOp;             // C4
+		std::uint32_t                                    firstOp;            // C8
+		bool                                             skipViewFrustum;    // CC
+		bool                                             preThreaded;        // CD
 	};
 	static_assert(sizeof(BSCompoundFrustum) == 0xD0);
 }
