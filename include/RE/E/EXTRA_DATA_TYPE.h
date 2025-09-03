@@ -95,7 +95,7 @@ namespace RE
 		kModelSwap,                     //
 		kRadius,                        //
 		kRadiation,                     //
-		kFactionChanges,                //
+		kFactionChanges,                // ExtraFactionChanges
 		kDismemberedLimbs,              //
 		kActorCause,                    //
 		kMultibound,                    //

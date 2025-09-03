@@ -19,7 +19,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetCollisionFilter{ 2277949 };
 		inline constexpr REL::ID GetCombatStyle{ 2231053 };
 		inline constexpr REL::ID SetCurrentAmmoCount{ 2229952 };
-		inline constexpr REL::ID GetCurrentCollisionGroup{ 410500 };
+		inline constexpr REL::ID GetCurrentCollisionGroup{ 2229993 };
 		inline constexpr REL::ID GetCurrentFireLocation{ 2231167 };
 		inline constexpr REL::ID GetDesiredSpeed{ 2230410 };
 		inline constexpr REL::ID GetHostileToActor{ 2229968 };
@@ -30,7 +30,7 @@ namespace RE::ID
 		inline constexpr REL::ID HandleDefaultAnimationSwitch{ 2229780 };
 		inline constexpr REL::ID HandleItemEquip{ 2229781 };
 		inline constexpr REL::ID InitiateDoNothingPackage{ 2229807 };
-		inline constexpr REL::ID IsCrippled{ 1238666 };
+		inline constexpr REL::ID IsCrippled{ 2230998 };
 		inline constexpr REL::ID IsFollowing{ 2230013 };
 		inline constexpr REL::ID IsJumping{ 2229640 };
 		inline constexpr REL::ID IsPathValid{ 2230279 };
@@ -56,6 +56,8 @@ namespace RE::ID
 		inline constexpr REL::ID CalcArmorRating2{ 2230009 };
 		inline constexpr REL::ID UnequipObject{ 2230479 };
 		inline constexpr REL::ID UpdateSoundCallBack{ 2229974 };
+		inline constexpr REL::ID GetFactionRank{ 2230100 };
+		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
 	}
 
 	namespace ActorEquipManager
@@ -94,7 +96,7 @@ namespace RE::ID
 		inline constexpr REL::ID SetActorsDetectionEvent{ 2231738 };
 		inline constexpr REL::ID SetCurrentAmmo{ 2232302 };
 		inline constexpr REL::ID SetCommandType{ 2231826 };
-		inline constexpr REL::ID SetEquippedItem{ 1200276 };
+		inline constexpr REL::ID SetEquippedItem{ 2231627 };
 		inline constexpr REL::ID SetupSpecialIdle{ 2231704 };
 		inline constexpr REL::ID SetWeaponBonesCulled{ 2232535 };
 		inline constexpr REL::ID StopCurrentIdle{ 2231705 };
@@ -102,7 +104,7 @@ namespace RE::ID
 
 	namespace AnimationSystemUtils
 	{
-		inline constexpr REL::ID WillEventChangeState{ 35074 };
+		inline constexpr REL::ID WillEventChangeState{ 2214271 };
 	}
 
 	namespace ApplyChangesFunctor
@@ -124,14 +126,14 @@ namespace RE::ID
 
 	namespace BGSAnimationSystemUtils
 	{
-		inline constexpr REL::ID GetActiveSyncInfo{ 1349978 };
+		inline constexpr REL::ID GetActiveSyncInfo{ 2214289 };
 		inline constexpr REL::ID InitializeActorInstant{ 672857 };
 		inline constexpr REL::ID IsActiveGraphInTransition{ 839650 };
 	}
 
 	namespace BGSAttachParentArray
 	{
-		inline constexpr REL::ID SetParentGroupNumber{ 1412266 };
+		inline constexpr REL::ID SetParentGroupNumber{ 2189125 };
 	}
 
 	namespace BGSCraftItemEvent
@@ -463,7 +465,7 @@ namespace RE::ID
 		namespace RenderTargetManager
 		{
 			inline constexpr REL::ID Singleton{ 2666735 };
-			inline constexpr REL::ID SetEnableDynamicResolution{ 116947 };
+			inline constexpr REL::ID SetEnableDynamicResolution{ 2277197 };
 		}
 
 		namespace State
@@ -620,7 +622,7 @@ namespace RE::ID
 
 	namespace BSScript_Object
 	{
-		inline constexpr REL::ID DecRef{ 541793 };
+		inline constexpr REL::ID DecRef{ 2314437 };
 		inline constexpr REL::ID GetHandle{ 2314431 };
 		inline constexpr REL::ID IncRef{ 2314436 };
 	}
@@ -863,7 +865,7 @@ namespace RE::ID
 
 	namespace ExamineMenu
 	{
-		inline constexpr REL::ID BuildWeaponScrappingArray{ 646841 };
+		inline constexpr REL::ID BuildWeaponScrappingArray{ 2223077 };
 		inline constexpr REL::ID GetSelectedIndex{ 2223022 };
 		inline constexpr REL::ID ShowConfirmMenu{ 2223081 };
 		inline constexpr REL::ID ConsumeSelectedItems{ 2223052 };
@@ -927,11 +929,14 @@ namespace RE::ID
 	namespace GamePlayFormulas
 	{
 		inline constexpr REL::ID CanHackGateCheck{ 269668 };
-		inline constexpr REL::ID CanPickLockGateCheck{ 1160841 };
+		inline constexpr REL::ID CanPickLockGateCheck{ 2209066 };
 		inline constexpr REL::ID GetExperienceReward{ 2209076 };
 		inline constexpr REL::ID GetLockXPReward{ 2209070 };
 		inline constexpr REL::ID CalculateItemHealthDamageBonus{ 2209087 };
 		inline constexpr REL::ID CalcSpringingActionPoints{ 2209071 };
+		inline constexpr REL::ID GetSweetSpotAngle{ 2209082 };
+		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
+		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
 	}
 
 	namespace GameScript
@@ -997,8 +1002,8 @@ namespace RE::ID
 	namespace IAnimationGraphManagerHolder
 	{
 		inline constexpr REL::ID SetGraphVariableBool{ 2214543 };
-		inline constexpr REL::ID SetGraphVariableFloat{ 27400 };
-		inline constexpr REL::ID SetGraphVariableInt{ 732926 };
+		inline constexpr REL::ID SetGraphVariableFloat{ 2214545 };
+		inline constexpr REL::ID SetGraphVariableInt{ 2214544 };
 		inline constexpr REL::ID RevertAnimationGraphManager{ 2214541 };
 	}
 
@@ -1024,7 +1029,7 @@ namespace RE::ID
 
 	namespace ImageSpaceEffectPipboyScreen
 	{
-		inline constexpr REL::ID PowerArmorPipboy{ 1065542 };
+		inline constexpr REL::ID PowerArmorPipboy{ 2713203 };
 	}
 
 	namespace ImageSpaceEffectRadialBlur
@@ -1183,16 +1188,16 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 2696546 };
 		inline constexpr REL::ID CenterCursor{ 2287473 };
 		inline constexpr REL::ID RegisterCursor{ 1318193 };
-		inline constexpr REL::ID SetCursorConstraintsRaw{ 907092 };
+		inline constexpr REL::ID SetCursorConstraintsRaw{ 2287480 };
 		inline constexpr REL::ID UnregisterCursor{ 1225249 };
-		inline constexpr REL::ID PipboyConstraintTLX{ 60674 };
-		inline constexpr REL::ID PipboyConstraintTLY{ 719279 };
-		inline constexpr REL::ID PipboyConstraintWidth{ 1376729 };
-		inline constexpr REL::ID PipboyConstraintHeight{ 452591 };
-		inline constexpr REL::ID PipboyConstraintTLX_PowerArmor{ 1110986 };
-		inline constexpr REL::ID PipboyConstraintTLY_PowerArmor{ 187113 };
-		inline constexpr REL::ID PipboyConstraintWidth_PowerArmor{ 844985 };
-		inline constexpr REL::ID PipboyConstraintHeight_PowerArmor{ 1503497 };
+		inline constexpr REL::ID PipboyConstraintTLX{ 280077 };
+		inline constexpr REL::ID PipboyConstraintTLY{ 938173 };
+		inline constexpr REL::ID PipboyConstraintWidth{ 13663 };
+		inline constexpr REL::ID PipboyConstraintHeight{ 672503 };
+		inline constexpr REL::ID PipboyConstraintTLX_PowerArmor{ 1330184 };
+		inline constexpr REL::ID PipboyConstraintTLY_PowerArmor{ 406096 };
+		inline constexpr REL::ID PipboyConstraintWidth_PowerArmor{ 1064265 };
+		inline constexpr REL::ID PipboyConstraintHeight_PowerArmor{ 140195 };
 	}
 
 	namespace MenuTopicManager
@@ -1202,7 +1207,7 @@ namespace RE::ID
 
 	namespace MessageBoxMenu
 	{
-		inline constexpr REL::ID ShowMessage{ 442479 };
+		inline constexpr REL::ID ShowMessage{ 2249469 };
 	}
 
 	namespace MessageMenuManager
@@ -1233,7 +1238,7 @@ namespace RE::ID
 	namespace NiControllerManager
 	{
 		inline constexpr REL::ID GetNiControllerManager{ 2271798 };
-		inline constexpr REL::ID GetSequenceByName{ 846648 };
+		inline constexpr REL::ID GetSequenceByName{ 2192808 };
 	}
 
 	namespace NiControllerSequence
@@ -1282,7 +1287,7 @@ namespace RE::ID
 
 	namespace nsStatsMenuUtils
 	{
-		inline constexpr REL::ID GetEffectDisplayInfo{ 294691 };
+		inline constexpr REL::ID GetEffectDisplayInfo{ 2224586 };
 	}
 
 	namespace PerkPointIncreaseEvent
@@ -1383,7 +1388,7 @@ namespace RE::ID
 
 	namespace PipboyPlayerInfoMenu
 	{
-		inline constexpr REL::ID UpdateData{ 426990 };
+		inline constexpr REL::ID UpdateData{ 2224248 };
 	}
 
 	namespace PipboyPrimitiveValue
@@ -1406,17 +1411,18 @@ namespace RE::ID
 
 	namespace PipboyRadioMenu
 	{
-		inline constexpr REL::ID UpdateData{ 713423 };
+		inline constexpr REL::ID UpdateData{ 2224242 };
 	}
 
 	namespace PipboySpecialMenu
 	{
-		inline constexpr REL::ID UpdateData{ 1426810 };
+		inline constexpr REL::ID UpdateData{ 2224256 };
 	}
 
 	namespace PipboyStatsMenu
 	{
-		inline constexpr REL::ID UpdateData{ 332518 };
+		inline constexpr REL::ID UpdateData{ 2224261 };
+		inline constexpr REL::ID UpdateActiveEffects{ 2224262 };
 	}
 
 	namespace PipboySubMenu
@@ -1556,7 +1562,7 @@ namespace RE::ID
 	namespace SendHUDMessage
 	{
 		inline constexpr REL::ID PopHUDMode{ 2222444 };
-		inline constexpr REL::ID PushHUDMode{ 2222443 };
+		inline constexpr REL::ID PushHUDMode{ 2222443 };	
 		inline constexpr REL::ID SetPowerArmorMode{ 2222459 };
 		inline constexpr REL::ID ShowHUDMessage{ 2222440 };
 	}
@@ -1595,8 +1601,8 @@ namespace RE::ID
 
 	namespace SplineUtils
 	{
-		inline constexpr REL::ID DisconnectSpline{ 750682 };
-		inline constexpr REL::ID ConnectSpline{ 59311 };
+		inline constexpr REL::ID DisconnectSpline{ 2195074 };
+		inline constexpr REL::ID ConnectSpline{ 2195073 };
 	}
 
 	namespace SWFToCodeFunctionHandler
