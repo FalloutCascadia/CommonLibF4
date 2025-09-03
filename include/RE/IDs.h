@@ -1562,7 +1562,7 @@ namespace RE::ID
 	namespace SendHUDMessage
 	{
 		inline constexpr REL::ID PopHUDMode{ 2222444 };
-		inline constexpr REL::ID PushHUDMode{ 2222443 };	
+		inline constexpr REL::ID PushHUDMode{ 2222443 };
 		inline constexpr REL::ID SetPowerArmorMode{ 2222459 };
 		inline constexpr REL::ID ShowHUDMessage{ 2222440 };
 	}
