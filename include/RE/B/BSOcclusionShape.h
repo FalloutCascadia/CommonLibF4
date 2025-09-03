@@ -1,5 +1,6 @@
 #pragma once
 
+#include "RE/B/BSMultiBoundShape.h"
 #include "RE/N/NiObject.h"
 
 namespace RE
