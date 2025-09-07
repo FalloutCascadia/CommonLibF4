@@ -937,6 +937,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetSweetSpotAngle{ 2209082 };
 		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
+		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
 	}
 
 	namespace GameScript
