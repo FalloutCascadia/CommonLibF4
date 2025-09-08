@@ -58,6 +58,7 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateSoundCallBack{ 2229974 };
 		inline constexpr REL::ID GetFactionRank{ 2230100 };
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
+		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
 	}
 
 	namespace ActorEquipManager
