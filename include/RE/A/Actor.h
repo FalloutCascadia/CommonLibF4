@@ -569,7 +569,7 @@ namespace RE
 		void UpdateSprinting()
 		{
 			using func_t = decltype(&Actor::UpdateSprinting);
-			static REL::Relocation<func_t> func{ ID::Actor::UpdateSprinting};
+			static REL::Relocation<func_t> func{ ID::Actor::UpdateSprinting };
 			return func(this);
 		}
 

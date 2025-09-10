@@ -5,7 +5,7 @@
 namespace RE
 {
 	class __declspec(novtable) BSMultiBoundAABB :
-		public BSMultiBoundShape // 00
+		public BSMultiBoundShape  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BSMultiBoundAABB };
@@ -13,7 +13,7 @@ namespace RE
 		static constexpr auto Ni_RTTI{ Ni_RTTI::BSMultiBoundAABB };
 
 		// add
-		virtual bool IntersectPlane(const NiPlane* a_plane); // 32
+		virtual bool IntersectPlane(const NiPlane* a_plane);  // 32
 
 		// members
 		NiPoint3A center;

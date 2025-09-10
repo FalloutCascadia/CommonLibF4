@@ -6,7 +6,7 @@ namespace RE
 	class CubeMapSide;
 
 	class __declspec(novtable) TESWaterObject :
-		public NiRefObject // 00
+		public NiRefObject  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::TESWaterObject };
@@ -21,18 +21,16 @@ namespace RE
 		};
 
 		// members
-		std::uint8_t flags;
-		NiPlane      reflectWaterPlane;
-		NiPointer<BSCubeMapCamera> cubeMapCamera;
-		NiPointer<BSShaderAccumulator> sorter;
-		BSCullingProcess*              cullingProcess;
+		std::uint8_t                                                             flags;
+		NiPlane                                                                  reflectWaterPlane;
+		NiPointer<BSCubeMapCamera>                                               cubeMapCamera;
+		NiPointer<BSShaderAccumulator>                                           sorter;
+		BSCullingProcess*                                                        cullingProcess;
 		BSTSmartPointer<BSWaterShaderMaterial, BSTSmartPointerIntrusiveRefCount> waterMaterial;
 		float                                                                    reflectionUpdateTimer;
 		std::uint32_t                                                            currentCubeMapFace;
 		CubeMapSide                                                              sortedCubeMapSide[6];
 		bool                                                                     activeThisFrame;
-
-
 	};
 	static_assert(sizeof(TESWaterObject) == 0x88);
 }

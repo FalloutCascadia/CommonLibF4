@@ -3,7 +3,7 @@
 namespace RE
 {
 	class __declspec(novtable) BSCubeMapCamera :
-		public NiCamera // 000
+		public NiCamera  // 000
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BSCubeMapCamera };
@@ -31,15 +31,15 @@ namespace RE
 			kNegZ = 0x5
 		};
 
-		// add 
+		// add
 		virtual void Click(FaceEnableFlags a_faceEnableFlags, bool a_silhouette, bool a_clearScene, bool a_LODOnly);  // 3A
 
 		// members
-		BSTArray<NiPointer<NiAVObject>, BSTArrayHeapAllocator> cubeMapScene; // 1A0
-		NiPointer<BSShaderAccumulator>                         accumulator; // 1B8
-		NiPointer<BSShaderAccumulator>                         accumulatorBackground; // 1C0
-		NiPointer<NiCamera>                                    cameraBackground; // 1C8
-		NiColorA                                               silhouetteColor; // 1D0
+		BSTArray<NiPointer<NiAVObject>, BSTArrayHeapAllocator> cubeMapScene;           // 1A0
+		NiPointer<BSShaderAccumulator>                         accumulator;            // 1B8
+		NiPointer<BSShaderAccumulator>                         accumulatorBackground;  // 1C0
+		NiPointer<NiCamera>                                    cameraBackground;       // 1C8
+		NiColorA                                               silhouetteColor;        // 1D0
 	};
 	static_assert(sizeof(BSCubeMapCamera) == 0x1E0);
 }
