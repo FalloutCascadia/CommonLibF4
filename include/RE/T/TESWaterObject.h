@@ -2,8 +2,10 @@
 
 namespace RE
 {
-	class BSCubeMapCamera;
-	class CubeMapSide;
+	class BSMultiBoundAABB;
+	class TESWaterNormals;
+	class TESWaterDisplacement;
+	class TESWaterReflections;
 
 	class __declspec(novtable) TESWaterObject :
 		public NiRefObject  // 00
@@ -21,16 +23,15 @@ namespace RE
 		};
 
 		// members
-		std::uint8_t                                                             flags;
-		NiPlane                                                                  reflectWaterPlane;
-		NiPointer<BSCubeMapCamera>                                               cubeMapCamera;
-		NiPointer<BSShaderAccumulator>                                           sorter;
-		BSCullingProcess*                                                        cullingProcess;
-		BSTSmartPointer<BSWaterShaderMaterial, BSTSmartPointerIntrusiveRefCount> waterMaterial;
-		float                                                                    reflectionUpdateTimer;
-		std::uint32_t                                                            currentCubeMapFace;
-		CubeMapSide                                                              sortedCubeMapSide[6];
-		bool                                                                     activeThisFrame;
+		NiPlane                                                      waterPlane;          // 10
+		NiPointer<NiAVObject>                                        waterObject;         // 20
+		NiPointer<NiAVObject>                                        waterRipplesObject;  // 28
+		TESWaterForm*                                                waterType;           // 30
+		NiPointer<TESWaterReflections>                               waterReflections;    // 38
+		NiPointer<TESWaterNormals>                                   waterNormals;        // 40
+		NiPointer<TESWaterDisplacement>                              waterDisplacement;   // 48
+		BSTArray<NiPointer<BSMultiBoundAABB>, BSTArrayHeapAllocator> multiBoundShape;     // 50
+		std::uint8_t                                                 flags;               // 68
 	};
-	static_assert(sizeof(TESWaterObject) == 0x88);
+	static_assert(sizeof(TESWaterObject) == 0x70);
 }
