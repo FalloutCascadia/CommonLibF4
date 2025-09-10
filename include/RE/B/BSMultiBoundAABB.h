@@ -16,8 +16,8 @@ namespace RE
 		virtual bool IntersectPlane(const NiPlane* a_plane);  // 32
 
 		// members
-		NiPoint3A center; // 20
-		NiPoint3A halfExtents; // 30
+		NiPoint3A center;       // 20
+		NiPoint3A halfExtents;  // 30
 	};
 	static_assert(sizeof(BSMultiBoundAABB) == 0x40);
 }

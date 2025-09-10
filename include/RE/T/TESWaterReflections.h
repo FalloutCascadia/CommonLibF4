@@ -30,16 +30,16 @@ namespace RE
 		};
 
 		// members
-		std::uint8_t                                                             flags;  // 10
-		NiPlane                                                                  reflectWaterPlane; // 14
-		NiPointer<BSCubeMapCamera>                                               cubeMapCamera; // 28
-		NiPointer<BSShaderAccumulator>                                           sorter; // 30
-		BSCullingProcess*                                                        cullingProcess; // 38
-		BSTSmartPointer<BSWaterShaderMaterial, BSTSmartPointerIntrusiveRefCount> waterMaterial; // 40
-		float                                                                    reflectionUpdateTimer; // 48
-		std::uint32_t                                                            currentCubeMapFace; // 4C
-		CubeMapSide                                                              sortedCubeMapSide[6]; // 50
-		bool                                                                     activeThisFrame; // 80
+		std::uint8_t                                                             flags;                  // 10
+		NiPlane                                                                  reflectWaterPlane;      // 14
+		NiPointer<BSCubeMapCamera>                                               cubeMapCamera;          // 28
+		NiPointer<BSShaderAccumulator>                                           sorter;                 // 30
+		BSCullingProcess*                                                        cullingProcess;         // 38
+		BSTSmartPointer<BSWaterShaderMaterial, BSTSmartPointerIntrusiveRefCount> waterMaterial;          // 40
+		float                                                                    reflectionUpdateTimer;  // 48
+		std::uint32_t                                                            currentCubeMapFace;     // 4C
+		CubeMapSide                                                              sortedCubeMapSide[6];   // 50
+		bool                                                                     activeThisFrame;        // 80
 	};
 	static_assert(sizeof(TESWaterReflections) == 0x88);
 }
