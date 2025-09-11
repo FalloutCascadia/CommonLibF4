@@ -86,6 +86,11 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 2189587 };
 	}
 
+	namespace AIFormulas
+	{
+		inline constexpr REL::ID GetBarterValue{ 2208969 };
+	}
+
 	namespace AIProcess
 	{
 		inline constexpr REL::ID GetCurrentAmmo{ 2232300 };
@@ -941,6 +946,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
 		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
+		inline constexpr REL::ID CalculateItemValue{ 2209074 };
 	}
 
 	namespace GameScript
