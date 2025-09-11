@@ -369,6 +369,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetHackDifficultyLockLevel{ 2197777 };
 		inline constexpr REL::ID IsTerminalRefInUse{ 2197779 };
 		inline constexpr REL::ID Show{ 2197776 };
+		inline constexpr REL::ID Activate{ 2197778 };
 	}
 
 	namespace bhkNPCollisionObject
@@ -930,7 +931,7 @@ namespace RE::ID
 
 	namespace GamePlayFormulas
 	{
-		inline constexpr REL::ID CanHackGateCheck{ 269668 };
+		inline constexpr REL::ID CanHackGateCheck{ 2209069 };
 		inline constexpr REL::ID CanPickLockGateCheck{ 2209066 };
 		inline constexpr REL::ID GetExperienceReward{ 2209076 };
 		inline constexpr REL::ID GetLockXPReward{ 2209070 };
