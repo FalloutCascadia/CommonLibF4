@@ -11,7 +11,6 @@
 #include "RE/A/ACTOR_VISIBILITY_MASK.h"
 #include "RE/A/ADDON_DATA.h"
 #include "RE/A/AIDATA_GAME.h"
-#include "RE/A/AIFormulas.h"
 #include "RE/A/AIProcess.h"
 #include "RE/A/AITimeStamp.h"
 #include "RE/A/AITimer.h"
