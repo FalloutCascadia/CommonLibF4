@@ -573,6 +573,13 @@ namespace RE
 			return func(this);
 		}
 
+		std::uint8_t GetMobilityCrippled()
+		{
+			using func_t = decltype(&Actor::GetMobilityCrippled);
+			static REL::Relocation<func_t> func{ ID::Actor::GetMobilityCrippled };
+			return func(this);
+		}
+
 		// members
 		NiTFlags<std::uint32_t, Actor>                   niFlags;                      // 2D0
 		float                                            updateTargetTimer;            // 2D4

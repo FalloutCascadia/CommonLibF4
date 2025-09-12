@@ -60,6 +60,8 @@ namespace RE::ID
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
 		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
 		inline constexpr REL::ID UpdateSprinting{ 2230498 };
+		inline constexpr REL::ID Jump{ 2229650 };
+		inline constexpr REL::ID GetMobilityCrippled{ 2230996 };
 	}
 
 	namespace ActorEquipManager
@@ -375,6 +377,11 @@ namespace RE::ID
 		inline constexpr REL::ID IsTerminalRefInUse{ 2197779 };
 		inline constexpr REL::ID Show{ 2197776 };
 		inline constexpr REL::ID Activate{ 2197778 };
+	}
+
+	namespace bhkCharacterController
+	{
+		inline constexpr REL::ID Jump{ 2278191 };
 	}
 
 	namespace bhkNPCollisionObject
