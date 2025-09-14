@@ -883,6 +883,7 @@
 #include "RE/P/PART_DATA.h"
 #include "RE/P/PATH_DATA.h"
 #include "RE/P/PC_GAMEPAD_TYPE.h"
+#include "RE/P/PERK_ENTRY_TYPE.h"
 #include "RE/P/PIPBOY_PAGES.h"
 #include "RE/P/PLAYER_ACTION.h"
 #include "RE/P/PLAYER_TARGET_LOC.h"
