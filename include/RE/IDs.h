@@ -62,6 +62,7 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateSprinting{ 2230498 };
 		inline constexpr REL::ID Jump{ 2229650 };
 		inline constexpr REL::ID GetMobilityCrippled{ 2230996 };
+		inline constexpr REL::ID SPECIALModifiedCallback{ 2231020 };
 	}
 
 	namespace ActorEquipManager
