@@ -10,10 +10,10 @@ namespace RE
 		static constexpr auto Ni_RTTI{ Ni_RTTI::SceneGraph };
 
 		// members
-		float customNearDistance; // 160
-		float customFarDistance; // 164
-		bool  customNearDistanceActive; // 168
-		bool  customFarDistanceActive; // 169
+		float customNearDistance;        // 160
+		float customFarDistance;         // 164
+		bool  customNearDistanceActive;  // 168
+		bool  customFarDistanceActive;   // 169
 	};
 	static_assert(sizeof(SceneGraph) == 0x170);
 }
