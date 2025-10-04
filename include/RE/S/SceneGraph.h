@@ -3,7 +3,7 @@
 namespace RE
 {
 	class __declspec(novtable) SceneGraph :
-		public BSSceneGraph // 000
+		public BSSceneGraph  // 000
 	{
 		static constexpr auto RTTI{ RTTI::SceneGraph };
 		static constexpr auto VTABLE{ VTABLE::SceneGraph };
