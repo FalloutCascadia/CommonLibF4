@@ -1252,6 +1252,7 @@ namespace RE::ID
 	namespace NiCamera
 	{
 		inline constexpr REL::ID WorldPtToScreenPt3{ 2270344 };
+		inline constexpr REL::ID ViewPointToRay{ 2270338 };
 	}
 
 	namespace NiControllerManager
