@@ -727,6 +727,7 @@
 #include "RE/I/INPUT_EVENT_TYPE.h"
 #include "RE/I/INSTANCE_FILTER.h"
 #include "RE/I/INTERACTING_STATE.h"
+#include "RE/I/INTERACTION_EXIT.h"
 #include "RE/I/INTERIOR_DATA.h"
 #include "RE/I/IPipboyThrottledValue.h"
 #include "RE/I/IPostAnimationChannelUpdateFunctor.h"
