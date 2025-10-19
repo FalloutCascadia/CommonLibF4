@@ -1987,6 +1987,8 @@ namespace RE::ID
 		inline constexpr REL::ID PlayPipboySound{ 2249706 };
 		inline constexpr REL::ID PlayMenuSound{ 2249707 };
 		inline constexpr REL::ID UpdateGamepadDependentButtonCodes{ 2249714 };
+		inline constexpr REL::ID ShowCraftingMenu{ 2249718 };
+		inline constexpr REL::ID HasRequiredInventoryForCraftingMenu{ 2249717 };
 	}
 
 	namespace VATS

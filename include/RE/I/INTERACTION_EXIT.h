@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class INTERACTING_STATE : std::int32_t
+	enum class INTERACTION_EXIT : std::int32_t
 	{
 		kNormal = 0x0,
 		kQuick = 0x1,
