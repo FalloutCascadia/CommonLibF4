@@ -6,7 +6,7 @@ namespace RE
 	{
 		kCalmed = 0xFFFFFFFF,
 		kUnagressive = 0x0,
-		kAggressive= 0x1,
+		kAggressive = 0x1,
 		kVeryAggressive = 0x2,
 		kFrenzied = 0x3,
 		kMax = 0x3

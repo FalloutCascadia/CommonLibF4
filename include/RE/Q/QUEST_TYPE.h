@@ -6,7 +6,7 @@ namespace RE
 	{
 		kNone = 0x0,
 		kMainquest = 0x1,
-		kBrotherhood= 0x2,
+		kBrotherhood = 0x2,
 		kInstitue = 0x3,
 		kMinutemen = 0x4,
 		kRailroad = 0x5,
