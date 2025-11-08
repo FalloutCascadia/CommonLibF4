@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	class __declspec(novtable) BGSSaveLoadScrapBuffer
+	class BGSSaveLoadScrapBuffer
 	{
 	public:
 		// members
