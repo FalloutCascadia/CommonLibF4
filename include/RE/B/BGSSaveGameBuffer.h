@@ -1,5 +1,7 @@
 #pragma once
 
+#include "RE/B/BGSSaveLoadBuffer.h"
+
 namespace RE
 {
 	class Actor;
@@ -27,7 +29,7 @@ namespace RE
 		}
 
 		// members
-		void*         buffer;          // 008
+		BGSSaveLoadBuffer buffer;	   // 008
 		std::uint32_t size;            // 010
 		std::uint32_t bufferPosition;  // 014
 	};
