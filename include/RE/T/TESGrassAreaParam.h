@@ -1,5 +1,4 @@
 #pragma once
-
 #include "RE/G/GrassParam.h"
 
 namespace RE
