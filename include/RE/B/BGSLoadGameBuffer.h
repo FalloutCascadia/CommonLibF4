@@ -23,9 +23,9 @@ namespace RE
 		}
 
 		// members
-		BGSSaveLoadScrapBuffer buffer; // 008
-		std::uint32_t bufferSize;      // 020
-		std::uint32_t bufferPosition;  // 024
+		BGSSaveLoadScrapBuffer buffer;          // 008
+		std::uint32_t          bufferSize;      // 020
+		std::uint32_t          bufferPosition;  // 024
 	};
 	static_assert(sizeof(BGSLoadGameBuffer) == 0x28);
 }
