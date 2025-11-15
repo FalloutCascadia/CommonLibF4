@@ -1,7 +1,7 @@
 #pragma once
 
-#include "RE/A/AITimer.h"
 #include "RE/A/AITimeStamp.h"
+#include "RE/A/AITimer.h"
 #include "RE/B/bhkCollisionQueryResultHandle.h"
 
 namespace RE
@@ -10,9 +10,9 @@ namespace RE
 	{
 	public:
 		// members
-		bhkCollisionQueryResultHandle collisionRequest;  // 00
-		AITimer updateTimer;  // 08
-		AITimeStamp gunStateChangedTimeStamp;  // 10
+		bhkCollisionQueryResultHandle collisionRequest;          // 00
+		AITimer                       updateTimer;               // 08
+		AITimeStamp                   gunStateChangedTimeStamp;  // 10
 	};
 	static_assert(sizeof(GunStateData) == 0x18);
 }

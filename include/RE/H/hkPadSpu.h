@@ -9,7 +9,7 @@ namespace RE
 		void operator=(T val) { storage = val; }
 		T    val() const { return storage; }
 		T&   operator*() const { return &storage; }
-		T*   operator->() const { return & storage; }
+		T*   operator->() const { return &storage; }
 
 		// members
 		T storage;  // 00

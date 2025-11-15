@@ -18,7 +18,6 @@ namespace RE
 			kTotal = 4,
 		};
 
-
 		enum class TO_DIRECTION
 		{
 			kFacingForward = 0,
@@ -36,8 +35,8 @@ namespace RE
 		{
 		public:
 			// members
-			REX::EnumSet<SPEED, std::uint32_t> fromSpeed;	// 00
-			REX::EnumSet<FROM_DIRECTION, std::uint32_t> fromDirection;	// 04
+			REX::EnumSet<SPEED, std::uint32_t>          fromSpeed;      // 00
+			REX::EnumSet<FROM_DIRECTION, std::uint32_t> fromDirection;  // 04
 		};
 		static_assert(sizeof(CurrentState) == 0x8);
 
@@ -45,7 +44,7 @@ namespace RE
 		{
 		public:
 			// members
-			REX::Enum<SPEED, std::uint32_t> toSpeed;
+			REX::Enum<SPEED, std::uint32_t>        toSpeed;
 			REX::Enum<TO_DIRECTION, std::uint32_t> toDirection;
 		};
 		static_assert(sizeof(DesiredState) == 0x8);
@@ -55,7 +54,7 @@ namespace RE
 		public:
 			// members
 			CurrentState fromState;  // 00
-			DesiredState toState;  // 08
+			DesiredState toState;    // 08
 		};
 		static_assert(sizeof(IdleSelectionData) == 0x10);
 	}

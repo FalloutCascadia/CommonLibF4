@@ -19,7 +19,7 @@ namespace RE
 			hknpBodyId              bodyId;                    // 00
 			hknpMaterialId          shapeMaterialId;           // 04
 			hkPadSpu<std::uint32_t> shapeKey;                  // 08
-			hkPadSpu<CFilter>		shapeCollisionFilterInfo;  // 0C
+			hkPadSpu<CFilter>       shapeCollisionFilterInfo;  // 0C
 			hkPadSpu<std::uint64_t> shapeUserData;             // 10
 		};
 		static_assert(sizeof(BodyInfo) == 0x18);

@@ -6,7 +6,7 @@ namespace RE
 	{
 	public:
 		// members
-		bool starting; // 00
+		bool starting;  // 00
 	};
 	static_assert(sizeof(IdleInputEvent) == 0x1);
 }

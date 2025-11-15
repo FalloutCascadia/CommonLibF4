@@ -24,8 +24,8 @@ namespace RE
 
 		// members
 		std::uint64_t lastInputTime;  // 78
-		std::uint8_t disableCount;  // 80
-		bool isInputIdle;  // 81
+		std::uint8_t  disableCount;   // 80
+		bool          isInputIdle;    // 81
 	};
 	static_assert(sizeof(BSIdleInputWatcher) == 0x88);
 }

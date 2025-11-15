@@ -188,7 +188,7 @@ namespace RE
 		ObjectRefHandle                 idleTarget;                  // D8
 		std::int16_t                    formListNumb;                // DC
 		std::uint8_t                    lowProcessFlags;             // DE
-		std::uint8_t					processLevel;                // DF
+		std::uint8_t                    processLevel;                // DF
 		bool                            skippedTimeStampForPathing;  // E0
 		bool                            ignoringCombat;              // E1
 		bool                            endAlarmOnActor;             // E2

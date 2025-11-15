@@ -8,8 +8,8 @@ namespace RE
 	{
 	public:
 		// members
-		BSFixedStringCS speakerName;	// 00
-		BSFixedStringCS subtitleText;	// 08
+		BSFixedStringCS speakerName;   // 00
+		BSFixedStringCS subtitleText;  // 08
 	};
 	static_assert(sizeof(HUDSubtitleDisplayData) == 0x10);
 }

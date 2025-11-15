@@ -3,11 +3,11 @@
 #include "RE/H/hkBlockStream.h"
 #include "RE/H/hkEnum.h"
 #include "RE/H/hkFlags.h"
-#include "RE/H/hknpShapeType.h"
 #include "RE/H/hkReferencedObject.h"
 #include "RE/H/hkResult.h"
-#include "RE/H/hknpCollisionDispatchType.h"
 #include "RE/H/hkVector4f.h"
+#include "RE/H/hknpCollisionDispatchType.h"
+#include "RE/H/hknpShapeType.h"
 
 namespace RE
 {

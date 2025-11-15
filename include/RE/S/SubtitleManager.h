@@ -26,9 +26,9 @@ namespace RE
 		}
 
 		// members
-		BSTArray<SubtitleInfo,BSTArrayHeapAllocator>  subtitlePriorityArray;  // 08
-		ObjectRefHandle								  currentSpeaker;         // 20
-	    BSTValueEventSource<HUDSubtitleDisplayEvent>  subtitleDisplayData;	  // 28
+		BSTArray<SubtitleInfo, BSTArrayHeapAllocator> subtitlePriorityArray;  // 08
+		ObjectRefHandle                               currentSpeaker;         // 20
+		BSTValueEventSource<HUDSubtitleDisplayEvent>  subtitleDisplayData;    // 28
 	};
 	static_assert(sizeof(SubtitleManager) == 0x50);
 }

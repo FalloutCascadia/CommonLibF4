@@ -54,7 +54,7 @@ namespace RE
 	template <>
 	struct hkMultiMapOperations<std::int32_t>
 	{};
-	
+
 	template <class K, class V = K, class O = hkMultiMapOperations<K>, class A = hkContainerHeapAllocator>
 	class hkMultiMap
 	{
@@ -62,14 +62,14 @@ namespace RE
 		struct Pair
 		{
 			// members
-			K key;	// 00
-			V value;	// ??
+			K key;    // 00
+			V value;  // ??
 		};
 
 		// members
-		Pair* elem;	// 00
-		std::int32_t elemCount;	// 08 - high bits are flags
-		std::int32_t hashMod;	// 10 - capacity - 1
+		Pair*        elem;       // 00
+		std::int32_t elemCount;  // 08 - high bits are flags
+		std::int32_t hashMod;    // 10 - capacity - 1
 	};
 	static_assert(sizeof(hkMultiMap<int>) == 0x10);
 }

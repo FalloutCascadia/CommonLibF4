@@ -36,8 +36,7 @@ namespace RE
 
 		bool NodeInFrustum(NiAVObject* a_node)
 		{
-			if (!a_node)
-			{
+			if (!a_node) {
 				return false;
 			}
 

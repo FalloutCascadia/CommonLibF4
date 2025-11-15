@@ -8,7 +8,7 @@ namespace RE
 		{
 		public:
 			// members
-			void* instanceData;	// 00
+			void* instanceData;  // 00
 		};
 		static_assert(sizeof(InstanceData) == 0x8);
 	}

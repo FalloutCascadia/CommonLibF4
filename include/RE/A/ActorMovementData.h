@@ -9,8 +9,8 @@ namespace RE
 	{
 	public:
 		// members
-		MovementData handlerData;	// 00
-		MovementTweenerOutputData tweenerData;	// 30
+		MovementData              handlerData;  // 00
+		MovementTweenerOutputData tweenerData;  // 30
 	};
 	static_assert(sizeof(ActorMovementData) == 0x50);
 }

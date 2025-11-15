@@ -16,8 +16,8 @@ namespace RE
 				kNoCollision = 1 << 14,
 				kLinkedGroup = 1 << 15,
 
-				kPartMask = 0x1F,	// BIPED_PART
-				kLayerMask = 0x7F	// COL_LAYER
+				kPartMask = 0x1F,  // BIPED_PART
+				kLayerMask = 0x7F  // COL_LAYER
 			};
 		};
 		~CFilter() noexcept {}  // intentional

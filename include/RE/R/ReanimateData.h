@@ -10,8 +10,8 @@ namespace RE
 	{
 	public:
 		// members
-		ActorHandle caster;	// 00
-		MagicItem*  reanimateSpell;	 // 08
+		ActorHandle caster;          // 00
+		MagicItem*  reanimateSpell;  // 08
 	};
 	static_assert(sizeof(ReanimateData) == 0x10);
 }

@@ -9,6 +9,7 @@ namespace RE
 	{
 	private:
 		using EventSource_t = BSTGlobalEvent::EventSource<PlayerCrosshairModeEvent>;
+
 	public:
 		[[nodiscard]] static EventSource_t* GetEventSource()
 		{
