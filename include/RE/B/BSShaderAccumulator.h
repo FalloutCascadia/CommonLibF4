@@ -14,7 +14,7 @@ namespace RE
 	class ShadowSceneNode;
 
 	class __declspec(novtable) BSShaderAccumulator :
-		public NiAlphaAccumulator  // 00
+		public NiAlphaAccumulator  // 000
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BSShaderAccumulator };
@@ -32,15 +32,15 @@ namespace RE
 		virtual void FinishAccumulatingPostResolveDepth();  // 2F
 
 		// members
-		std::uint32_t                 sunPixelCount;             // 58
-		bool                          waitingForSunQuery;        // 5C
-		float                         percentSunOccludedStored;  // 60
-		SunOcclusionTest              sunTests[3];               // 68
-		bool                          firstPerson;               // B0
-		bool                          zPrePass;                  // B1
-		NiColorA                      silhouetteColor;           // B4
-		bool                          renderDecals;              // C4
-		BSBatchRenderer               batchRenderer;             // C8
+		std::uint32_t                 sunPixelCount;             // 058
+		bool                          waitingForSunQuery;        // 05C
+		float                         percentSunOccludedStored;  // 060
+		SunOcclusionTest              sunTests[3];               // 068
+		bool                          firstPerson;               // 0B0
+		bool                          zPrePass;                  // 0B1
+		NiColorA                      silhouetteColor;           // 0B4
+		bool                          renderDecals;              // 0C4
+		BSBatchRenderer               batchRenderer;             // 0C8
 		std::uint32_t                 currentPass;               // 548
 		std::uint32_t                 currentBucket;             // 54C
 		bool                          currentActiveA;            // 550
