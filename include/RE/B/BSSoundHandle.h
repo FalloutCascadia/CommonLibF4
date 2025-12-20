@@ -2,6 +2,8 @@
 
 namespace RE
 {
+	class BSISoundOutputModel;
+
 	class BSSoundHandle
 	{
 	public:
@@ -19,6 +21,34 @@ namespace RE
 			using func_t = decltype(&BSSoundHandle::FadeOutAndRelease);
 			static REL::Relocation<func_t> func{ ID::BSSoundHandle::FadeOutAndRelease };
 			return func(this, a_milliseconds);
+		}
+
+		bool IsPlaying() const
+		{
+			using func_t = decltype(&BSSoundHandle::IsPlaying);
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::IsPlaying };
+			return func(this);
+		}
+
+		bool Play()
+		{
+			using func_t = decltype(&BSSoundHandle::Play);
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::Play};
+			return func(this);
+		}
+
+		bool SetOutputModel(const BSISoundOutputModel* a_outputModel)
+		{
+			using func_t = decltype(&BSSoundHandle::SetOutputModel);
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::SetOutputModel};
+			return func(this, a_outputModel);
+		}
+
+		bool Stop()
+		{
+			using func_t = decltype(&BSSoundHandle::Stop);
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::Stop };
+			return func(this);
 		}
 
 		// members
