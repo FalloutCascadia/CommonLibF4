@@ -735,6 +735,16 @@ namespace RE
 		};
 		static_assert(sizeof(RenderTargetManager) == 0xFF0);
 
+		class OcclusionQuery
+		{
+		public:
+
+			// members
+			REX::W32::ID3D11Query* occlusionQuery;	// 00
+			std::uint32_t          inUse;	// 08
+		};
+		static_assert(sizeof(OcclusionQuery) == 0x10);
+
 		namespace Utility
 		{
 			inline void ConvertHALFToNiPoint3Stream(const std::uint16_t* a_src, NiPoint3* a_dst, std::uint32_t a_count, std::uint32_t a_stride)

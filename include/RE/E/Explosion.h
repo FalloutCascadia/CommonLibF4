@@ -7,6 +7,7 @@
 #include "RE/B/BSSoundHandle.h"
 #include "RE/B/BSTArray.h"
 #include "RE/B/BSTSmartPointer.h"
+#include "RE/H/hknpClosestUniqueBodyIdHitCollector.h"
 #include "RE/N/NiPoint.h"
 #include "RE/N/NiPointer.h"
 #include "RE/T/TESObjectREFR.h"
@@ -74,8 +75,7 @@ namespace RE
 		virtual void FindTargets();          // C8
 
 		// members
-		// hknpClosestUniqueBodyIdHitCollector collector;			   // 110
-		std::byte                          collector[0x520 - 0x110];  // 110
+		hknpClosestUniqueBodyIdHitCollector collector;			   // 110
 		void*                              explosionDBHandle;         // 520 - TODO
 		float                              age;                       // 528
 		float                              obj3Dlifetime;             // 52C
