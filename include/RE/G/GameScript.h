@@ -165,9 +165,9 @@ namespace RE
 			};
 
 			// members
-			BSScrapArray<TESObjectREFR*>* array;	// 00
-			const ActorValueInfo*         filter;	// 8
-			std::uint32_t                 option;	// 10
+			BSScrapArray<TESObjectREFR*>* array;   // 00
+			const ActorValueInfo*         filter;  // 8
+			std::uint32_t                 option;  // 10
 		};
 		static_assert(sizeof(GetWorkshopResourceObjectsLinkedRefChildVisitor) == 0x18);
 

@@ -15,8 +15,8 @@ namespace RE
 		static constexpr auto TYPE{ EXTRA_DATA_TYPE::kPoison };
 
 		// members
-		std::uint32_t count;	// 18
-		AlchemyItem*  poison;	// 20
+		std::uint32_t count;   // 18
+		AlchemyItem*  poison;  // 20
 	};
 	static_assert(sizeof(ExtraPoison) == 0x28);
 }

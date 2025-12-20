@@ -22,7 +22,7 @@ namespace RE
 			kRealDelta = 0x3,
 			kFrameCount = 0x4,
 			kAccumulatedDelta = 0x5,
-			
+
 			kTotal = 0x6
 		};
 
@@ -41,7 +41,7 @@ namespace RE
 			kWater = 0xA,
 			kFaceCustomization = 0xB,
 			kImageSpace = 0xC,
-			
+
 			kTotal = 0xD
 		};
 
@@ -126,67 +126,67 @@ namespace RE
 		class State
 		{
 			// members
-			ShadowSceneNode* shadowSceneNode[5];	// 00
-			float            timerValues[6];	// 28
-			std::uint32_t    frameCount;	// 40
-			NiColorA         loadedRange;	// 44
-			bool             interior;	// 54
-			bool             liteBrite;	// 55
-			bool             deferredRGBEmit;	// 56
-			bool             deferredRGBSpec;	// 57
-			bool             menuScreenPremultAlpha;	// 58
-			bool             menuScreenPostAA;	// 59
-			float            menuScreenAlpha;	// 5C
-			bool             characterLightEnabled;	// 60
-			bool             screenSpaceReflectionsEnabled;	// 61
-			bool             screenSpaceSubsurfaceScatteringEnabled;	// 62
-			std::uint32_t    pipboyScreenTarget;	// 64
-			NiPointer<NiTexture> pipboyFXTexture;	// 68
-			float                pipboyScreenEmitIntensity;	// 70
-			float                pipboyScreenDiffuseIntensity;	// 74
-			float                pipboyScreenEmitIntensityWA;	// 78
-			float                pipboyScreenDiffuseIntensityWA;	// 7C
-			float                specularLODStartFadeSquared;	// 80
-			float                specularLODEndSquared;	// 84
-			float                landLOFaceSeconds;	// 88
-			float                leafAnimDampenDistStartSPU;	// 8C
-			float                leafAnimDampenDistEndSPU;	// 90
-			NiPoint2             oldGridArrayCenter;	// 94
-			NiPoint2             gridArrayCenter;	// 9C
-			float                gridArrayLerpStart;	// A4
-			bool                 LODFadeInProgress;	// A8
-			std::uint8_t         sceneGraph;	// A9
-			BSShaderManager::etRenderMode debugMode;	// AC
-			std::uint32_t                 debugColorWrite;	// B0
-			NiTransform                   directionalAmbientTransform;	// C0
-			NiTransform                   localDirectionalAmbientTransform;	// 100
-			NiColorA                      ambientSpecular;	// 140
-			bool                          ambientSpecularEnabled;	// 150
-			std::uint32_t                 textureTransformCurrentBuffer;	// 154
-			std::uint32_t                 textureTransformFlipMode; // 158
-			std::uint32_t                 cameraInWaterState;	// 15C
-			float                         cameraNear;	// 160
-			float                         cameraFar;	// 164
-			float                         waterIntersect;	// 168
-			NiColorA                      menuScreenBlendParams;	// 16C
-			NiColorA                      debugTintColor;	// 17C
-			float                         boneTintingTiming;	// 18C
-			NiPoint3                      forwardLightOffset;	// 190
-			NiPoint3                      clipVolume[2];	// 19C
-			NiPointer<BSGeometry>         clipVolumeGeom;	// 1B8
-			NiColorA                      maskRectParams;	// 1C0
-			NiColorA                      UIMaskRectsA[16];	// 1D0
-			NiColorA                      UIMaskRectColorsA[16];	// 2D0
-			NiColorA                      characterLightParams;	// 3D0
-			std::uint32_t                 forceDisableFrame;	// 3E0
-			bool                          effectShaderVATSHighlight;	// 3E4
-			bool                          forceEffectShaderPremultAlpha;	// 3E5
-			bool                          forceDisableSSR;	// 3E6
-			bool                          forceDisableGodrays;	// 3E7
-			bool                          forceDisableDirLights;	// 3E8
-			bool                          pendingForceDisableSSR;	// 3E9
-			bool                          pendingForceDisableGodrays;	// 3EA
-			bool                          pendingForceDisableDirLights;	// 3EB
+			ShadowSceneNode*              shadowSceneNode[5];                      // 00
+			float                         timerValues[6];                          // 28
+			std::uint32_t                 frameCount;                              // 40
+			NiColorA                      loadedRange;                             // 44
+			bool                          interior;                                // 54
+			bool                          liteBrite;                               // 55
+			bool                          deferredRGBEmit;                         // 56
+			bool                          deferredRGBSpec;                         // 57
+			bool                          menuScreenPremultAlpha;                  // 58
+			bool                          menuScreenPostAA;                        // 59
+			float                         menuScreenAlpha;                         // 5C
+			bool                          characterLightEnabled;                   // 60
+			bool                          screenSpaceReflectionsEnabled;           // 61
+			bool                          screenSpaceSubsurfaceScatteringEnabled;  // 62
+			std::uint32_t                 pipboyScreenTarget;                      // 64
+			NiPointer<NiTexture>          pipboyFXTexture;                         // 68
+			float                         pipboyScreenEmitIntensity;               // 70
+			float                         pipboyScreenDiffuseIntensity;            // 74
+			float                         pipboyScreenEmitIntensityWA;             // 78
+			float                         pipboyScreenDiffuseIntensityWA;          // 7C
+			float                         specularLODStartFadeSquared;             // 80
+			float                         specularLODEndSquared;                   // 84
+			float                         landLOFaceSeconds;                       // 88
+			float                         leafAnimDampenDistStartSPU;              // 8C
+			float                         leafAnimDampenDistEndSPU;                // 90
+			NiPoint2                      oldGridArrayCenter;                      // 94
+			NiPoint2                      gridArrayCenter;                         // 9C
+			float                         gridArrayLerpStart;                      // A4
+			bool                          LODFadeInProgress;                       // A8
+			std::uint8_t                  sceneGraph;                              // A9
+			BSShaderManager::etRenderMode debugMode;                               // AC
+			std::uint32_t                 debugColorWrite;                         // B0
+			NiTransform                   directionalAmbientTransform;             // C0
+			NiTransform                   localDirectionalAmbientTransform;        // 100
+			NiColorA                      ambientSpecular;                         // 140
+			bool                          ambientSpecularEnabled;                  // 150
+			std::uint32_t                 textureTransformCurrentBuffer;           // 154
+			std::uint32_t                 textureTransformFlipMode;                // 158
+			std::uint32_t                 cameraInWaterState;                      // 15C
+			float                         cameraNear;                              // 160
+			float                         cameraFar;                               // 164
+			float                         waterIntersect;                          // 168
+			NiColorA                      menuScreenBlendParams;                   // 16C
+			NiColorA                      debugTintColor;                          // 17C
+			float                         boneTintingTiming;                       // 18C
+			NiPoint3                      forwardLightOffset;                      // 190
+			NiPoint3                      clipVolume[2];                           // 19C
+			NiPointer<BSGeometry>         clipVolumeGeom;                          // 1B8
+			NiColorA                      maskRectParams;                          // 1C0
+			NiColorA                      UIMaskRectsA[16];                        // 1D0
+			NiColorA                      UIMaskRectColorsA[16];                   // 2D0
+			NiColorA                      characterLightParams;                    // 3D0
+			std::uint32_t                 forceDisableFrame;                       // 3E0
+			bool                          effectShaderVATSHighlight;               // 3E4
+			bool                          forceEffectShaderPremultAlpha;           // 3E5
+			bool                          forceDisableSSR;                         // 3E6
+			bool                          forceDisableGodrays;                     // 3E7
+			bool                          forceDisableDirLights;                   // 3E8
+			bool                          pendingForceDisableSSR;                  // 3E9
+			bool                          pendingForceDisableGodrays;              // 3EA
+			bool                          pendingForceDisableDirLights;            // 3EB
 		};
 		static_assert(sizeof(State) == 0x3F0);
 	};

@@ -6,9 +6,9 @@ namespace RE
 	{
 	public:
 		// members
-		std::uint32_t id;	// 00
-		std::uint32_t index;	// 04
-		std::uint64_t memberArray[6];	// 8
+		std::uint32_t id;              // 00
+		std::uint32_t index;           // 04
+		std::uint64_t memberArray[6];  // 8
 	};
 	static_assert(sizeof(BGSStoryEvent) == 0x38);
 }

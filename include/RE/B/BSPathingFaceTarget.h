@@ -7,7 +7,6 @@ namespace RE
 	class BSPathingFaceTarget
 	{
 	public:
-
 		enum class FACE_TARGET_TYPE : std::uint32_t
 		{
 			kNone = 0x0,
@@ -17,11 +16,11 @@ namespace RE
 		};
 
 		// members
-		BSPathingFaceTarget::FACE_TARGET_TYPE type; // 00
-		NiPoint3                              point;	// 04
-		float                                 angle;	// 10
-		float                                 angleTolernaceCCW;	// 14
-		float                                 angleToleranceCW;	// 18
+		BSPathingFaceTarget::FACE_TARGET_TYPE type;               // 00
+		NiPoint3                              point;              // 04
+		float                                 angle;              // 10
+		float                                 angleTolernaceCCW;  // 14
+		float                                 angleToleranceCW;   // 18
 	};
 	static_assert(sizeof(BSPathingFaceTarget) == 0x1C);
 }

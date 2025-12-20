@@ -8,7 +8,7 @@ namespace RE
 	{
 	public:
 		// members
-		NiPoint2 point;	// 00
+		NiPoint2 point;  // 00
 	};
 	static_assert(sizeof(TESRegionPoint) == 0x8);
 }

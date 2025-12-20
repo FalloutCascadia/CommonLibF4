@@ -10,9 +10,9 @@ namespace RE
 	{
 	public:
 		// members
-		std::uint8_t boneCount;	// 00
-		RagDollBone* boneArray;	// 08
-		NiPoint3     bip01Rot;	// 10
+		std::uint8_t boneCount;  // 00
+		RagDollBone* boneArray;  // 08
+		NiPoint3     bip01Rot;   // 10
 	};
 	static_assert(sizeof(RagDollData) == 0x20);
 }

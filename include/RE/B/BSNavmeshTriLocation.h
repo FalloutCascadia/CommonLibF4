@@ -6,10 +6,10 @@
 namespace RE
 {
 	class BSNavmeshTriLocation :
-		public BSNavmeshTriHandle // 00
+		public BSNavmeshTriHandle  // 00
 	{
 		// members
-		NiPoint3 location;	// 10
+		NiPoint3 location;  // 10
 	};
 	static_assert(sizeof(BSNavmeshTriLocation) == 0x20);
 }

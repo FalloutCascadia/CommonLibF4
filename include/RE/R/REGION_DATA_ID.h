@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class REGION_DATA_ID : std::uint32_t 
+	enum class REGION_DATA_ID : std::uint32_t
 	{
 		kNone = 0x0,
 		kGeneralID = 0x1,

@@ -18,11 +18,11 @@ namespace RE
 		};
 
 		// members
-		NiPoint3 point1;	// 00
-		NiPoint3 point2;	// 0C
-		float    radius;	// 18
-		float    cost;	// 1C
-		BSPathingAvoidNode::AVOID_NODE_TYPE type;	// 20
+		NiPoint3                            point1;  // 00
+		NiPoint3                            point2;  // 0C
+		float                               radius;  // 18
+		float                               cost;    // 1C
+		BSPathingAvoidNode::AVOID_NODE_TYPE type;    // 20
 	};
 	static_assert(sizeof(BSPathingAvoidNode) == 0x24);
 }

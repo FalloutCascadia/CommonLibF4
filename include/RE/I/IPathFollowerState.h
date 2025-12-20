@@ -24,10 +24,9 @@ namespace RE
 		virtual ~IPathFollowerState();  // 00
 
 		// add
-		virtual IPathFollowerState::PATH_FOLLOWER_STATE_RESULT Update(const PathFollowerStateUpdateData*, MovementPlannerAgentReturnDataSmallDelta*, MovementTweenerAgentOutputData*);	// 01
-		virtual void                                           SaveGame(BSPathingStreamWrite*, const ICheckEndReachedFunctorMapper*) = 0;												// 02
+		virtual IPathFollowerState::PATH_FOLLOWER_STATE_RESULT Update(const PathFollowerStateUpdateData*, MovementPlannerAgentReturnDataSmallDelta*, MovementTweenerAgentOutputData*);  // 01
+		virtual void                                           SaveGame(BSPathingStreamWrite*, const ICheckEndReachedFunctorMapper*) = 0;                                               // 02
 		virtual void                                           LoadGame(BSPathingStreamRead*, const ICheckEndReachedFunctorMapper*) = 0;                                                // 03
-		
 	};
 	static_assert(sizeof(IPathFollowerState) == 0x8);
 }

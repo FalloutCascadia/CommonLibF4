@@ -7,8 +7,8 @@ namespace RE
 	class BSNavmeshTriHandle
 	{
 	public:
-		BSNavmeshInfo* pNavMeshInfo;	// 00
-		std::uint16_t  triangle;	// 08
+		BSNavmeshInfo* pNavMeshInfo;  // 00
+		std::uint16_t  triangle;      // 08
 	};
 	static_assert(sizeof(BSNavmeshTriHandle) == 0x10);
 }

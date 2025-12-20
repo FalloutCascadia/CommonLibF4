@@ -8,14 +8,14 @@ namespace RE
 	namespace BSExternalAudioIO
 	{
 		class ExternalLoad :
-			public BSIntrusiveRefCounted // 00
+			public BSIntrusiveRefCounted  // 00
 		{
 		public:
 			// members
-			std::uint32_t bufferSize;	// 04
-			std::uint32_t sourceSize;	// 08
-			std::uint32_t streamOffset;	// 0C
-			void*         buffer;	// 10
+			std::uint32_t bufferSize;    // 04
+			std::uint32_t sourceSize;    // 08
+			std::uint32_t streamOffset;  // 0C
+			void*         buffer;        // 10
 		};
 		static_assert(sizeof(ExternalLoad) == 0x18);
 

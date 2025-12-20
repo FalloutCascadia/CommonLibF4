@@ -16,13 +16,13 @@ namespace RE
 		};
 
 		// members
-		MovementCorrection::CORRECTION_TYPE correctionType;	// 00
-		NiPoint3                            parameters[10];	// 04
-		float                               correctionStartTime;	// 7C
-		float                               correctionEndTime;	// 80
-		float                               correctionStartRotateTime; // 84
-		float                               correctionEndRotateTime;	// 88
-		float                               totalTime; // 8C
+		MovementCorrection::CORRECTION_TYPE correctionType;             // 00
+		NiPoint3                            parameters[10];             // 04
+		float                               correctionStartTime;        // 7C
+		float                               correctionEndTime;          // 80
+		float                               correctionStartRotateTime;  // 84
+		float                               correctionEndRotateTime;    // 88
+		float                               totalTime;                  // 8C
 	};
 	static_assert(sizeof(MovementCorrection) == 0x90);
 }

@@ -8,8 +8,8 @@ namespace RE
 	{
 	public:
 		// members
-		NiPoint3A eulerAngles;	// 00
-		float     speed;	// 10
+		NiPoint3A eulerAngles;  // 00
+		float     speed;        // 10
 	};
 	static_assert(sizeof(MovementVector) == 0x20);
 }

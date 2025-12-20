@@ -28,27 +28,27 @@ namespace RE
 		};
 
 		// add
-		virtual void FinishAccumulatingPreResolveDepth(); // 2E
-		virtual void FinishAccumulatingPostResolveDepth(); // 2F
+		virtual void FinishAccumulatingPreResolveDepth();   // 2E
+		virtual void FinishAccumulatingPostResolveDepth();  // 2F
 
 		// members
-		std::uint32_t sunPixelCount;	// 58
-		bool          waitingForSunQuery;	// 5C
-		float         percentSunOccludedStored;	// 60
-		SunOcclusionTest sunTests[3];	// 68
-		bool	firstPerson;	// B0
-		bool	zPrePass; // B1
-		NiColorA         silhouetteColor;	// B4
-		bool             renderDecals;	// C4
-		BSBatchRenderer  batchRenderer;	// C8
-		std::uint32_t    currentPass;	// 548
-		std::uint32_t    currentBucket;	// 54C
-		bool             currentActiveA;	// 550
-		ShadowSceneNode* activeShadowSceneNode;	// 558
-		BSShaderManager::etRenderMode renderMode;	// 560
-		NiPointer<BSLight> shadowLight;	// 568
-		NiPoint3A eyePosition;	// 570
-		std::uint32_t depthPassIndex;	// 580
+		std::uint32_t                 sunPixelCount;             // 58
+		bool                          waitingForSunQuery;        // 5C
+		float                         percentSunOccludedStored;  // 60
+		SunOcclusionTest              sunTests[3];               // 68
+		bool                          firstPerson;               // B0
+		bool                          zPrePass;                  // B1
+		NiColorA                      silhouetteColor;           // B4
+		bool                          renderDecals;              // C4
+		BSBatchRenderer               batchRenderer;             // C8
+		std::uint32_t                 currentPass;               // 548
+		std::uint32_t                 currentBucket;             // 54C
+		bool                          currentActiveA;            // 550
+		ShadowSceneNode*              activeShadowSceneNode;     // 558
+		BSShaderManager::etRenderMode renderMode;                // 560
+		NiPointer<BSLight>            shadowLight;               // 568
+		NiPoint3A                     eyePosition;               // 570
+		std::uint32_t                 depthPassIndex;            // 580
 	};
 	static_assert(sizeof(BSShaderAccumulator) == 0x590);
 }
