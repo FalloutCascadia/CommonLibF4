@@ -33,14 +33,14 @@ namespace RE
 		bool Play()
 		{
 			using func_t = decltype(&BSSoundHandle::Play);
-			static REL::Relocation<func_t> func{ ID::BSSoundHandle::Play};
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::Play };
 			return func(this);
 		}
 
 		bool SetOutputModel(const BSISoundOutputModel* a_outputModel)
 		{
 			using func_t = decltype(&BSSoundHandle::SetOutputModel);
-			static REL::Relocation<func_t> func{ ID::BSSoundHandle::SetOutputModel};
+			static REL::Relocation<func_t> func{ ID::BSSoundHandle::SetOutputModel };
 			return func(this, a_outputModel);
 		}
 
