@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class SHAPE_TYPES : std::uint32_t
+	enum class SHAPE_TYPES
 	{
 		kCapsule = 0x0,
 		kCustom = 0x0,
