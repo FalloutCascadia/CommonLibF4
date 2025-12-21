@@ -694,8 +694,8 @@ namespace RE
 		{
 		public:
 			// members
-			VertexBuffer* VB;	// 00
-			std::uint32_t dataStride;	// 08
+			VertexBuffer* VB;          // 00
+			std::uint32_t dataStride;  // 08
 		};
 		static_assert(sizeof(DynamicTriShapeData) == 0x10);
 
@@ -703,8 +703,8 @@ namespace RE
 		{
 		public:
 			// members
-			REX::W32::ID3D11Buffer* buffer;	// 00
-			std::uint32_t           offset;	// 08
+			REX::W32::ID3D11Buffer* buffer;  // 00
+			std::uint32_t           offset;  // 08
 		};
 		static_assert(sizeof(DynamicTriShapeDrawData) == 0x10);
 

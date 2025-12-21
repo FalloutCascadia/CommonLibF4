@@ -7,15 +7,15 @@
 namespace RE
 {
 	class __declspec(novtable) BSNavmeshObstacleCoverData :
-		public NiRefObject	// 00
+		public NiRefObject  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BSNavmeshObstacleCoverData };
 		static constexpr auto VTABLE{ VTABLE::BSNavmeshObstacleCoverData };
 
 		// members
-		BSTArray<BSNavmeshCoverEdge> coverEdgeArray;	// 10
-		std::uint32_t                flags;	// 28
+		BSTArray<BSNavmeshCoverEdge> coverEdgeArray;  // 10
+		std::uint32_t                flags;           // 28
 	};
 	static_assert(sizeof(BSNavmeshObstacleCoverData) == 0x30);
 }
