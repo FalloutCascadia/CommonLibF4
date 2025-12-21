@@ -9,6 +9,22 @@ namespace RE
 	public:
 		~BSSoundHandle() noexcept {}  // NOLINT(modernize-use-equals-default)
 
+		enum class ASSUMED_STATE : std::uint32_t
+		{
+			kInitialized = 0x0,
+			kPlaying = 0x1,
+			kStopped = 0x2,
+			kPaused = 0x3
+		};
+
+		enum class LOOP_TYPE : std::uint32_t
+		{
+			kNone = 0x0,
+			kWholeFile = 0x1,
+			kEnvFast = 0x2,
+			kEnvSlow = 0x3
+		};
+
 		bool FadeInPlay(std::uint16_t a_milliseconds)
 		{
 			using func_t = decltype(&BSSoundHandle::FadeInPlay);
