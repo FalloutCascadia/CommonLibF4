@@ -29,7 +29,7 @@ namespace RE
 		kShouldersUnderWater = 0x800000,
 		kOnStairs = 0x1000000,
 		kCanPitch = 0x2000000,
-		kCanRoll  = 0x4000000,
+		kCanRoll = 0x4000000,
 		kNoCharacterCollisions = 0x8000000,
 		kNotPushablePermanent = 0x10000000,
 		kPossiblePathObstacle = 0x20000000,

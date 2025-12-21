@@ -50,7 +50,6 @@ namespace RE
 			kMotionTypes = 0x7F0000
 		};
 
-
 		bool CollidesWithSmallTransparentLayer()
 		{
 			using func_t = decltype(&BGSProjectile::CollidesWithSmallTransparentLayer);

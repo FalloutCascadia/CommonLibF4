@@ -8,7 +8,7 @@ namespace RE
 		kAny = 0x1,
 		kImpossible = 0x2,
 		kMoral = 0x3,
-		
+
 		kTotal = 0x4
 	};
 }

@@ -10,9 +10,9 @@ namespace RE
 	{
 	public:
 		// members
-		const HUDModeType* validHUDModes;	// 00
-		std::uint32_t      numHUDModes;	// 08
-		POWER_ARMOR_HUD_VISIBILITY_RULE powerArmorHUDVisibilityRule;	// 0C
+		const HUDModeType*              validHUDModes;                // 00
+		std::uint32_t                   numHUDModes;                  // 08
+		POWER_ARMOR_HUD_VISIBILITY_RULE powerArmorHUDVisibilityRule;  // 0C
 	};
 	static_assert(sizeof(HUDModeInitParams) == 0x10);
 }

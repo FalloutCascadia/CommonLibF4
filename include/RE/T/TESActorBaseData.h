@@ -23,7 +23,6 @@ namespace RE
 			kVeryEvil = 0x4
 		};
 
-
 		// add
 		virtual void CopyFromTemplateForms([[maybe_unused]] TESActorBase** a_forceTemplates) { return; }  // 07
 		virtual bool GetIsGhost() const;                                                                  // 08

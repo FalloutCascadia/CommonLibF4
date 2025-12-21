@@ -47,11 +47,11 @@ namespace RE
 		{
 		public:
 			// members
-			bool checkDangerous;	// 00
-			bool checkActors;	// 01
-			bool checkGround;	// 02
-			bool checkEnvironment;	// 03
-			bool useHitToleranceCheck;	// 04
+			bool checkDangerous;        // 00
+			bool checkActors;           // 01
+			bool checkGround;           // 02
+			bool checkEnvironment;      // 03
+			bool useHitToleranceCheck;  // 04
 		};
 		static_assert(sizeof(CheckGoodType) == 0x05);
 
