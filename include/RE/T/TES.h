@@ -56,7 +56,7 @@ namespace RE
 			kSpecifiedWorldOnly = 0x4
 		};
 
-		enum class TAC_CONTROL
+		enum class TAC_CONTROL : std::uint32_t
 		{
 			kStop = 0xFFFFFFFF,
 			kContinue = 0x0,

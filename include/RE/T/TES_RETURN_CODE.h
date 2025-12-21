@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class TES_RETURN_CODE : std::uint32_t
+	enum class TES_RETURN_CODE
 	{
 		kNone = 0x0,
 		kNotFound = 0x1,

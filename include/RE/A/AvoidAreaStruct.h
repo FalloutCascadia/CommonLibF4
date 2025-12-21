@@ -6,8 +6,10 @@ namespace RE
 {
 	class TESObjectREFR;
 
-	struct AvoidAreaStruct
+	class AvoidAreaStruct
 	{
+	public:
+		// members
 		BSPathingAvoidNode avoideNode;  // 00
 		float              timeExpire;  // 24
 		TESObjectREFR*     refObj;      // 28

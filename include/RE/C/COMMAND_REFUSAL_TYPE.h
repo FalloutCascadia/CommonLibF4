@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class COMMAND_REFUSAL_TYPE : std::uint32_t
+	enum class COMMAND_REFUSAL_TYPE
 	{
 		kNone = 0x0,
 		kAny = 0x1,
