@@ -104,12 +104,12 @@ namespace RE
 		{
 		public:
 			// members
-			std::uint32_t geometryCount;	// 00
-			std::uint32_t triangleCount;	// 04
-			std::uint32_t newRenderPassCoutn;	// 08
-			std::uint32_t activeLights;	// 0C
-			std::uint64_t totalTime;	// 10
-			std::uint32_t accumulateTime;	// 18
+			std::uint32_t geometryCount;       // 00
+			std::uint32_t triangleCount;       // 04
+			std::uint32_t newRenderPassCoutn;  // 08
+			std::uint32_t activeLights;        // 0C
+			std::uint64_t totalTime;           // 10
+			std::uint32_t accumulateTime;      // 18
 		};
 		static_assert(sizeof(RENDER_DATA) == 0x20);
 
