@@ -38,7 +38,7 @@ namespace RE
 		float                                                  power;                    // 84
 		float                                                  scale;                    // 88
 		float                                                  coneOfFireRadiusMult;     // 8C
-		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::int32_t> targetLimb;               // 90
+		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;              // 90
 		bool                                                   alwaysHit;                // 94
 		bool                                                   noDamageOutsideCombat;    // 95
 		bool                                                   autoAim;                  // 96

@@ -8,6 +8,8 @@
 #include "RE/B/BSTArray.h"
 #include "RE/B/bhkCollisionQueryResultHandle.h"
 #include "RE/C/CELLJobs.h"
+#include "RE/C/CFilter.h"
+#include "RE/H/hknpBodyId.h"
 #include "RE/N/NiPoint.h"
 #include "RE/N/NiPointer.h"
 #include "RE/N/NiTransform.h"
@@ -39,7 +41,21 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::Projectile };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kREFR };
 
-		class ImpactCreation;
+		class ImpactCreation
+		{
+		public:
+			// members
+			NiPoint3A contactPoint;	// 00
+			NiPoint3A contactNormal;	// 10
+			TESObjectREFR* collidee;	// 20
+			CFilter        collisionFilter;	// 28
+			hknpBodyId     collisionBodyId;	// 2C
+			std::uint32_t  collisionShapeKey;	// 30
+			bool           spellCast;	// 34
+			bool           backface;	// 35
+			bool           trigger;	// 36
+		};
+		static_assert(sizeof(ImpactCreation) == 0x40);
 
 		class ImpactData
 		{
@@ -51,7 +67,7 @@ namespace RE
 			ObjectRefHandle                                        collidee;                // 20
 			NiPointer<bhkNPCollisionObject>                        colObj;                  // 28
 			BGSMaterialType*                                       materialType;            // 30
-			REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::int32_t> damageLimb;              // 38
+			REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> damageLimb;              // 38
 			REX::EnumSet<COL_LAYER, std::int32_t>                  collisionLayer;          // 3C
 			NiPointer<NiNode>                                      closestBone;             // 40
 			REX::EnumSet<ImpactResult, std::int32_t>               resultOverride;          // 48
@@ -125,7 +141,7 @@ namespace RE
 		void*                                                  muzzleFlashDBHandle;  // 1E8 - TODO
 		NiPointer<NiNode>                                      muzzleFlashArt;       // 1F0
 		BSMagicShaderParticles*                                particles;            // 1F8
-		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::int32_t> targetLimb;           // 200
+		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;           // 200
 		NiPointer<NiAVObject>                                  targetLimbObj;        // 208
 		NiAVObject*                                            clonePoolKey;         // 210
 		float                                                  power;                // 218
