@@ -100,6 +100,7 @@
 #include "RE/B/BGSCreatedObjectManager.h"
 #include "RE/B/BGSDamageType.h"
 #include "RE/B/BGSDebris.h"
+#include "RE/B/BGSDecalEmitter.h"
 #include "RE/B/BGSDecalGroup.h"
 #include "RE/B/BGSDecalNode.h"
 #include "RE/B/BGSDefaultObject.h"

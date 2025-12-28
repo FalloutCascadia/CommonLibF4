@@ -150,6 +150,11 @@ namespace RE::ID
 		inline constexpr REL::ID SetParentGroupNumber{ 2189125 };
 	}
 
+	namespace BGSConstructibleObject
+	{
+		inline constexpr REL::ID PlayerPassesConditions{ 2197318 };
+	}
+
 	namespace BGSCraftItemEvent
 	{
 		inline constexpr REL::ID EventIndex{ 2663409 };
