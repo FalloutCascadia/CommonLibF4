@@ -8,7 +8,6 @@ namespace RE
 	class BSPathingGoal
 	{
 	public:
-
 		enum class GOAL_RADIUS_TYPE
 		{
 			kNone = 0x0,
@@ -25,12 +24,12 @@ namespace RE
 		};
 
 		// members
-		NiPoint3 targetPoint;	// 00
-		float    targetAngleTolerance;	// 0C
-		BSPathingLocation location;	// 10
-		float             zDelta;	// 40
-		float             goalRadius;	// 44
-		float             normalizedSpeedAtGoal;	// 48
+		NiPoint3          targetPoint;            // 00
+		float             targetAngleTolerance;   // 0C
+		BSPathingLocation location;               // 10
+		float             zDelta;                 // 40
+		float             goalRadius;             // 44
+		float             normalizedSpeedAtGoal;  // 48
 	};
 	static_assert(sizeof(BSPathingGoal) == 0x50);
 }
