@@ -40,7 +40,7 @@ namespace RE
 		{
 		public:
 			// members
-			const void*        menuItem;  // 00 - BGSTerminal::MenuItem*
+			const BGSTerminal::MenuItem* menuItem;  // 00
 			const BGSTerminal* terminal;  // 08
 		};
 		static_assert(sizeof(ListItem) == 0x10);

@@ -1357,6 +1357,21 @@ namespace RE::ID
 		inline constexpr REL::ID SetAllowDegrade{ 2270148 };
 	}
 
+	namespace nsHUDNotifications
+	{
+		inline constexpr REL::ID IsQuestNotification{ 2222465 };
+		inline constexpr REL::ID IsObjectiveNotification{ 2222466 };
+		inline constexpr REL::ID IsLocationDiscoveredNotification{ 2222467 };
+	}
+
+	namespace nsHUDTypes
+	{
+		namespace NotificationInfo
+		{
+			inline constexpr REL::ID ctor{ 2223292 };
+		}
+	}
+
 	namespace nsStatsMenuUtils
 	{
 		inline constexpr REL::ID GetEffectDisplayInfo{ 2224586 };
