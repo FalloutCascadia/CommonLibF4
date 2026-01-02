@@ -22,8 +22,8 @@ namespace RE
 		};
 
 		// members
-		BSPathingLocation location;	// 00
-		float             tangent;	// 30
+		BSPathingLocation location;  // 00
+		float             tangent;   // 30
 	};
 	static_assert(sizeof(BSPathingStart) == 0x38);
 }

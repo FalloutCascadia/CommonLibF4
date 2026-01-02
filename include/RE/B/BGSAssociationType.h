@@ -17,7 +17,7 @@ namespace RE
 		{
 			kParent = 0x0,
 			kChild = 0x1,
-			kCount  = 0x2
+			kCount = 0x2
 		};
 
 		enum class Flags
@@ -26,8 +26,8 @@ namespace RE
 		};
 
 		// members
-		BSFixedStringCS associationLabel[2][2];  // 20
-		REX::EnumSet<Flags, std::uint32_t>   flags;                   // 40
+		BSFixedStringCS                    associationLabel[2][2];  // 20
+		REX::EnumSet<Flags, std::uint32_t> flags;                   // 40
 	};
 	static_assert(sizeof(BGSAssociationType) == 0x48);
 }

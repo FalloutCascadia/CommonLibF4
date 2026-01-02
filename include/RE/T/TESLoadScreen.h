@@ -22,11 +22,11 @@ namespace RE
 		{
 		public:
 			// members
-			TESBoundObject* loadNif;	// 00
-			std::int16_t    rotationConstraints[2];	// 08
-			TESModel        cameraPath;	// 10
-			BGSTransform*   transform;	// 40
-			float           zoomConstraints[2];	// 48
+			TESBoundObject* loadNif;                 // 00
+			std::int16_t    rotationConstraints[2];  // 08
+			TESModel        cameraPath;              // 10
+			BGSTransform*   transform;               // 40
+			float           zoomConstraints[2];      // 48
 		};
 		static_assert(sizeof(LoadNIFData) == 0x50);
 
