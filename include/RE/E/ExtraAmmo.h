@@ -13,7 +13,7 @@ namespace RE
 		static constexpr auto TYPE{ EXTRA_DATA_TYPE::kAmmo };
 
 		// members
-		std::uint32_t count;	// 18
+		std::uint32_t count;  // 18
 	};
 	static_assert(sizeof(ExtraAmmo) == 0x20);
 }

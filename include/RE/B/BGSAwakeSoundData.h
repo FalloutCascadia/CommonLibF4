@@ -16,10 +16,10 @@ namespace RE
 			kTotal = 0x3
 		};
 
-		BSSoundHandle             sound;        // 00
-		std::uint32_t             soundFormID;  // 08
-		float                     volume;       // 0C
-		BGSAwakeSoundData::State  state;        // 10
+		BSSoundHandle            sound;        // 00
+		std::uint32_t            soundFormID;  // 08
+		float                    volume;       // 0C
+		BGSAwakeSoundData::State state;        // 10
 	};
 	static_assert(sizeof(BGSAwakeSoundData) == 0x14);
 }

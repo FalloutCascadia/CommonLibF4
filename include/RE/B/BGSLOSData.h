@@ -5,7 +5,7 @@
 namespace RE
 {
 	class __declspec(novtable) BGSLOSData :
-		public NiRefObject	// 00
+		public NiRefObject  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::BGSLOSData };
