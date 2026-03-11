@@ -14,7 +14,7 @@ namespace RE
 		static constexpr auto TYPE{ EXTRA_DATA_TYPE::kRagdollData };
 
 		// members
-		RagDollData* ragDollData;       // 18
+		RagDollData* ragDollData;  // 18
 	};
 	static_assert(sizeof(ExtraRagDolldata) == 0x20);
 }
