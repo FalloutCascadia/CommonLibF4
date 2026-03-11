@@ -1015,6 +1015,8 @@
 #include "RE/P/PerkValueEvents.h"
 #include "RE/P/PersistentPassList.h"
 #include "RE/P/PipboyArray.h"
+#include "RE/P/PipboyCommand.h"
+#include "RE/P/PipboyCommandResult.h"
 #include "RE/P/PipboyDataGroup.h"
 #include "RE/P/PipboyDataManager.h"
 #include "RE/P/PipboyHolotapeMenu.h"
