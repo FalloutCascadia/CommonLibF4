@@ -1638,6 +1638,12 @@ namespace RE::ID
 		inline constexpr REL::ID ShowBuildFailureMessage{ 2224322 };
 	}
 
+	namespace PowerUtils
+	{
+		inline constexpr REL::ID ItemIsPowerConnection{ 2195078 };
+		inline constexpr REL::ID ItemIsPowerReceiver{ 2195060 };
+	}
+
 	namespace ProcessLists
 	{
 		inline constexpr REL::ID Singleton{ 4796160 };
@@ -2015,6 +2021,7 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateDynamicNavmesh{ 2201206 };
 		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
 		inline constexpr REL::ID GetRelevantWaterHeight{ 2201189 };
+		inline constexpr REL::ID CanBeMoved{ 2200898 };
 	}
 
 	namespace TESObjectWEAP
