@@ -11,13 +11,13 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::PipboyCommand };
 
 		// add
-		virtual ~PipboyCommand();							// 00
-		virtual void Init(Json::Value* a_json) = 0;			// 01
-		virtual const PipboyCommandResult* DoValidate();	// 02
-		virtual const PipboyCommandResult* DoExecute();     // 03
+		virtual ~PipboyCommand();                                          // 00
+		virtual void                       Init(Json::Value* a_json) = 0;  // 01
+		virtual const PipboyCommandResult* DoValidate();                   // 02
+		virtual const PipboyCommandResult* DoExecute();                    // 03
 
 		// members
-		const std::uint32_t id;				// 08
+		const std::uint32_t        id;                // 08
 		const PipboyCommandResult* validationResult;  // 10
 		const PipboyCommandResult* executionResult;   // 18
 		bool                       isReadonOnly;      // 20
