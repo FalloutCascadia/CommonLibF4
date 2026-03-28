@@ -2,6 +2,8 @@
 
 namespace RE
 {
+	class PipboyCommandResult;
+
 	class __declspec(novtable) PipboyCommand
 	{
 	public:
