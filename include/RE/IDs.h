@@ -343,6 +343,11 @@ namespace RE::ID
 		inline constexpr REL::ID ctor{ 2214021 };
 	}
 
+	namespace BGSPrimitive
+	{
+		inline constexpr REL::ID CreateAbstract{ 2194290 };
+	}
+
 	namespace BGSProjectile
 	{
 		inline constexpr REL::ID CollidesWithSmallTransparentLayer{ 2197620 };
@@ -711,6 +716,11 @@ namespace RE::ID
 	namespace BSShaderTextureSet
 	{
 		inline constexpr REL::ID CreateObject{ 2316324 };
+	}
+
+	namespace BSShaderUtil
+	{
+		inline constexpr REL::ID SetMaterialAlpha{ 2317566 };
 	}
 
 	namespace BSSoundHandle
@@ -1246,6 +1256,11 @@ namespace RE::ID
 		inline constexpr REL::ID SetCameraFOV{ 2228973 };
 	}
 
+	namespace MapMarkerData
+	{
+		inline constexpr REL::ID GetLocationName{ 2191791 };
+	}
+
 	namespace MemoryManager
 	{
 		namespace AutoScrapBuffer
@@ -1668,6 +1683,12 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Allocate{ 2267983 };
 		inline constexpr REL::ID Deallocate{ 2267984 };
+	}
+
+	namespace ScreenSplatter
+	{
+		inline constexpr REL::ID Clear{ 2194783 };
+		inline constexpr REL::ID Update{ 2194781 };
 	}
 
 	namespace SCRIPT_FUNCTION
