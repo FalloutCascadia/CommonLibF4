@@ -8,11 +8,10 @@ namespace RE
 	class __declspec(novtable) MapMarkerData :
 		public TESFullName  // 00
 	{
-
 		const char* GetLocationName()
 		{
 			using func_t = decltype(&MapMarkerData::GetLocationName);
-			static REL::Relocation<func_t> func{ ID::MapMarkerData::GetLocationName};
+			static REL::Relocation<func_t> func{ ID::MapMarkerData::GetLocationName };
 			return func(this);
 		}
 
