@@ -876,6 +876,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPickRef{ 2701395 };
 		inline constexpr REL::ID GetPickRefs{ 2701391 };
 		inline constexpr REL::ID SetCurrentPickREFR{ 2248551 };
+		inline constexpr REL::ID DisplayRef{ 2248550 };
 	}
 
 	namespace ConsoleLog
@@ -1233,6 +1234,7 @@ namespace RE::ID
 	namespace LockpickingMenu
 	{
 		inline constexpr REL::ID OpenLockpickingMenu{ 2249263 };
+		inline constexpr REL::ID SendLockInfoToMenu{ 2249267 };
 	}
 
 	namespace LocksPicked
@@ -1669,9 +1671,12 @@ namespace RE::ID
 
 	namespace REFR_LOCK
 	{
+		inline constexpr REL::ID GetLevel{ 2191019 };
 		inline constexpr REL::ID GetLockLevel{ 2191018 };
 		inline constexpr REL::ID SetLocked{ 2191020 };
 		inline constexpr REL::ID IsBroken{ 2191021 };
+		inline constexpr REL::ID NumericValueToEnum{ 2191023 };
+		inline constexpr REL::ID IsInaccessible{ 2191022 };
 	}
 
 	namespace SavefileMetadata
@@ -1993,6 +1998,17 @@ namespace RE::ID
 		inline constexpr REL::ID RemoveReference{ 2200299 };
 		inline constexpr REL::ID UpdateAllDecals{ 2200643 };
 		inline constexpr REL::ID DefaultWater{ 4799138 };
+	}
+
+	namespace TESObjectCONT
+	{
+		inline constexpr REL::ID GetActivateText{ 2198653 };
+	}
+
+	namespace TESObjectDOOR
+	{
+		inline constexpr REL::ID GetActivateText{ 2198690 };
+		inline constexpr REL::ID CalculateDoFavor{ 2198692 };
 	}
 
 	namespace TESObjectLoadedEvent
