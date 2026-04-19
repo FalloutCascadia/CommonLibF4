@@ -1240,6 +1240,7 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID OpenLockpickingMenu{ 2249263 };
 		inline constexpr REL::ID SendLockInfoToMenu{ 2249267 };
+		inline constexpr REL::ID DamageLockpick{ 2249275 };
 	}
 
 	namespace LocksPicked
