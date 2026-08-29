@@ -20,10 +20,10 @@ namespace RE
 			kResolveGoalToClosest = 0x400
 		};
 
-		float preferredCostFactor;					// 00
-		float tangentSmoothingFactor;				// 04
-		std::uint16_t retryCount;					// 08
-		REX::TEnumSet<Flags, std::uint16_t> flags;	// 0A
+		float                               preferredCostFactor;     // 00
+		float                               tangentSmoothingFactor;  // 04
+		std::uint16_t                       retryCount;              // 08
+		REX::TEnumSet<Flags, std::uint16_t> flags;                   // 0A
 	};
 	static_assert(sizeof(BSPathingSearchParameters) == 0x0C);
 }

@@ -158,7 +158,7 @@ namespace RE
 		{
 		public:
 			// members
-			BSTArray<Entry*> entriesA;	// 00
+			BSTArray<Entry*> entriesA;  // 00
 		};
 		static_assert(sizeof(Entries) == 0x18);
 

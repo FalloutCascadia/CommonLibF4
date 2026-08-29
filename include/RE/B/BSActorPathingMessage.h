@@ -11,9 +11,9 @@ namespace RE
 	{
 	public:
 		// members
-		PATHING_MESSAGE_TYPE type;	// 00
-		BSTSmartPointer<BSPathingRequest> request;	// 08
-		BSTSmartPointer<BSPathingSolution> solution;	// 10 
+		PATHING_MESSAGE_TYPE               type;      // 00
+		BSTSmartPointer<BSPathingRequest>  request;   // 08
+		BSTSmartPointer<BSPathingSolution> solution;  // 10
 	};
 	static_assert(sizeof(BSActorPathingMessage) == 0x18)
 }

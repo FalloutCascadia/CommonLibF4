@@ -10,9 +10,9 @@ namespace RE
 	class BSPathingNode
 	{
 	public:
-		BSPathingLocation location;															// 000
-		BSTSmartPointer<MovementMessage, BSTSmartPointerIntrusiveRefCount> actionAtNode;	// 030
-		NiPoint3                                                           tangent;			// 038
+		BSPathingLocation                                                  location;      // 000
+		BSTSmartPointer<MovementMessage, BSTSmartPointerIntrusiveRefCount> actionAtNode;  // 030
+		NiPoint3                                                           tangent;       // 038
 	};
 	static_assert(sizeof(BSPathingNode) == 0x48);
 }

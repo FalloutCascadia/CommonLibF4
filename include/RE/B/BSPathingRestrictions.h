@@ -9,8 +9,8 @@ namespace RE
 	class BSPathingRestrictions
 	{
 	public:
-		NiPointer<BSPathingAvoidNodeArray> avoidNodeArray;		// 00
-		BSPathingSearchAreaRestrictions    areaRestrictions;	// 08
+		NiPointer<BSPathingAvoidNodeArray> avoidNodeArray;    // 00
+		BSPathingSearchAreaRestrictions    areaRestrictions;  // 08
 	};
 	static_assert(sizeof(BSPathingRestrictions) == 0x18);
 }

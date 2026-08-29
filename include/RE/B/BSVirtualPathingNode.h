@@ -11,8 +11,8 @@ namespace RE
 	{
 	public:
 		// members
-		BSPathingLocation location;															// 000
-		BSTSmartPointer<MovementMessage, BSTSmartPointerIntrusiveRefCount> actionAtNode;	// 030
+		BSPathingLocation                                                  location;      // 000
+		BSTSmartPointer<MovementMessage, BSTSmartPointerIntrusiveRefCount> actionAtNode;  // 030
 	};
 	static_assert(sizeof(BSVirtualPathingNode) == 0x38);
 }

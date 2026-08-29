@@ -38,12 +38,12 @@ namespace RE
 		};
 
 		// members
-		float                              radius;				// 00
-		float                              height;				// 04
-		float                              floatHeight;			// 08
-		BSTSmartPointer<BSPathingLockData> lockData;			// 10
-		std::uint32_t                      data;				// 18
-		std::uint8_t                       traversalFlags;		// 1C
+		float                              radius;          // 00
+		float                              height;          // 04
+		float                              floatHeight;     // 08
+		BSTSmartPointer<BSPathingLockData> lockData;        // 10
+		std::uint32_t                      data;            // 18
+		std::uint8_t                       traversalFlags;  // 1C
 	};
 	static_assert(sizeof(BSPathingActorAttributes) == 0x20);
 }

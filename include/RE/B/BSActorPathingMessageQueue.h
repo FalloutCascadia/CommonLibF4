@@ -12,8 +12,8 @@ namespace RE
 	{
 	public:
 		// members
-		BSTSmallArray<BSActorPathingMessage, 1> messages;		// 008
-		BSSpinLock                              messagesLock;	// 030
+		BSTSmallArray<BSActorPathingMessage, 1> messages;      // 008
+		BSSpinLock                              messagesLock;  // 030
 	};
 	static_assert(sizeof(BSActorPathingMessageQueue) == 0x38)
 }
