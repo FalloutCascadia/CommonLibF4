@@ -15,5 +15,5 @@ namespace RE
 		BSTSmallArray<BSActorPathingMessage, 1> messages;      // 008
 		BSSpinLock                              messagesLock;  // 030
 	};
-	static_assert(sizeof(BSActorPathingMessageQueue) == 0x38)
+	static_assert(sizeof(BSActorPathingMessageQueue) == 0x38);
 }

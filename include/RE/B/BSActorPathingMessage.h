@@ -15,5 +15,5 @@ namespace RE
 		BSTSmartPointer<BSPathingRequest>  request;   // 08
 		BSTSmartPointer<BSPathingSolution> solution;  // 10
 	};
-	static_assert(sizeof(BSActorPathingMessage) == 0x18)
+	static_assert(sizeof(BSActorPathingMessage) == 0x18);
 }
