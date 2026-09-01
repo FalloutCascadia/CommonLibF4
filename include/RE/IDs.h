@@ -2319,6 +2319,7 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID SetStage{ 2207743 };
 		inline constexpr REL::ID GetAliasedRef{ 2207810 };
+		inline constexpr REL::ID GetActive{ 2207733 };
 	}
 
 	namespace TESResponse
