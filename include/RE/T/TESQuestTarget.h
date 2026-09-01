@@ -16,7 +16,8 @@ namespace RE
 	public:
 		class REF_DATA
 		{
-			TeleportPath                                TeleportPath;        // 00
+		public:
+			TeleportPath                                teleportPath;        // 00
 			ObjectRefHandle                             reference;           // 50
 			BSTSmartPointer<BSActorPathingMessageQueue> pathMessageQueue;    // 58
 			bool                                        forceRebuildQueued;  // 60
