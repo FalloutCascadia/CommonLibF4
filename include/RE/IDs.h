@@ -2306,6 +2306,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
 		inline constexpr REL::ID GetRelevantWaterHeight{ 2201189 };
 		inline constexpr REL::ID CanBeMoved{ 2200898 };
+		inline constexpr REL::ID HasLocationRefType{ 2202676 };
 	}
 
 	namespace TESObjectWEAP
