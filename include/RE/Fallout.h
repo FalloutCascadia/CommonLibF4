@@ -703,6 +703,7 @@
 #include "RE/E/ExtraRadioData.h"
 #include "RE/E/ExtraRadioReceiver.h"
 #include "RE/E/ExtraRadioRepeater.h"
+#include "RE/E/ExtraRadius.h"
 #include "RE/E/ExtraRagDollData.h"
 #include "RE/E/ExtraReferenceHandles.h"
 #include "RE/E/ExtraStartingWorldOrCell.h"

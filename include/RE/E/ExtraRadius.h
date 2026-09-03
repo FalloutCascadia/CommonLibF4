@@ -13,7 +13,7 @@ namespace RE
 		static constexpr auto TYPE{ EXTRA_DATA_TYPE::kRadius };
 
 		// members
-		float radius;	// 18
+		float radius;  // 18
 	};
 	static_assert(sizeof(ExtraRadius) == 0x20);
 }
