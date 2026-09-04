@@ -2158,6 +2158,7 @@ namespace RE::ID
 	namespace TESFurniture
 	{
 		inline constexpr REL::ID GetContainer{ 2198043 };
+		inline constexpr REL::ID Activate{ 2198054 };
 	}
 
 	namespace TESFurnitureEvent
