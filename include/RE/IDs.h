@@ -1718,6 +1718,7 @@ namespace RE::ID
 	namespace PipboyMapData
 	{
 		inline constexpr REL::ID GetTravelLocationRefr{ 2225515 };
+		inline constexpr REL::ID UpdateQuestMarkers{ 2225549 };
 	}
 
 	namespace PipboyMapMenu
